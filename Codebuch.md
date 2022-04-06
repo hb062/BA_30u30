@@ -59,7 +59,7 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 2 = Gymnasialabschluss / Abitur,
 3 = Ausbildung, 
 4 = Bachelor,
-5 = Master,
+5 = Master / MBA,
 6 = PhD
 
 - membership: definiert bei natürlichen Personen, ob diese Mitglied in einer studentischen PR-Initiative / PR-Verband sind oder waren.
