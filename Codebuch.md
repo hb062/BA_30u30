@@ -76,7 +76,8 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 - exchange: definiert, ob die Person in ihrem Studium ein Auslandssemester absolviert hat oder ganz im Ausland studiert hat. 
 1 = Auslandssemester, 
 2 = Studium im Ausland, 
-3 = nein
+3 = beides,
+4 = nein
 
 - abroad: definiert, ob die Person in ihrem Berufsleben bislang (zeitweise) im Ausland gearbeitet hat. 
 1 = ja, 2 = nein
