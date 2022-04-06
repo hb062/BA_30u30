@@ -68,7 +68,7 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 1 = ja - Mitglied, 2 = Gründungs/Vorstandsrolle, 2 = nein
 
 - scholarship: definiert, ob die Person in ihrem Studium durch ein Stipendium gefördert wurde. 
-1 = ja, 2 = nein
+1 = ja, 2 = nein, 3 = hat selbst kein Stipendium erhalten, ist aber Mitglied der Auswahlkommission
 
 - exchange: definiert, ob die Person in ihrem Studium ein Auslandssemester absolviert hat oder ganz im Ausland studiert hat. 
 1 = Auslandssemester, 
