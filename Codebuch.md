@@ -25,7 +25,8 @@ Grundregel Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf 
 10 = Freelance *beschreibt eine freiberufliche Tätigkeit* 
 11 = Mitgliedschaft *beschreibt die Mitgliedschaft in einem Verein, z.B. einer studentischen PR-Initiative.* 
 12 = Ehrenamt *beschreibt das ehrenamtliche Engagement einer natürlichen Person bei einer Organisation.* 
-13 = Förderung *Förderung meint, dass die natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde.* 
+13 = founder *bezieht sich auf Personen, die in einer Organisation / einem Verein eine Führungsrolle hatten / Gründerin o. Gründer waren*
+14 = Förderung *Förderung meint, dass die natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde.* 
 
 - year: Das Edge-Attribut “year” definiert das Jahr, in dem die jeweilige Beziehung bestand, beziehungsweise wann eine Person bei einer Organisation beschäftigt war oder an einer Hochschule studiert hat. Die Zeiträume wurden auf Basis der Angaben in den jeweiligen LinkedIn-Profilen der Personen erfasst. Bei mehrjährigen Verbindungen wurde entsprechend für jedes separate Jahr eine Beziehung angelegt. Die Jahreszahlen reichen von 1961 bis 2022 und umfassen damit den Berufs- und Studienweg der Akteure vor ihrer Aufnahme in das 30u30 Netzwerk bis hin zum aktuellen Zeitpunkt zur Datenerhebung im Rahmen dieser Arbeit (März 2022). Bei Verbindungen, bei denen das Jahr nicht bekannt war, wurde statt einer Jahreszahl der Wert “NA” vergeben.
 
@@ -89,10 +90,15 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 2 = Agentur, 
 3 = NGO, 
 4 = Regierungsorganisation / Partei, 
-5 = Universität / Hochschule, 
-6 = Verein / Netzwerk, 
-7 = Begabtenförderung,
-8 = Sonstiges
+5 = Universität staatlich, 
+6 = Universität privat, 
+7 = FH / HAW staatlich, 
+8 = FH / HAW privat, 
+9 = Business School, 
+10 = Weiterbildungsakademie, 
+11 = Verein / Netzwerk, 
+12 = Begabtenförderung,
+13 = Sonstiges
 
 - sponsor definiert, ob die jeweiligen Organisation Partner bzw. Unterstützer des #30u30 Netzwerks ist. 
 1 = ja, 
