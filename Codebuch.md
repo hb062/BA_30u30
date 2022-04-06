@@ -40,9 +40,7 @@ Grundregel Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf 
 ## Nodelist und Node-Attribute
 Da es sich um eine two mode - Akteursnetzwerk handelt, in dem sowohl natürliche Personen (die Mitglieder der #30u30) sowie Organisationen (Unternehmen, Hochschulen, Vereine etc.) erfasst wurden, gibt es Node-Attribute, die sich auf alle Knoten beziehen als auch solche, die nur natürliche Personen oder nur Organisationen näher definieren. Bei diesen Attributen wurde für die Knoten, die davon nicht betroffen sind, der Wert “99” vergeben.
 
-- id: eindeutige Codierung des Knoten - Jede ID entspricht einer natürlichen Person oder einer Organisation, die mit einer Person in Verbindung steht.
-
-ids der #30u30: Die Arbeit mit Initialen würde bei 150 Personen zu vielen Doppelungen führen. Die Knoten der #30u30 werden daher codiert anhand der Nachnamen der Akteur*in (z.B. “Schipp” für Linda Schipp) 
+- id: eindeutige Codierung des Knoten - Jede ID entspricht einer natürlichen Person oder einer Organisation, die mit einer Person in Verbindung steht. ids der #30u30: Die Arbeit mit Initialen würde bei 150 Personen zu vielen Doppelungen führen. Die Knoten der #30u30 werden daher codiert anhand der Nachnamen der Akteurin / des Akteurs (z.B. “Schipp” für Linda Schipp) 
 Bei der Codierung der Organisationen (Universitäten, Unternehmen oder Vereinen) wurde eine selbstgewählte Abkürzung gewählt, bei den Arbeitsstellen wurde aufgrund der hohen Zahl an Unternehmen/Agenturen etc.  zur Vermeidung von Doppelungen anhand von Zahlen codiert.
 
 - name:  gibt den Namen oder die Bezeichnung des Knotens an. Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein einheitlicher Name, auf Zusätze wie GmbH oder ähnliches wurde der Einfachheit wegen verzichtet.
@@ -62,7 +60,8 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 3 = divers
 
 - entry: definiert das Jahr, in dem die jeweiligen Personen in das #30u30-Netzwerk aufgenommen wurden. Bei dem Wert handelt es sich um eine Jahreszahl. 
-education definiert den höchsten Bildungsabschluss der natürlichen Personen.
+-
+- education definiert den höchsten Bildungsabschluss der natürlichen Personen.
 1 = kein Abschluss 
 2 = Gymnasialabschluss / Abitur 
 3 = Ausbildung 
