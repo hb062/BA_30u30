@@ -44,10 +44,13 @@ Bei der Codierung der Organisationen (Universitäten, Unternehmen oder Vereinen)
 # Node-Attribute, die Knoten des Typs 1 (natürliche Personen) näher definieren. 
 Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA vergeben.
 
-- Age: definiert das Alter der natürlichen Person zum Zeitpunkt der Aufnahme in das Netzwerk. Wird als numerischer Wert angegeben.
+- age: definiert das Alter der natürlichen Person zum Zeitpunkt der Aufnahme in das Netzwerk. Wird als numerischer Wert angegeben.
 
 - sex: definiert das Geschlecht der natürlichen Personen
 1 = weiblich, 2 = männlich, 3 = divers
+
+- mentor: definiert, ob es sich um ein #30u30-Mitglied oder eine Mentorin / einen Mentor eines #30u30-Mitglieds handelt.
+1 = 30u30 Mitglied, 2 = Mentorin / Mentor
 
 - entry: definiert das Jahr, in dem die jeweiligen Personen in das #30u30-Netzwerk aufgenommen wurden. Bei dem Wert handelt es sich um eine Jahreszahl. 
 
@@ -59,7 +62,7 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 5 = Master,
 6 = PhD
 
-- membership: definiert bei natürlichen Personen, ob diese Mitglied in einer studentischen PR-Initiative sind oder waren.
+- membership: definiert bei natürlichen Personen, ob diese Mitglied in einer studentischen PR-Initiative / PR-Verband sind oder waren.
 1 = ja - Mitglied, 2 = Gründungs/Vorstandsrolle, 2 = nein
 
 - scholarship: definiert, ob die Person in ihrem Studium durch ein Stipendium gefördert wurde. 
