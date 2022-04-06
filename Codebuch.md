@@ -61,7 +61,7 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 4 = Bachelor,
 5 = Master / MBA,
 6 = Magister, 
-7 = PhD
+7 = PhD (da sich die Personen aufgrund ihres Alters teils noch in der Promotion befinden, wird bereits der Promotionsprozess hier als angestrebter Abschluss erfasst)
 
 - membership: definiert bei natürlichen Personen, ob diese Mitglied in einer studentischen PR-Initiative / PR-Verband sind oder waren.
 1 = ja - Mitglied, 2 = Gründungs/Vorstandsrolle, 2 = nein
