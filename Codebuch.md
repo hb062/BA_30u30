@@ -21,14 +21,7 @@ Grundregel Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf 
 - from: Die Werte in der Spalte “from” definieren einen Ausgangspunkt einer Beziehung, da es sich um ein ungerichtetes Netzwerk handelt, ist die Richtung der Beziehung nicht relevant, es gibt keinen Sender oder Empfänger. Der eingetragene Wert entspricht einer ID in der Nodelist und enthält keine Sonderzeichen, sondern nur ein Wort.
 - to: Die Werte in der Spalte “to” definieren den Empfänger in ungerichteten Netzwerken. Der eingetragene Wert entspricht einer ID in der Nodelist und enthält keine Sonderzeichen, sondern nur ein Wort.
 - relationship: Das Edge-Attribut “relationship” definiert die Art der Beziehung zwischen den Knoten, da es sich um ein multiplexes Netzwerk mit verschiedenen Beziehungsarten handelt. Hierbei werden jedoch nur die Beziehungen zwischen Knoten des Typ 1 und Typ 2 definiert, da keine Daten zu den Beziehungen zwischen den einzelnen natürlichen Personen vorliegen. Stattdessen wird die Verbindung zwischen natürlicher Person und der Organisation näher definiert, etwa ob diese durch ein Studium, Praktikum o.ä. besteht.
-1 = Ausbildung 
-2 = Bachelorstudium 
-3 = Masterstudium 
-4 = Auslandssemester 
-5 = PhD 
-6 = Weiterbildung 
-7 = Praktikum/Werkstudium 
-8 = Traineeship / Volontariat  
+1 = Ausbildung 2 = Bachelorstudium 3 = Masterstudium 4 = Auslandssemester 5 = PhD 6 = Weiterbildung 7 = Praktikum/Werkstudium 8 = Traineeship / Volontariat  
 9 = Anstellung *beschreibt ein festes Arbeitsverhältnis zwischen einer natürlichen Person und einer Organisation, keine Unterscheidung zwischen Hierarchiestufen* 
 10 = Freelance *beschreibt eine freiberufliche Tätigkeit* 
 11 = Mitgliedschaft *beschreibt die Mitgliedschaft in einem Verein, z.B. einer studentischen PR-Initiative.* 
