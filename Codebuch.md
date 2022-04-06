@@ -68,7 +68,7 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 6 = PhD
 
 - membership: definiert bei natürlichen Personen, ob diese Mitglied in einer studentischen PR-Initiative sind oder waren.
-1 = ja, 2 = nein
+1 = ja - Mitglied, 2 = Gründungs/Vorstandsrolle, 2 = nein
 
 - scholarship: definiert, ob die Person in ihrem Studium durch ein Stipendium gefördert wurde. 
 1 = ja, 2 = nein
