@@ -60,7 +60,7 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 3 = divers
 
 - entry: definiert das Jahr, in dem die jeweiligen Personen in das #30u30-Netzwerk aufgenommen wurden. Bei dem Wert handelt es sich um eine Jahreszahl. 
--
+
 - education definiert den höchsten Bildungsabschluss der natürlichen Personen.
 1 = kein Abschluss 
 2 = Gymnasialabschluss / Abitur 
