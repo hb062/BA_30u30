@@ -21,19 +21,19 @@ Grundregel Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf 
 - from: Die Werte in der Spalte “from” definieren einen Ausgangspunkt einer Beziehung, da es sich um ein ungerichtetes Netzwerk handelt, ist die Richtung der Beziehung nicht relevant, es gibt keinen Sender oder Empfänger. Der eingetragene Wert entspricht einer ID in der Nodelist und enthält keine Sonderzeichen, sondern nur ein Wort.
 - to: Die Werte in der Spalte “to” definieren den Empfänger in ungerichteten Netzwerken. Der eingetragene Wert entspricht einer ID in der Nodelist und enthält keine Sonderzeichen, sondern nur ein Wort.
 - relationship: Das Edge-Attribut “relationship” definiert die Art der Beziehung zwischen den Knoten, da es sich um ein multiplexes Netzwerk mit verschiedenen Beziehungsarten handelt. Hierbei werden jedoch nur die Beziehungen zwischen Knoten des Typ 1 und Typ 2 definiert, da keine Daten zu den Beziehungen zwischen den einzelnen natürlichen Personen vorliegen. Stattdessen wird die Verbindung zwischen natürlicher Person und der Organisation näher definiert, etwa ob diese durch ein Studium, Praktikum o.ä. besteht.
-1= Ausbildung
-2= Bachelorstudium
-3= Masterstudium
-4= Auslandssemester
-5= PhD
-6= Weiterbildung
-7=Praktikum/Werkstudium
-8= Traineeship / Volontariat
-9= Anstellung - Beschreibt ein festes Arbeitsverhältnis zwischen einer natürlichen Person und einer Organisation, keine Unterscheidung zwischen Hierarchiestufen
-10= Freelance beschreibt eine freiberufliche Tätigkeit
-11= Mitgliedschaft beschreibt die Mitgliedschaft in einem Verein, z.B. einer studentischen PR-Initiative.
-12= Ehrenamt beschreibt das ehrenamtliche Engagement einer natürlichen Person bei einer Organisation. 
-13= Förderung Förderung meint, dass die natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde.
+1 = Ausbildung 
+2 = Bachelorstudium 
+3 = Masterstudium 
+4 = Auslandssemester 
+5 = PhD 
+6 = Weiterbildung 
+7 = Praktikum/Werkstudium 
+8 = Traineeship / Volontariat  
+9 = Anstellung *beschreibt ein festes Arbeitsverhältnis zwischen einer natürlichen Person und einer Organisation, keine Unterscheidung zwischen Hierarchiestufen* 
+10 = Freelance *beschreibt eine freiberufliche Tätigkeit* 
+11 = Mitgliedschaft *beschreibt die Mitgliedschaft in einem Verein, z.B. einer studentischen PR-Initiative.* 
+12 = Ehrenamt *beschreibt das ehrenamtliche Engagement einer natürlichen Person bei einer Organisation.* 
+13 = Förderung *Förderung meint, dass die natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde.* 
 
 - year: Das Edge-Attribut “year” definiert das Jahr, in dem die jeweilige Beziehung bestand, beziehungsweise wann eine Person bei einer Organisation beschäftigt war oder an einer Hochschule studiert hat. Die Zeiträume wurden auf Basis der Angaben in den jeweiligen LinkedIn-Profilen der Personen erfasst. Bei mehrjährigen Verbindungen wurde entsprechend für jedes separate Jahr eine Beziehung angelegt. Die Jahreszahlen reichen von 1961 bis 2022 und umfassen damit den Berufs- und Studienweg der Akteure vor ihrer Aufnahme in das 30u30 Netzwerk bis hin zum aktuellen Zeitpunkt zur Datenerhebung im Rahmen dieser Arbeit (März 2022). Bei Verbindungen, bei denen das Jahr nicht bekannt war, wurde statt einer Jahreszahl der Wert “NA” vergeben.
 
