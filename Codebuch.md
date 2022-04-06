@@ -79,7 +79,7 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 3 = beides,
 4 = nein
 
-- abroad: definiert, ob die Person in ihrem Berufsleben bislang (zeitweise) im Ausland gearbeitet hat. 
+- abroad: definiert, ob die Person in ihrem Berufsleben bislang (zeitweise) im Ausland gearbeitet hat - außerhalb des DACH-Raumes. 
 1 = ja, 2 = nein
 
 - winner definiert, ob die Person unter den 30 Mitgliedern ihres Jahrgangs als Young Professional des Jahres ausgewählt und vom PR Report ausgezeichnet wurden. 
