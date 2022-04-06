@@ -55,55 +55,50 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA ver
 - Age: definiert das Alter der natürlichen Person zum Zeitpunkt der Aufnahme in das Netzwerk. Wird als numerischer Wert angegeben.
 
 - sex: definiert das Geschlecht der natürlichen Personen
-1 = männlich
-2 = weiblich
-3 = divers
+1 = weiblich, 2 = männlich, 3 = divers
 
 - entry: definiert das Jahr, in dem die jeweiligen Personen in das #30u30-Netzwerk aufgenommen wurden. Bei dem Wert handelt es sich um eine Jahreszahl. 
 
 - education definiert den höchsten Bildungsabschluss der natürlichen Personen.
-1 = kein Abschluss 
-2 = Gymnasialabschluss / Abitur 
-3 = Ausbildung 
-4 = Bachelor 
-5 = Master  
+1 = kein Abschluss,
+2 = Gymnasialabschluss / Abitur,
+3 = Ausbildung, 
+4 = Bachelor,
+5 = Master,
 6 = PhD
 
 - membership: definiert bei natürlichen Personen, ob diese Mitglied in einer studentischen PR-Initiative sind oder waren.
-1 = ja 
-2 = nein
+1 = ja, 2 = nein
 
 - scholarship: definiert, ob die Person in ihrem Studium durch ein Stipendium gefördert wurde. 
-1 = ja 
-2 = nein
+1 = ja, 2 = nein
 
 - exchange: definiert, ob die Person in ihrem Studium ein Auslandssemester absolviert hat oder ganz im Ausland studiert hat. 
-1 = Auslandssemester 
-2 = Studium im Ausland 
+1 = Auslandssemester, 
+2 = Studium im Ausland, 
 3 = nein
 
 - abroad: definiert, ob die Person in ihrem Berufsleben bislang (zeitweise) im Ausland gearbeitet hat. 
-1 = ja 
-2 = nein
+1 = ja, 2 = nein
 
 - winner definiert, ob die Person unter den 30 Mitgliedern ihres Jahrgangs als Young Professional des Jahres ausgewählt und vom PR Report ausgezeichnet wurden. 
-1 = Gewinner*in des Young Professional Awards 
+1 = Gewinner/in des Young Professional Awards, 
 2 = nein
 
 # Node-Attribute, die sich auf Knoten des Typs 2 (Organisationen) beziehen
 
 - category: definiert die Art der Organisation genauer
-1 = Unternehmen 
-2 = Agentur 
-3 = NGO 
-4 = Regierungsorganisation / Partei 
-5 = Universität / Hochschule 
-6 = Verein / Netzwerk 
-7 = Begabtenförderung
+1 = Unternehmen, 
+2 = Agentur, 
+3 = NGO, 
+4 = Regierungsorganisation / Partei, 
+5 = Universität / Hochschule, 
+6 = Verein / Netzwerk, 
+7 = Begabtenförderung,
 8 = Sonstiges
 
 - sponsor definiert, ob die jeweiligen Organisation Partner bzw. Unterstützer des #30u30 Netzwerks ist. 
-1 = ja 
+1 = ja, 
 2 = nein
 
 - Fehlende Werte werden mit NA angebeben, etwa wenn diese nicht verfügbar waren oder wenn das Attribut nur auf Personen bezogen ist, wurde bei Knoten des Typs 2 (Organisation) dieser Wert vergeben.
