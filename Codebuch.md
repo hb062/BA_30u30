@@ -13,7 +13,7 @@ Die Daten der Mitglieder wurden auf Basis von deren LinkedIn-Profilen erfasst un
 Das Netzwerk ist ein ungerichtetes two-mode Gesamtnetzwerk, welches zur weiteren Analyse in einzelne Teilnetzwerke aufgeteilt werden kann.
 
 # Umgang mit fehlenden Werten 
-Fehlende Werte werden nicht erfasst.
+Fehlende Werte oder falls sich Werte nur auf einen bestimmten Typ an Nodes bezieht, werden diese nicht erfasst. Das zugehörige Feld in der Edge-List bleibt in diesem Fall frei.
 
 ## Edgelist und Edge-Attribute
 Grundregel Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf die ID und den Namen ist dieser idealerweise numerisch codiert (als Zahl).
@@ -31,10 +31,10 @@ Grundregel Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf 
 16 = family *beschreibt familiäre Verbindungen, etwa zwischen Eltern - Kind oder Geschwistern* 
 17 = mentorship *beschreibt eine Verbindung zwischen einem Mentor und einem #30u30-Mitglied.
 
-- year: Das Edge-Attribut “year” definiert das Jahr, in dem die jeweilige Beziehung bestand, beziehungsweise wann eine Person bei einer Organisation beschäftigt war oder an einer Hochschule studiert hat. Die Zeiträume wurden auf Basis der Angaben in den jeweiligen LinkedIn-Profilen der Personen erfasst. Bei mehrjährigen Verbindungen wurde entsprechend für jedes separate Jahr eine Beziehung angelegt. Die Jahreszahlen reichen von 1961 bis 2022 und umfassen damit den Berufs- und Studienweg der Akteure vor ihrer Aufnahme in das 30u30 Netzwerk bis hin zum aktuellen Zeitpunkt zur Datenerhebung im Rahmen dieser Arbeit (März 2022). Bei Verbindungen, bei denen das Jahr nicht bekannt war, wurde statt einer Jahreszahl der Wert “NA” vergeben.
+- year: Das Edge-Attribut “year” definiert das Jahr, in dem die jeweilige Beziehung bestand, beziehungsweise wann eine Person bei einer Organisation beschäftigt war oder an einer Hochschule studiert hat. Die Zeiträume wurden auf Basis der Angaben in den jeweiligen LinkedIn-Profilen der Personen erfasst. Bei mehrjährigen Verbindungen wurde entsprechend für jedes separate Jahr eine Beziehung angelegt. Die Jahreszahlen reichen von 1961 bis 2022 und umfassen damit den Berufs- und Studienweg der Akteure vor ihrer Aufnahme in das 30u30 Netzwerk bis hin zum aktuellen Zeitpunkt zur Datenerhebung im Rahmen dieser Arbeit (März 2022). Bei Verbindungen, bei denen das Jahr nicht bekannt war, wurde statt einer Jahreszahl kein Wert angegeben.
 
 ## Nodelist und Node-Attribute
-Da es sich um eine two mode - Akteursnetzwerk handelt, in dem sowohl natürliche Personen (die Mitglieder der #30u30) sowie Organisationen (Unternehmen, Hochschulen, Vereine etc.) erfasst wurden, gibt es Node-Attribute, die sich auf alle Knoten beziehen als auch solche, die nur natürliche Personen oder nur Organisationen näher definieren. Bei diesen Attributen wurde für die Knoten, die davon nicht betroffen sind, der Wert “99” vergeben.
+Da es sich um eine two mode - Akteursnetzwerk handelt, in dem sowohl natürliche Personen (die Mitglieder der #30u30) sowie Organisationen (Unternehmen, Hochschulen, Vereine etc.) erfasst wurden, gibt es Node-Attribute, die sich auf alle Knoten beziehen als auch solche, die nur natürliche Personen oder nur Organisationen näher definieren. Bei diesen Attributen wurde für die Knoten, die davon nicht betroffen sind, kein Wert vergeben.
 
 - id: eindeutige Codierung des Knoten - Jede ID entspricht einer natürlichen Person oder einer Organisation, die mit einer Person in Verbindung steht. ids der #30u30: Die Arbeit mit Initialen würde bei 150 Personen zu vielen Doppelungen führen. Die Knoten der #30u30 werden daher codiert anhand der Nachnamen der Akteurin / des Akteurs (z.B. “Schipp” für Linda Schipp) 
 Bei der Codierung der Organisationen (Universitäten, Unternehmen oder Vereinen) wurde eine selbstgewählte Abkürzung gewählt, bei den Arbeitsstellen wurde aufgrund der hohen Zahl an Unternehmen/Agenturen etc.  zur Vermeidung von Doppelungen anhand von Zahlen codiert.
@@ -46,7 +46,7 @@ Bei der Codierung der Organisationen (Universitäten, Unternehmen oder Vereinen)
 2 = Organisation (Unternehmen, Agentur, NGO, politische Organisation, Universität etc.)
 
 # Node-Attribute, die Knoten des Typs 1 (natürliche Personen) näher definieren. 
-Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute der Wert NA vergeben.
+Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute kein Wert vergeben, R Studio erkennt freie Felder automatisch als NA.
 
 - age: definiert das Alter der natürlichen Person zum Zeitpunkt der Aufnahme in das Netzwerk. Wird als numerischer Wert angegeben.
 
@@ -109,5 +109,3 @@ politics: definiert, ob die Person Mitglied einer politischen Partei ist.
 - sponsor definiert, ob die jeweiligen Organisation Partner bzw. Unterstützer des #30u30 Netzwerks ist. 
 1 = ja, 
 2 = nein
-
-- Fehlende Werte werden mit NA angebeben, etwa wenn diese nicht verfügbar waren oder wenn das Attribut nur auf Personen bezogen ist, wurde bei Knoten des Typs 2 (Organisation) dieser Wert vergeben.
