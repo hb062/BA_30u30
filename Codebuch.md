@@ -101,7 +101,8 @@ politics: definiert, ob die Person Mitglied einer politischen Partei ist.
 6 = Verein / Netzwerk, 
 7 = Begabtenförderung,
 8 = Zeitung / Medienunternehmen,
-9 = Sonstiges
+9 = Sonstiges, 
+10 = Forschungs-/Bildungseinrichtung / Institut
 
 - ownership definiert bei Hochschulen, um welche Art der Hochschule es sich handelt.  
 1 = Universität staatlich, 2 = Universität privat, 3 = FH / HAW staatlich, 4 = FH / HAW privat, 5 = Business School, 6 = Weiterbildungsakademie, 7 = Berufsschule, 8 = duale Hochschule, 9 = sonstiges
