@@ -96,14 +96,13 @@ politics: definiert, ob die Person Mitglied einer politischen Partei ist.
 1 = Unternehmen, 
 2 = Agentur, 
 3 = NGO / NPO,
-4 = Regierungsorganisation / Partei,
+4 = Regierungsorganisation / Partei / Behörde o.ä.,
 5 = Hochschule,
 6 = Verein / Netzwerk, 
-7 = Begabtenförderung,
+7 = Begabtenförderungswerk / Stiftung
 8 = Medienunternehmen / Zeitung / Sender,
 9 = Sonstiges, 
-10 = Forschungs-/Bildungseinrichtung / Institut,
-11 = Gesundheitsversorgung / Krankenhaus o.ä.
+10 = Forschungs-/Bildungseinrichtung / Institut
 
 - ownership definiert bei Hochschulen, um welche Art der Hochschule es sich handelt.  
 1 = Universität staatlich, 2 = Universität privat, 3 = FH / HAW staatlich, 4 = FH / HAW privat, 5 = Business School, 6 = Weiterbildungsakademie, 7 = Berufsschule, 8 = duale Hochschule, 9 = sonstiges
