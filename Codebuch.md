@@ -23,9 +23,9 @@ Grundregel Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf 
 - relationship: Das Edge-Attribut “relationship” definiert die Art der Beziehung zwischen den Knoten, da es sich um ein multiplexes Netzwerk mit verschiedenen Beziehungsarten handelt. Hierbei werden vor allem die Beziehungen zwischen Knoten des Typ 1 und Typ 2 definiert, da wenig Daten zu den Beziehungen zwischen den einzelnen natürlichen Personen vorliegen. Primär wird die Verbindung zwischen natürlicher Person und der Organisation näher definiert, etwa ob diese durch ein Studium, Praktikum o.ä. besteht. Darüber hinaus werden Verbindungen zwischen den #30u30 und ihren Mentorinnen / Mentoren erfasst.
 1 = Ausbildung 2 = Bachelorstudium 3 = Masterstudium 4 = Auslandssemester 5 = PhD 6 = Weiterbildung 7 = Praktikum/Werkstudium 8 = Traineeship / Volontariat 9 = Anstellung *beschreibt ein festes Arbeitsverhältnis zwischen einer natürlichen Person und einer Organisation, keine Unterscheidung zwischen Hierarchiestufen* 
 10 = Freelance *beschreibt eine freiberufliche Tätigkeit* 
-11 = Mitgliedschaft *beschreibt die Mitgliedschaft in einer Partei oder einem Verein, z.B. einer studentischen PR-Initiative oder einer Hochschulgruppe.* 
-12 = Ehrenamt *beschreibt das ehrenamtliche Engagement einer natürlichen Person bei einer Organisation.* 
-13 = Founder *bezieht sich auf Personen, die in einer Organisation / einem Verein eine Führungsrolle hatten / Gründerin o. Gründer waren*
+11 = Mitgliedschaft *beschreibt die Mitgliedschaft (Auch Alumni) in einer Partei / einem Verein, z.B. einer studentischen PR-Initiative oder einer Hochschulgruppe.* 
+12 = Ehrenamt *beschreibt die berufliche Tätigkeit einer Person in einem Unternehmen, das er / sie selbst gegründet hat* 
+13 =  *bezieht sich auf Personen, die in einem Verein eine Führungsrolle hatten / Gründerin o. Gründer waren- z. B. Vorstand bei PRIHO o. ä.*
 14 = Förderung *Förderung meint, dass die natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde.* 
 15 = Lehrtätigkeit *beschreibt die Lehrtätigkeit von Personen an Hochschulen, entweder in Vollzeit oder als Gastdozierende*
 16 = family *beschreibt familiäre Verbindungen, etwa zwischen Eltern - Kind oder Geschwistern* 
@@ -37,8 +37,7 @@ Grundregel Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf 
 ## Nodelist und Node-Attribute
 Da es sich um eine two mode - Akteursnetzwerk handelt, in dem sowohl natürliche Personen (die Mitglieder der #30u30) sowie Organisationen (Unternehmen, Hochschulen, Vereine etc.) erfasst wurden, gibt es Node-Attribute, die sich auf alle Knoten beziehen als auch solche, die nur natürliche Personen oder nur Organisationen näher definieren. Bei diesen Attributen wurde für die Knoten, die davon nicht betroffen sind, kein Wert vergeben.
 
-- id: eindeutige Codierung des Knoten - Jede ID entspricht einer natürlichen Person oder einer Organisation, die mit einer Person in Verbindung steht. ids der #30u30: Die Arbeit mit Initialen würde bei 150 Personen zu vielen Doppelungen führen. Die Knoten der #30u30 werden daher codiert anhand der Nachnamen der Akteurin / des Akteurs (z.B. “Schipp” für Linda Schipp) 
-Bei der Codierung der Organisationen (Universitäten, Unternehmen oder Vereinen) wurde eine selbstgewählte Abkürzung gewählt, bei den Arbeitsstellen wurde aufgrund der hohen Zahl an Unternehmen/Agenturen etc.  zur Vermeidung von Doppelungen anhand von Zahlen codiert.
+- id: eindeutige Codierung des Knoten - Jede ID entspricht einer natürlichen Person oder einer Organisation, die mit einer Person in Verbindung steht. ids der #30u30: Die Arbeit mit Initialen würde bei 150 Personen zu vielen Doppelungen führen. Die Knoten der #30u30 werden daher codiert anhand der Nachnamen der Akteurin / des Akteurs (z.B. “Schipp” für Linda Schipp). Bei der Codierung der Organisationen (Universitäten, Unternehmen oder Vereinen) wurde eine selbstgewählte Abkürzung gewählt.
 
 - name:  gibt den Namen oder die Bezeichnung des Knotens an. Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein einheitlicher Name, auf Zusätze wie GmbH oder ähnliches wurde der Einfachheit wegen verzichtet.
 
