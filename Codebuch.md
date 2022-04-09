@@ -102,8 +102,8 @@ politics: definiert, ob die Person Mitglied einer politischen Partei ist.
 7 = Begabtenförderung,
 8 = Sonstiges
 
-ownership definiert bei Hochschulen, um welche Art der Hochschule es sich handelt.  
-1 = Universität staatlich, 2 = Universität privat, 3 = FH / HAW staatlich, 4 = FH / HAW privat, 5 = Business School, 6 = Weiterbildungsakademie, 
+- ownership definiert bei Hochschulen, um welche Art der Hochschule es sich handelt.  
+1 = Universität staatlich, 2 = Universität privat, 3 = FH / HAW staatlich, 4 = FH / HAW privat, 5 = Business School, 6 = Weiterbildungsakademie, / = Berufsschule, 8 = sonstiges
 
 - sponsor definiert, ob die jeweiligen Organisation Partner bzw. Unterstützer des #30u30 Netzwerks ist. 
 1 = ja, 
