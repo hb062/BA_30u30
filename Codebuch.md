@@ -96,16 +96,14 @@ politics: definiert, ob die Person Mitglied einer politischen Partei ist.
 1 = Unternehmen, 
 2 = Agentur, 
 3 = NGO, 
-4 = Regierungsorganisation / Partei, 
-5 = Universität staatlich, 
-6 = Universität privat, 
-7 = FH / HAW staatlich, 
-8 = FH / HAW privat, 
-9 = Business School, 
-10 = Weiterbildungsakademie, 
-11 = Verein / Netzwerk, 
-12 = Begabtenförderung,
-13 = Sonstiges
+4 = Regierungsorganisation / Partei,
+5 = Hochschule,
+6 = Verein / Netzwerk, 
+7 = Begabtenförderung,
+8 = Sonstiges
+
+ownership definiert bei Hochschulen, um welche Art der Hochschule es sich handelt.  
+1 = Universität staatlich, 2 = Universität privat, 3 = FH / HAW staatlich, 4 = FH / HAW privat, 5 = Business School, 6 = Weiterbildungsakademie, 
 
 - sponsor definiert, ob die jeweiligen Organisation Partner bzw. Unterstützer des #30u30 Netzwerks ist. 
 1 = ja, 
