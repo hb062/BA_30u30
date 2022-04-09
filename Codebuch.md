@@ -1,5 +1,5 @@
 Datensatz 30u30
-Codebuch Stand 2022-04-07 
+Codebuch Stand 2022-04-09 
 erstellt von Hannah Bauer (hb062@hdm-stuttgart.de)
 
 ## Inhalt
@@ -100,7 +100,8 @@ politics: definiert, ob die Person Mitglied einer politischen Partei ist.
 5 = Hochschule,
 6 = Verein / Netzwerk, 
 7 = Begabtenförderung,
-8 = Sonstiges
+8 = Zeitung / Medienunternehmen,
+9 = Sonstiges
 
 - ownership definiert bei Hochschulen, um welche Art der Hochschule es sich handelt.  
 1 = Universität staatlich, 2 = Universität privat, 3 = FH / HAW staatlich, 4 = FH / HAW privat, 5 = Business School, 6 = Weiterbildungsakademie, 7 = Berufsschule, 8 = duale Hochschule, 9 = sonstiges
