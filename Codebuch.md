@@ -49,8 +49,6 @@ Bei der Codierung der Organisationen (Universitäten, Unternehmen oder Vereinen)
 # Node-Attribute, die Knoten des Typs 1 (natürliche Personen) näher definieren. 
 Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute kein Wert vergeben, R Studio erkennt freie Felder automatisch als NA.
 
-- age: definiert das Alter der natürlichen Person zum Zeitpunkt der Aufnahme in das Netzwerk. Wird als numerischer Wert angegeben.
-
 - sex: definiert das Geschlecht der natürlichen Personen
 1 = weiblich, 2 = männlich, 3 = divers
 
