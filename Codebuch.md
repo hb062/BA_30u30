@@ -95,7 +95,7 @@ politics: definiert, ob die Person Mitglied einer politischen Partei ist.
 - category: definiert die Art der Organisation genauer
 1 = Unternehmen, 
 2 = Agentur, 
-3 = NGO, 
+3 = NGO / NPO,
 4 = Regierungsorganisation / Partei,
 5 = Hochschule,
 6 = Verein / Netzwerk, 
