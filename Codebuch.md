@@ -1,5 +1,5 @@
 Datensatz 30u30
-Codebuch Stand 2022-04-09 
+Codebuch Stand 2022-04-11
 erstellt von Hannah Bauer (hb062@hdm-stuttgart.de)
 
 ## Inhalt
@@ -24,13 +24,16 @@ Grundregel Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf 
 1 = Ausbildung 2 = Bachelorstudium 3 = Masterstudium 4 = Auslandssemester 5 = PhD 6 = Weiterbildung 7 = Praktikum/Werkstudium 8 = Traineeship / Volontariat 9 = Anstellung *beschreibt ein festes Arbeitsverhältnis zwischen einer natürlichen Person und einer Organisation, keine Unterscheidung zwischen Hierarchiestufen* 
 10 = Freelance *beschreibt eine freiberufliche Tätigkeit* 
 11 = Mitgliedschaft *beschreibt die Mitgliedschaft (Auch Alumni) in einer Partei / einem Verein, z.B. einer studentischen PR-Initiative oder einer Hochschulgruppe.* 
-12 = Ehrenamt *beschreibt die berufliche Tätigkeit einer Person in einem Unternehmen, das er / sie selbst gegründet hat* 
-13 =  *bezieht sich auf Personen, die in einem Verein eine Führungsrolle hatten / Gründerin o. Gründer waren- z. B. Vorstand bei PRIHO o. ä.*
+12 = Founder *beschreibt die berufliche Tätigkeit einer Person in einem Unternehmen, das er / sie selbst gegründet hat* 
+13 = Leader *bezieht sich auf Personen, die in einem Verein eine Führungsrolle hatten / Gründerin o. Gründer waren- z. B. Vorstand bei PRIHO o. ä.*
 14 = Förderung *Förderung meint, dass die natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde.* 
 15 = Lehrtätigkeit *beschreibt die Lehrtätigkeit von Personen an Hochschulen, entweder in Vollzeit oder als Gastdozierende*
 16 = family *beschreibt familiäre Verbindungen, etwa zwischen Eltern - Kind oder Geschwistern* 
 17 = mentorship *beschreibt eine Verbindung zwischen einem Mentor und einem #30u30-Mitglied.*
 18 = Freundschaft / Beziehung
+19 = Magister *beschreibt ein Studium, das mit dem nicht mehr existierenden akademischen Grad Magister beendet wurde*
+20 = Diplom *beschreibt ein Studium, das mit dem nicht mehr existierenden akademischen Grad Diplom beendet wurde*
+21 = Staatsexamen 
 
 - year: Das Edge-Attribut “year” definiert das Jahr, in dem die jeweilige Beziehung bestand, beziehungsweise wann eine Person bei einer Organisation beschäftigt war oder an einer Hochschule studiert hat. Die Zeiträume wurden auf Basis der Angaben in den jeweiligen LinkedIn-Profilen der Personen erfasst. Bei mehrjährigen Verbindungen wurde entsprechend für jedes separate Jahr eine Beziehung angelegt. Die Jahreszahlen reichen von 1961 bis 2022 und umfassen damit den Berufs- und Studienweg der Akteure vor ihrer Aufnahme in das 30u30 Netzwerk bis hin zum aktuellen Zeitpunkt zur Datenerhebung im Rahmen dieser Arbeit (März 2022). Bei Verbindungen, bei denen das Jahr nicht bekannt war, wurde statt einer Jahreszahl kein Wert angegeben.
 
@@ -62,7 +65,7 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute kein Wert verge
 3 = Ausbildung, 
 4 = Bachelor,
 5 = Master / MBA,
-6 = Magister, 
+6 = Magister / Diplom,
 7 = PhD (da sich die Personen aufgrund ihres Alters teils noch in der Promotion befinden, wird bereits der Promotionsprozess hier als angestrebter Abschluss erfasst)
 
 - membership: definiert bei natürlichen Personen, ob diese Mitglied in einer studentischen PR-Initiative / PR-Verband sind oder waren.
@@ -91,7 +94,7 @@ politics: definiert, ob die Person Mitglied einer politischen Partei ist.
 
 - category: definiert die Art der Organisation genauer
 1 = Unternehmen, 
-2 = Agentur, 
+2 = Agentur / Beratungsunternehmen,
 3 = NGO / NPO,
 4 = Regierungsorganisation / Partei / Behörde o.ä.,
 5 = Hochschule,
