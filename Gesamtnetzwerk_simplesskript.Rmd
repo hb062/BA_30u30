@@ -1,0 +1,60 @@
+---
+title: "Gesamtnetzwerk 30u30"
+author: "hb062"
+date: "13 4 2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Skript: Netzwerk #30u30 - Pretest
+
+```{r wichtigste packages abrufen}
+# Vorab werden die wichtigsten packages geladen
+library(igraph)
+library(igraphdata)
+library(knitr) 
+library(rmarkdown) 
+```
+
+```{r Netzwerk einlesen}
+# Zunächst werden Edge - und Nodelist eingelesen:
+
+el <- read.csv("https://raw.githubusercontent.com/hb062/BA_30u30/main/edges_complete%20-%20edgelist.csv", header=T, as.is=T, sep = ",")
+
+nodes <- read.csv("https://raw.githubusercontent.com/hb062/BA_30u30/main/nodelist_complete%20-%20nodelist.csv", header=T, as.is=T, sep = ",")
+
+# zeigt die ersten sechs Zeilen des Datensatzes an
+head(el)
+head(nodes)
+
+# wandelt die Edgelist als Matrix um.
+edgematrix <-as.matrix(el)
+
+# erstellt ein igraph-objekt aus der Fusion von Edge- und Nodelist
+pretest <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=FALSE)
+
+# das igraph-Objekt heisst jetzt "pretest" und ist ein ungerichtetes Netzwerk.
+pretest
+# generiert eine einfache Visualisierung des Netzwerks
+plot(pretest,
+     layout=layout_with_kk,
+     edge.curved=curve_multiple(pretest), # verhindert, dass sich Kanten überlagern
+     vertex.label=NA, # entfernt die Beschriftung der Knoten für bessere Übersichtlichkeit
+     vertex.size=.1,
+     main="#30u30 Netzwerk",
+     sub="Mitglieder der Jahrgänge 2017 - 2021,
+     ihre Stationen sowie Mentor*innen")
+plot(pretest,
+     layout=layout_with_kk,
+     edge.curved=curve_multiple(pretest), # verhindert, dass sich Kanten überlagern
+     vertex.label=NA, # entfernt die Beschriftung der Knoten für bessere Übersichtlichkeit
+     vertex.size=.1,
+     main="#30u30 Netzwerk",
+     sub="Mitglieder der Jahrgänge 2017 - 2021,
+     ihre Stationen sowie Mentor*innen")
+
+
+```
