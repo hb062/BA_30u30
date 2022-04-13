@@ -47,14 +47,5 @@ plot(pretest,
      main="#30u30 Netzwerk",
      sub="Mitglieder der Jahrgänge 2017 - 2021,
      ihre Stationen sowie Mentor*innen")
-plot(pretest,
-     layout=layout_with_kk,
-     edge.curved=curve_multiple(pretest), # verhindert, dass sich Kanten überlagern
-     vertex.label=NA, # entfernt die Beschriftung der Knoten für bessere Übersichtlichkeit
-     vertex.size=.1,
-     main="#30u30 Netzwerk",
-     sub="Mitglieder der Jahrgänge 2017 - 2021,
-     ihre Stationen sowie Mentor*innen")
-
 
 ```
