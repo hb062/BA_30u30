@@ -1,5 +1,5 @@
 Datensatz 30u30
-Codebuch Stand 2022-04-13
+Codebuch Stand 2022-04-19
 erstellt von Hannah Bauer (hb062@hdm-stuttgart.de)
 
 ## Inhalt
