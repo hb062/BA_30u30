@@ -1,13 +1,13 @@
 id,name,type,entry,sex,category
-1,Barzel,1,2017,2,99
-2,Bisswanger,1,2017,1,99
-3,Blokhina,1,2017,1,99
-4,Bohnerth,1,2017,2,99
-5,Thyssenkrupp,2,99,99,1
-6,FSFM,2,99,99,2
-7,Uni Leipzig,2,99,99,2
-8,Uni Salzburg,2,99,99,2
-9,WEComm,2,99,99,1
-10,LMU,2,99,99,2
-11,WMPEurocom,2,99,99,1
-12,Nordakademie,2,99,99,2
+1,Barzel,1,2017,2,NA
+2,Bisswanger,1,2017,1,NA
+3,Blokhina,1,2017,1,NA
+4,Bohnerth,1,2017,2,NA
+5,Thyssenkrupp,2,NA,NA,1
+6,FSFM,2,NA,NA,2
+7,Uni Leipzig,2,NA,NA,2
+8,Uni Salzburg,2,NA,NA,2
+9,WEComm,2,NA,NA,1
+10,LMU,2,NA,NA,2
+11,WMPEurocom,2,NA,NA,1
+12,Nordakademie,2,NA,NA,2
