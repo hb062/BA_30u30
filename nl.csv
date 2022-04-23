@@ -28,7 +28,7 @@ ainetter,Wolfgang Ainetter,1,99,2,2,99,99,99,99,99,99,99,99,99
 airbus,Airbus,2,99,99,99,99,99,99,99,99,99,1,99,2
 aka_agency,AKA Agency,2,99,99,99,99,99,99,99,99,99,1,99,2
 akad,AKAD University,2,99,99,99,99,99,99,99,99,99,5,9,
-akad_tutzing,Akademie für Politische Bildung Tutzing,2,99,99,99,99,99,99,99,99,99,10,,2
+akad_tutzing,Akademie für Politische Bildung Tutzing,2,99,99,99,99,99,99,99,99,99,10,99,2
 akademiebayern,Bayerische Akademie für Werbung,2,99,99,99,99,99,99,99,99,99,5,6,
 akademische_gesellschaft,Akademische Gesellschaft für Unternehmensführung und Kommunikation,2,99,99,99,99,99,99,99,99,99,10,99,2
 albrink,Kristof Albrink,1,99,2,2,99,99,99,99,99,99,99,99,99
@@ -1084,7 +1084,7 @@ uni_oregon,University of Oregon,2,99,99,99,99,99,99,99,99,99,5,1,99
 uni_oslo,University of Oslo,2,99,99,99,99,99,99,99,99,99,5,1,99
 uni_pace,Pace University,2,99,99,99,99,99,99,99,99,99,5,2,99
 uni_paderborn,Universität Paderborn,2,99,99,99,99,99,99,99,99,99,5,1,99
-uni_padua,Universita di Padova,,99,99,99,99,99,99,99,99,99,99,99,99
+uni_padua,Universita di Padova,2,99,99,99,99,99,99,99,99,99,99,99,99
 uni_pantheon,Panthéon-Sorbonne University,2,99,99,99,99,99,99,99,99,99,5,1,99
 uni_passau,Universität Passau,2,99,99,99,99,99,99,99,99,99,5,1,99
 uni_pavia,University of Pavia,2,99,99,99,99,99,99,99,99,99,5,1,99
