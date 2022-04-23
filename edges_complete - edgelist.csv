@@ -2414,7 +2414,7 @@ kohl,brunswick,2019,9
 kohl,brunswick,2020,9
 kohl,brunswick,2021,9
 kohl,brunswick,2022,9
-kohl,cnc_communications,2018,7
+kohl,kekstcnc,2018,7
 kohl,db_netz,2015,7
 kohl,db_netz,2016,7
 kohl,db_netz,2017,7
@@ -2549,8 +2549,8 @@ lamm,uni_muenster,2015,3
 lamm,uni_muenster,2016,3
 langhans,campaigning_academy,2014,9
 langhans,campaigning_academy,2015,9
-langhans,cnc_communications,2012,7
-langhans,cnc_communications,2013,7
+langhans,kekstcnc,2012,7
+langhans,kekstcnc,2013,7
 langhans,freelance,2017,10
 langhans,freelance,2018,10
 langhans,freelance,2019,10
@@ -2642,7 +2642,7 @@ lechermann,siemens,2021,9
 lechermann,siemens,2022,9
 leinhos,uni_bonn,,21
 leinhos,vodafone,,9
-leithaeuser,kekstcnc,,9
+leithaeuser,kekst,,9
 leithaeuser,uni_edinburgh,,2
 leithaeuser,uni_leipzig,,3
 leithaeuser,uni_muenster,,19
