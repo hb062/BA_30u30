@@ -13,7 +13,7 @@ Die Daten der Mitglieder wurden primär auf Basis ihrer LinkedIn-CVs erfasst und
 Das Netzwerk ist ein ungerichtetes two-mode Gesamtnetzwerk, welches zur weiteren Analyse in einzelne Teilnetzwerke aufgeteilt werden kann.
 
 # Umgang mit fehlenden Werten 
-Fehlen Werte oder falls sich Werte nur auf einen bestimmten Typ an Nodes bezieht, werden diese nicht erfasst. Das zugehörige Feld in der Node-List bleibt in diesem Fall frei. Gleiches gilt für Werte in der Edgelist, etwa wenn bei bestimmten Beziehungen keine Informationen über den Zeitraum oder die Art der Beziehung vorliegen - in diesem Fall bleiben die jeweiligen Felder abgesehen von *to* und *from* frei.
+Fehlen Werte oder falls sich Werte nur auf einen bestimmten Typ an Nodes bezieht, werden diese mit dem Wert "99" codiert. Dies ist beispielsweise der Fall bei Organisationen, für die beim Vertex-Attribut "sex" natürlich kein Wert vergeben wird. Gleichermaßen gilt es für Daten der Edge-List, etwa wenn zu einer Beziehung kein Jahr bekannt ist. Das vorherige Vorgehen, bei dem das zugehörige Feld in der Edge- oder Node-List frei gelassen oder mit NA versehen wurde, hatte zu Problemen beim Plotten der Daten geführt, konkret bei der Arbeit mit und Selektion nach Vertex-/Node-Attributen. Eine Umcodierung auf "99" konnte zur Beseitigung des Problems beitragen.
 
 ## Edgelist und Edge-Attribute
 Grundregel: Die Edgelist enthält pro Spalte immer nur einen Wert. Bis auf die ID und den Namen ist dieser numerisch codiert (als Zahl).
