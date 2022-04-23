@@ -1,5 +1,5 @@
 Datensatz 30u30
-Codebuch Stand 2022-04-20
+Codebuch Stand 2022-04-23
 erstellt von Hannah Bauer (hb062@hdm-stuttgart.de)
 
 ## Inhalt
@@ -42,7 +42,7 @@ Da es sich um eine two mode - Akteursnetzwerk handelt, in dem sowohl natürliche
 
 - id: eindeutige Codierung des Knoten - Jede ID entspricht einer natürlichen Person oder einer Organisation, die mit einer Person in Verbindung steht. ids der #30u30: Die Arbeit mit Initialen würde bei 150 Personen zu vielen Doppelungen führen. Die Knoten der #30u30 werden daher codiert anhand der Nachnamen der Akteurin / des Akteurs (z.B. “Schipp” für Linda Schipp). Bei der Codierung der Organisationen (Universitäten, Unternehmen oder Vereinen) wurde eine selbstgewählte Abkürzung gewählt.
 
-- name:  gibt den Namen oder die Bezeichnung des Knotens an. Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein einheitlicher Name, auf Zusätze wie GmbH oder ähnliches wurde der Einfachheit wegen verzichtet. Sonderfall: Im Falle von Umfirmierungen wird der aktuelle Firmenname verwendet. Bei Personen, die z. B. bei der Agentur "Hering Schuppener" gearbeitet haben, die nun in Finsbury Glover Hering umfusioniert wurde, wird die Beziehung dennoch mit Finsbury angegeben, um die Zusammenhänge besser abzubilden. Gleiches gilt für "Burson Marsteller", woraus nach Zusammenschluss mit Cohn-Wolfe "Burson Cohne Wolfe" wurde. Auch wenn der Firmenname zur Zeit der Beschäftigung der Personen damals noch anders lautete, wird jeweils der aktuelle Name verwendet.
+- name:  gibt den Namen oder die Bezeichnung des Knotens an. Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein einheitlicher Name, auf Zusätze wie GmbH oder ähnliches wurde der Einfachheit wegen verzichtet. Sonderfall: Im Falle von Umfirmierungen wird der aktuelle Firmenname verwendet. Bei Personen, die z. B. bei der Agentur "Hering Schuppener" gearbeitet haben, die nun in Finsbury Glover Hering umfusioniert wurde, wird die Beziehung dennoch mit Finsbury angegeben, um die Zusammenhänge besser abzubilden. Gleiches gilt für "Burson Marsteller", woraus nach Zusammenschluss mit Cohn-Wolfe "Burson Cohne Wolfe" wurde sowie für die Agentur "CNC Communications", aus der nach einem Zusammenschluss "Kekst CNC" wurde. Auch wenn der Firmenname zur Zeit der Beschäftigung der Personen damals noch anders lautete, wird jeweils der aktuelle Name verwendet.
 
 - type: definiert den Typ der Knoten des two mode-Netzwerks 
 1 = natürliche Person 
