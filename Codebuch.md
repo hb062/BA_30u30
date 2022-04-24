@@ -3,8 +3,8 @@ Codebuch Stand 2022-04-23
 erstellt von Hannah Bauer (hb062@hdm-stuttgart.de)
 
 ## Inhalt
-- Edges.csv (Edgelist) https://github.com/hb062/BA_30u30/blob/main/edges_complete%20-%20edgelist.csv
-- Nodes.csv (Nodelist) https://github.com/hb062/BA_30u30/blob/main/nodelist_complete%20-%20nodelist.csv
+- Edges.csv (Edgelist) https://github.com/hb062/BA_30u30/blob/main/el.csv
+- Nodes.csv (Nodelist) https://github.com/hb062/BA_30u30/blob/main/nl.csv
 - Codebuch.md (Codierung der Datensätze)
 
 ## Forschungsinteresse, Ursprung und Datenerhebung
@@ -49,8 +49,6 @@ Da es sich um eine two mode - Akteursnetzwerk handelt, in dem sowohl natürliche
 2 = Organisation (Unternehmen, Agentur, NGO, politische Organisation, Universität etc.)
 
 # Node-Attribute, die Knoten des Typs 1 (natürliche Personen) näher definieren. 
-Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute kein Wert vergeben, R Studio erkennt freie Felder automatisch als NA.
-
 - sex: definiert das Geschlecht der natürlichen Personen
 1 = weiblich, 2 = männlich, 3 = divers
 
@@ -88,7 +86,6 @@ Bei Knoten des Typs 2 (Organisationen) wird für diese Attribute kein Wert verge
 2 = nein
 
 # Node-Attribute, die sich auf Knoten des Typs 2 (Organisationen) beziehen
-
 - category: definiert die Art der Organisation genauer
 1 = Unternehmen, 
 2 = Agentur / Beratungsunternehmen,
