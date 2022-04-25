@@ -1,0 +1,28 @@
+id,name,type,entry,sex,mentor,education,membership,scholarship,exchange,abroad,winner,category,ownership,sponsor
+winiarski,Andreas Winiarski,1,99,2,2,99,99,99,99,99,99,99,99,99
+sievers,Felix Sievers,1,2017,2,1,4,3,2,4,2,2,99,99,99
+van_poele,Max van Poele,1,2019,2,1,5,1,1,1,2,1,99,99,99
+earlybird,Earlybird Venture Captial,2,99,99,99,99,99,99,99,99,99,1,99,2
+finsbury,Finsbury Glover Hering,2,99,99,99,99,99,99,99,99,99,2,99,2
+rckt,RCKT,2,99,99,99,99,99,99,99,99,99,2,99,2
+fu_berlin,Freie Universität Berlin,2,99,99,99,99,99,99,99,99,99,5,1,99
+hwr_berlin,Hochschule für Wirtschaft und Recht,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_mtm,"Hochschule für Musik, Theater und Medien Hannover",2,99,99,99,99,99,99,99,99,99,5,3,99
+legrand_rosenboom,Legrand und Rosenboom,2,99,99,99,99,99,99,99,99,99,2,99,2
+madsack,Verlagsgesellschaft Madsack,2,99,99,99,99,99,99,99,99,99,8,99,2
+triscore,Triscore,2,99,99,99,99,99,99,99,99,99,1,99,2
+rocket_internet,Rocket Internet SE,2,99,99,99,99,99,99,99,99,99,1,99,2
+mediatest,MediaTest digital,2,99,99,99,99,99,99,99,99,99,1,99,2
+futur3,FUTUR DREI,2,99,99,99,99,99,99,99,99,99,2,99,2
+uni_mannheim,Universität Mannheim,2,99,99,99,99,99,99,99,99,99,5,1,99
+uni_leipzig,Universität Leipzig,2,99,99,99,99,99,99,99,99,99,5,1,99
+uni_windsor,University of Windsor,2,99,99,99,99,99,99,99,99,99,5,1,99
+uni_hongkong,Hong Kong Baptist University,2,99,99,99,99,99,99,99,99,99,5,1,99
+center_rfc,Center for Research in Financial Communication,2,99,99,99,99,99,99,99,99,99,10,99,2
+hypr,Hypr,2,99,99,99,99,99,99,99,99,99,2,99,1
+kaufmann_langhans,KAUFMANN LANGHANS,2,99,99,99,99,99,99,99,99,99,2,99,2
+freelance,Freiberufliche Tätigkeit,2,99,99,99,99,99,99,99,99,99,9,99,2
+lprs,LPRS (Leipzig),2,99,99,99,99,99,99,99,99,99,6,99,2
+efellows,e-Fellows Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,99
+promos,Promos Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,99
+klein,Sachar Klein,1,99,2,2,99,99,99,99,99,99,99,99,99
