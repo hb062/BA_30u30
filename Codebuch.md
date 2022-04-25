@@ -67,7 +67,7 @@ Da es sich um eine two mode - Akteursnetzwerk handelt, in dem sowohl natürliche
 7 = PhD (da sich die Personen aufgrund ihres Alters teils noch in der Promotion befinden, wird bereits der Promotionsprozess hier als angestrebter Abschluss erfasst)
 
 - membership: definiert bei natürlichen Personen, ob diese Mitglied in einer studentischen PR-Initiative / PR-Verband sind oder waren.
-1 = ja - Mitglied, 2 = Gründungs/Vorstandsrolle, 2 = nein
+1 = ja - Mitglied, 2 = Gründungs/Vorstandsrolle, 3 = nein
 
 - scholarship: definiert, ob die Person in ihrem Studium durch ein Stipendium gefördert wurde. 
 1 = ja, 2 = nein, 3 = hat selbst kein Stipendium erhalten, ist aber Mitglied der Auswahlkommission
