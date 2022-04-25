@@ -27,7 +27,7 @@ aiesec,AIESEC,2,99,99,99,99,99,99,99,99,99,6,99,2
 ainetter,Wolfgang Ainetter,1,99,2,2,99,99,99,99,99,99,99,99,99
 airbus,Airbus,2,99,99,99,99,99,99,99,99,99,1,99,2
 aka_agency,AKA Agency,2,99,99,99,99,99,99,99,99,99,1,99,2
-akad,AKAD University,2,99,99,99,99,99,99,99,99,99,5,9,
+akad,AKAD University,2,99,99,99,99,99,99,99,99,99,5,9,99
 akad_tutzing,Akademie für Politische Bildung Tutzing,2,99,99,99,99,99,99,99,99,99,10,99,2
 akademiebayern,Bayerische Akademie für Werbung,2,99,99,99,99,99,99,99,99,99,5,6,
 akademische_gesellschaft,Akademische Gesellschaft für Unternehmensführung und Kommunikation,2,99,99,99,99,99,99,99,99,99,10,99,2
@@ -40,7 +40,7 @@ alnews,Arts London News,2,99,99,99,99,99,99,99,99,99,8,99,2
 alsterradio,Alster Radio,2,99,99,99,99,99,99,99,99,99,8,99,2
 altena,Stadt Altena,2,99,99,99,99,99,99,99,99,99,9,99,2
 altpeter,Caren Altpeter,1,2018,1,1,5,2,1,1,2,2,99,99,99
-american_university,American University,2,99,99,99,99,99,99,99,99,99,5,2,
+american_university,American University,2,99,99,99,99,99,99,99,99,99,5,2,99
 amnesty,Amnesty International,2,99,99,99,99,99,99,99,99,99,3,99,2
 angel_ai,Angel AI,2,99,99,99,99,99,99,99,99,99,1,99,2
 anselmoellers,Ansel und Möllers,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -84,7 +84,7 @@ bayer,Bayer,2,99,99,99,99,99,99,99,99,99,1,99,2
 bayerischegeschichte,Haus der Bayerischen Geschichte,2,99,99,99,99,99,99,99,99,99,4,99,2
 bb_academy,Berlin-Brandenburg Academy of Sciences and Humanities,2,99,99,99,99,99,99,99,99,99,10,99,2
 bbdo,BBDO Worldwide,2,99,99,99,99,99,99,99,99,99,2,99,2
-bdistipendium,Stipendium des Bundesverbands der Deutschen Industrie,2,99,99,99,99,99,99,99,99,99,7,99,
+bdistipendium,Stipendium des Bundesverbands der Deutschen Industrie,2,99,99,99,99,99,99,99,99,99,7,99,99
 bdkom,Bundesverband der Kommunikatoren,2,99,99,99,99,99,99,99,99,99,6,99,2
 beauty_hills,Beauty Hills,2,99,99,99,99,99,99,99,99,99,1,99,2
 becker,Tilman Becker,1,99,2,2,99,99,99,99,99,99,99,99,99
@@ -94,14 +94,14 @@ berkeley,Berkeley Kommunikation,2,99,99,99,99,99,99,99,99,99,2,99,2
 berndgmbh,BERND,2,99,99,99,99,99,99,99,99,99,2,99,2
 bertelsmann,Bertelsmann,2,99,99,99,99,99,99,99,99,99,1,99,2
 bertermann,Christian Bertermann,1,99,2,2,99,99,99,99,99,99,99,99,99
-berufskolleg,Berufskolleg an der Lindenstraße Köln,2,99,99,99,99,99,99,99,99,99,5,7,
+berufskolleg,Berufskolleg an der Lindenstraße Köln,2,99,99,99,99,99,99,99,99,99,5,7,99
 bessenbach,James Bessenbach,1,2021,2,1,4,3,2,2,1,2,99,99,99
 bieller,Carolin Bieller,1,99,1,2,99,99,99,99,99,99,99,99,99
 bilandia,bilandia,2,99,99,99,99,99,99,99,99,99,1,99,2
 bild,BILD,2,99,99,99,99,99,99,99,99,99,8,99,2
 bilfinger,Bilfinger Berger Facility Services,2,99,99,99,99,99,99,99,99,99,1,99,2
 biospin,Bruker BioSpin,2,99,99,99,99,99,99,99,99,99,1,99,2
-birmelin,Stipendium der Akademie für emotionale Intelligenz,2,99,99,99,99,99,99,99,99,99,7,99,
+birmelin,Stipendium der Akademie für emotionale Intelligenz,2,99,99,99,99,99,99,99,99,99,7,99,99
 bischoff,Volker Bischoff,1,99,2,2,99,99,99,99,99,99,99,99,99
 bisswanger,Luisa Bisswanger,1,2017,1,1,4,1,1,2,2,2,99,99,99
 blackbox,Black Box Events,2,99,99,99,99,99,99,99,99,99,1,99,2
@@ -126,7 +126,7 @@ boxxport,BOXXPORT,2,99,99,99,99,99,99,99,99,99,1,99,2
 br,Bayerischer Rundfunk,2,99,99,99,99,99,99,99,99,99,8,99,2
 brainpool,BRAINPOOL,2,99,99,99,99,99,99,99,99,99,8,99,2
 brand,Renate Brand,1,99,1,2,99,99,99,99,99,99,99,99,99
-brand_academy,Brand Academy – University of Applied Sciences,2,99,99,99,99,99,99,99,99,99,5,4,
+brand_academy,Brand Academy – University of Applied Sciences,2,99,99,99,99,99,99,99,99,99,5,4,99
 brandfuel,BrandFuel Ltd,2,99,99,99,99,99,99,99,99,99,2,99,2
 brauer,Inessa Brauer,1,2019,1,1,5,3,2,4,2,2,99,99,99
 bredow_institut,Hans-Bredow-Institut,2,99,99,99,99,99,99,99,99,99,10,99,2
@@ -136,14 +136,14 @@ brockhaus,Jana Brockhaus,1,2021,1,1,5,1,2,1,1,2,99,99,99
 bruebach,Amélie Brübach,1,2019,1,1,5,3,2,2,1,2,99,99,99
 bruj,Bruj International,2,99,99,99,99,99,99,99,99,99,1,99,2
 brunswick,Brunswick Group,2,99,99,99,99,99,99,99,99,99,2,99,1
-bs_antwerp,Antwerp Management School,2,99,99,99,99,99,99,99,99,99,5,5,
-bs_copenhagen,Copenhagen Business School,2,99,99,99,99,99,99,99,99,99,5,5,
-bs_esic,ESIC Business and Marketing School,2,99,99,99,99,99,99,99,99,99,5,5,
-bs_manchester,Alliance Manchester Business School,2,99,99,99,99,99,99,99,99,99,5,5,
-bsgav,"Berufsschule für den Großhandel, Außenhandel und Verkehr",2,99,99,99,99,99,99,99,99,99,5,7,
-bsis,Brussels School of International Studies,2,99,99,99,99,99,99,99,99,99,5,1,
-bsp,Business and Law School Berlin,2,99,99,99,99,99,99,99,99,99,5,4,
-bucerius,Bucerius Law School,2,99,99,99,99,99,99,99,99,99,5,2,
+bs_antwerp,Antwerp Management School,2,99,99,99,99,99,99,99,99,99,5,5,99
+bs_copenhagen,Copenhagen Business School,2,99,99,99,99,99,99,99,99,99,5,5,99
+bs_esic,ESIC Business and Marketing School,2,99,99,99,99,99,99,99,99,99,5,5,99
+bs_manchester,Alliance Manchester Business School,2,99,99,99,99,99,99,99,99,99,5,5,99
+bsgav,"Berufsschule für den Großhandel, Außenhandel und Verkehr",2,99,99,99,99,99,99,99,99,99,5,7,99
+bsis,Brussels School of International Studies,2,99,99,99,99,99,99,99,99,99,5,1,99
+bsp,Business and Law School Berlin,2,99,99,99,99,99,99,99,99,99,5,4,99
+bucerius,Bucerius Law School,2,99,99,99,99,99,99,99,99,99,5,2,99
 buchele_cc,Buchele cc,2,99,99,99,99,99,99,99,99,99,2,99,2
 buehler_healthcare,BühlerHealthCare,2,99,99,99,99,99,99,99,99,99,1,99,2
 buendnis90,Bündnis 90,2,99,99,99,99,99,99,99,99,99,4,99,2
@@ -205,11 +205,11 @@ creditsuisse,Credit Suisse,2,99,99,99,99,99,99,99,99,99,1,99,2
 crystal_mckenzie,Crystal McKenzie,2,99,99,99,99,99,99,99,99,99,2,99,2
 csu,CSU,2,99,99,99,99,99,99,99,99,99,4,99,2
 da_costa_zuzarte,Saskia da Costa Zuzarte,1,2021,1,1,5,3,2,4,2,2,99,99,99
-daad,DAAD Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,
+daad,DAAD Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,99
 dai_heidelberg,Deutsch-Amerikanisches-Institut Heidelberg,2,99,99,99,99,99,99,99,99,99,10,99,2
 daimler,Daimler,2,99,99,99,99,99,99,99,99,99,1,99,2
 dapd,dadp Nachrichtenagentur,2,99,99,99,99,99,99,99,99,99,8,99,2
-dapr,Deutsche Akademie für Public Relations,2,99,99,99,99,99,99,99,99,99,5,6,
+dapr,Deutsche Akademie für Public Relations,2,99,99,99,99,99,99,99,99,99,5,6,99
 dazn,DAZN,2,99,99,99,99,99,99,99,99,99,1,99,2
 db_netz,DB Netz AG,2,99,99,99,99,99,99,99,99,99,1,99,2
 db_projektbau,DB ProjektBau,2,99,99,99,99,99,99,99,99,99,1,99,2
@@ -227,16 +227,16 @@ deinbus,DeinBus,2,99,99,99,99,99,99,99,99,99,1,99,2
 deka,Deka Bank,2,99,99,99,99,99,99,99,99,99,1,99,2
 deki,Abdelhak Deki,1,2019,2,1,4,3,1,1,1,2,99,99,99
 denkwerk,Denkwerk,2,99,99,99,99,99,99,99,99,99,2,99,2
-depak,Deutsche Presseakademie,2,99,99,99,99,99,99,99,99,99,5,6,
+depak,Deutsche Presseakademie,2,99,99,99,99,99,99,99,99,99,5,6,99
 deutschebahn,Deutsche Bahn,2,99,99,99,99,99,99,99,99,99,1,99,2
 deutschebank,Deutsche Bank,2,99,99,99,99,99,99,99,99,99,1,99,2
 deutschebotschaft,Deutsche Botschaft,2,99,99,99,99,99,99,99,99,99,4,99,2
 deutschemarkenarbeit,Deutsche Markenarbeit,2,99,99,99,99,99,99,99,99,99,2,99,2
 deutschenbaur,Tanja Deutschenbaur,1,99,1,2,99,99,99,99,99,99,99,99,99
 deutschepost,Deutsche Post,2,99,99,99,99,99,99,99,99,99,1,99,2
-deutschlandstip,Deutschlandstipendium,2,99,99,99,99,99,99,99,99,99,7,99,
+deutschlandstip,Deutschlandstipendium,2,99,99,99,99,99,99,99,99,99,7,99,99
 dfjw,DFJW,2,99,99,99,99,99,99,99,99,99,3,99,2
-dhbw,Duale Hochschule Baden-Württemberg,2,99,99,99,99,99,99,99,99,99,5,8,
+dhbw,Duale Hochschule Baden-Württemberg,2,99,99,99,99,99,99,99,99,99,5,8,99
 diaz,Claudia Diaz,1,99,1,2,99,99,99,99,99,99,99,99,99
 diebold,Simone Diebold,1,99,1,2,99,99,99,99,99,99,99,99,99
 dievision,Dievision,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -251,7 +251,7 @@ djv,Deutscher Journalistenverband,2,99,99,99,99,99,99,99,99,99,6,99,2
 doepke,Yannik Döpke,1,2017,2,1,4,2,1,4,2,2,99,99,99
 douglas,Douglas,2,99,99,99,99,99,99,99,99,99,1,99,2
 dpa,dpa,2,99,99,99,99,99,99,99,99,99,8,99,2
-dprg,Deutsche Public Relations Gesellschaft,2,99,99,99,99,99,99,99,99,99,6,99,
+dprg,Deutsche Public Relations Gesellschaft,2,99,99,99,99,99,99,99,99,99,6,99,99
 drachenmond,Drachenmond Verlag,2,99,99,99,99,99,99,99,99,99,1,99,2
 dries,Folker Dries,1,99,2,2,99,99,99,99,99,99,99,99,99
 driveline,GKN Driveline,2,99,99,99,99,99,99,99,99,99,1,99,2
@@ -263,12 +263,12 @@ duravit,Duravit,2,99,99,99,99,99,99,99,99,99,1,99,2
 earlybird,Earlybird Venture Capital,2,99,99,99,99,99,99,99,99,99,1,99,2
 earnesto,Earnesto,2,99,99,99,99,99,99,99,99,99,2,99,2
 eberspaecher,Eberspächer Gruppe,2,99,99,99,99,99,99,99,99,99,1,99,2
-ebertstiftung,Friedrich-Ebert-Stiftung,2,99,99,99,99,99,99,99,99,99,7,99,
+ebertstiftung,Friedrich-Ebert-Stiftung,2,99,99,99,99,99,99,99,99,99,7,99,99
 eckelmann,Florian Eckelmann,1,99,2,2,99,99,99,99,99,99,99,99,99
 eddiks,Thiemo eddiks computergrafik,2,99,99,99,99,99,99,99,99,99,9,99,2
 edeka,EDEKA ZENTRALE Stiftung,2,99,99,99,99,99,99,99,99,99,1,99,2
 edelman,Edelman,2,99,99,99,99,99,99,99,99,99,2,99,2
-efellows,e-Fellows Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,
+efellows,e-Fellows Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,99
 effektrausch,Effektrausch,2,99,99,99,99,99,99,99,99,99,2,99,2
 eichner,Bianca Eichner,1,99,1,2,99,99,99,99,99,99,99,99,99
 eisbaeren,EHC Eisbären Management,2,99,99,99,99,99,99,99,99,99,9,99,2
@@ -279,7 +279,7 @@ elci,Aylin Elci,1,2019,1,1,5,3,2,2,1,2,99,99,99
 elinvar,Elinvar,2,99,99,99,99,99,99,99,99,99,1,99,2
 ellerbeck,Thomas Ellerbeck,1,99,2,2,99,99,99,99,99,99,99,99,99
 emanate,Emanate PR,2,99,99,99,99,99,99,99,99,99,2,99,2
-emsland,Emslandstipendium,2,99,99,99,99,99,99,99,99,99,7,99,
+emsland,Emslandstipendium,2,99,99,99,99,99,99,99,99,99,7,99,99
 enactus,enactus München,2,99,99,99,99,99,99,99,99,99,6,99,2
 enbw,EnBW,2,99,99,99,99,99,99,99,99,99,1,99,2
 engel_zimmermann,Engel und Zimmermann,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -289,10 +289,10 @@ eon,EON,2,99,99,99,99,99,99,99,99,99,1,99,2
 epilog,DIE EPILOG,2,99,99,99,99,99,99,99,99,99,8,99,2
 eplseslang,Eplseslang,2,99,99,99,99,99,99,99,99,99,1,99,2
 erdmeier,Kristine Erdmeier,1,2018,1,1,5,3,2,4,2,2,99,99,99
-esade,ESADE Barcelona,2,99,99,99,99,99,99,99,99,99,5,5,
+esade,ESADE Barcelona,2,99,99,99,99,99,99,99,99,99,5,5,99
 ese_malta,ESE Malta,2,99,99,99,99,99,99,99,99,99,9,99,2
 esport,STARK Esports,2,99,99,99,99,99,99,99,99,99,2,99,2
-eth,ETH Zürich,2,99,99,99,99,99,99,99,99,99,5,1,
+eth,ETH Zürich,2,99,99,99,99,99,99,99,99,99,5,1,99
 euparlament,Europaparlament,2,99,99,99,99,99,99,99,99,99,4,99,2
 eurofighter,Eurofighter Jagdflugzeug,2,99,99,99,99,99,99,99,99,99,1,99,2
 eutop,EUTOP,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -304,7 +304,7 @@ expeditionpr,Expedition PR,2,99,99,99,99,99,99,99,99,99,2,99,2
 express,Express Zeitung,2,99,99,99,99,99,99,99,99,99,8,99,2
 exxonmobil,Exxon Mobil,2,99,99,99,99,99,99,99,99,99,1,99,2
 ey,EY,2,99,99,99,99,99,99,99,99,99,2,99,2
-fachakademiesp,Fachakademie Sozialpädagogik München,2,99,99,99,99,99,99,99,99,99,5,7,
+fachakademiesp,Fachakademie Sozialpädagogik München,2,99,99,99,99,99,99,99,99,99,5,7,99
 faktor3,Faktor 3,2,99,99,99,99,99,99,99,99,99,2,99,2
 falke,Amelie Falke,1,2020,1,1,4,3,2,4,2,2,99,99,99
 familienversicherung,Deutsche Familienversicherung,2,99,99,99,99,99,99,99,99,99,1,99,2
@@ -312,11 +312,11 @@ fastner,Manuela Fastner,1,99,1,2,99,99,99,99,99,99,99,99,99
 fc_kaiserslautern,1 FC Kaiserslautern,2,99,99,99,99,99,99,99,99,99,9,99,2
 fdp,FDP,2,99,99,99,99,99,99,99,99,99,4,99,2
 feuser,Nils Feuser,1,2018,2,1,3,3,2,4,2,2,99,99,99
-fgu_stipendium,Franco-German University,2,99,99,99,99,99,99,99,99,99,7,99,
-fh_burgenland,FH Burgenland,2,99,99,99,99,99,99,99,99,99,5,3,
-fh_mittelstand,Fachhochschule des Mittelstandes,2,99,99,99,99,99,99,99,99,99,5,4,
-fh_muenster,Fachhochschule Muenster,2,99,99,99,99,99,99,99,99,99,5,3,
-fh_wuerzburg,Hochschule für Angewandte Wissenschaften Würzburg-Schweinfurt,2,99,99,99,99,99,99,99,99,99,5,3,
+fgu_stipendium,Franco-German University,2,99,99,99,99,99,99,99,99,99,7,99,99
+fh_burgenland,FH Burgenland,2,99,99,99,99,99,99,99,99,99,5,3,99
+fh_mittelstand,Fachhochschule des Mittelstandes,2,99,99,99,99,99,99,99,99,99,5,4,99
+fh_muenster,Fachhochschule Muenster,2,99,99,99,99,99,99,99,99,99,5,3,99
+fh_wuerzburg,Hochschule für Angewandte Wissenschaften Würzburg-Schweinfurt,2,99,99,99,99,99,99,99,99,99,5,3,99
 finsbury,Finsbury Glover Hering,2,99,99,99,99,99,99,99,99,99,2,99,2
 fischer,Tobias Felix Fischer,1,2018,2,1,5,3,1,3,1,2,99,99,99
 fischerappelt,fischerAppelt,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -326,7 +326,7 @@ flemmingpfuhl,Flemming-Pfuhl Werbeagentur,2,99,99,99,99,99,99,99,99,99,2,99,2
 flixbus,FlixBus,2,99,99,99,99,99,99,99,99,99,1,99,2
 foerderverein,Förderverein Kinderfreundliches Stuttgart,2,99,99,99,99,99,99,99,99,99,6,99,2
 follesa,Carla Follesa,1,99,1,2,99,99,99,99,99,99,99,99,99
-fom,FOM Hochschule,2,99,99,99,99,99,99,99,99,99,5,4,
+fom,FOM Hochschule,2,99,99,99,99,99,99,99,99,99,5,4,99
 forster,Franziska Forster,1,2021,1,1,5,3,2,4,2,2,99,99,99
 foundamental,Foundamental,2,99,99,99,99,99,99,99,99,99,1,99,2
 frankfurterrundschau,Frankfurter Rundschau,2,99,99,99,99,99,99,99,99,99,8,99,2
@@ -346,11 +346,11 @@ friese,Eva-Maria Friese,1,2017,1,1,5,3,2,4,1,2,99,99,99
 frischefische,Frische Fische,2,99,99,99,99,99,99,99,99,99,2,99,2
 froehler,Christine Fröhler,1,99,1,2,99,99,99,99,99,99,99,99,99
 frommhold,Martin Frommhold,1,99,2,2,99,99,99,99,99,99,99,99,99
-fsfm,Frankfurt School of Finance and Management,2,99,99,99,99,99,99,99,99,99,5,4,
+fsfm,Frankfurt School of Finance and Management,2,99,99,99,99,99,99,99,99,99,5,4,99
 fti_consulting,FTI Consulting,2,99,99,99,99,99,99,99,99,99,2,99,2
-fu_berlin,Freie Universität Berlin,2,99,99,99,99,99,99,99,99,99,5,1,
+fu_berlin,Freie Universität Berlin,2,99,99,99,99,99,99,99,99,99,5,1,99
 fuhrmann,Rasmus Fuhrmann,1,2017,2,1,5,3,1,3,1,2,99,99,99
-fulbright,Fulbright-Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,
+fulbright,Fulbright-Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,99
 funke,Funke Mediengruppe,2,99,99,99,99,99,99,99,99,99,8,99,2
 futur3,FUTUR DREI,2,99,99,99,99,99,99,99,99,99,2,99,2
 fypx,FYPX,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -379,7 +379,7 @@ golombek,Christopher Golombek,1,2020,2,1,5,2,2,1,2,2,99,99,99
 gongverlag,Gong Verlag,2,99,99,99,99,99,99,99,99,99,8,99,2
 goodthoughts,Goodthoughts,2,99,99,99,99,99,99,99,99,99,2,99,2
 google,Google,2,99,99,99,99,99,99,99,99,99,1,99,2
-gpra,GPRA,2,99,99,99,99,99,99,99,99,99,6,99,
+gpra,GPRA,2,99,99,99,99,99,99,99,99,99,6,99,99
 graswald,Nais Graswald,1,2020,1,1,5,3,1,4,2,2,99,99,99
 graupner,Beatrice Graupner,1,2021,1,1,5,1,1,3,1,2,99,99,99
 grayling,Grayling,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -388,9 +388,9 @@ grillo,Sven Grillo,1,2020,2,1,5,3,2,4,2,2,99,99,99
 gruen,Natanja Marija Grün,1,2017,1,1,5,3,2,4,1,2,99,99,99
 grunerjahr,Gruner + Jahr,2,99,99,99,99,99,99,99,99,99,8,99,2
 guettner,Christoph Güttner,1,2019,2,1,5,1,1,1,1,2,99,99,99
-gwa,Gesamtverband Kommunikationsagenturen,2,99,99,99,99,99,99,99,99,99,6,99,
+gwa,Gesamtverband Kommunikationsagenturen,2,99,99,99,99,99,99,99,99,99,6,99,99
 gwpr,Global Women in PR,2,99,99,99,99,99,99,99,99,99,6,99,2
-gymnasialfonds,Kölner Gymnasial- und Stiftungsfonds,2,99,99,99,99,99,99,99,99,99,7,99,
+gymnasialfonds,Kölner Gymnasial- und Stiftungsfonds,2,99,99,99,99,99,99,99,99,99,7,99,99
 haag,Johanna Haag,1,2021,1,1,5,3,2,3,1,2,99,99,99
 haas,Peter Haas,1,99,2,2,99,99,99,99,99,99,99,99,99
 haase,Margarete Haase,1,99,1,2,99,99,99,99,99,99,99,99,99
@@ -409,7 +409,7 @@ havas,Havas PR,2,99,99,99,99,99,99,99,99,99,2,99,2
 haw_hamburg,Hochschule für Angewandte Wissenschaften Hamburg,2,99,99,99,99,99,99,99,99,99,5,3,99
 hays,Hays,2,99,99,99,99,99,99,99,99,99,2,99,2
 hbm,HBM,2,99,99,99,99,99,99,99,99,99,1,99,2
-hdm,Hochschule der Medien,2,99,99,99,99,99,99,99,99,99,5,3,
+hdm,Hochschule der Medien,2,99,99,99,99,99,99,99,99,99,5,3,99
 heavenhr,HeavenHR,2,99,99,99,99,99,99,99,99,99,1,99,2
 heimat,Heimat,2,99,99,99,99,99,99,99,99,99,2,99,2
 heimrich_hannot,Heimrich und Hannot,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -432,12 +432,12 @@ hesse,Isabell Hesse,1,2020,1,1,5,3,2,4,2,2,99,99,99
 hessenchemie,HessenChemie,2,99,99,99,99,99,99,99,99,99,1,99,2
 hessischerrundfunk,Hessischer Rundfunk,2,99,99,99,99,99,99,99,99,99,8,99,2
 hewlettpackard,Hewlett Packard Enterprise,2,99,99,99,99,99,99,99,99,99,1,99,2
-hhl_leipzig,HHL Leipzig Graduate School of Management,2,99,99,99,99,99,99,99,99,99,5,5,
+hhl_leipzig,HHL Leipzig Graduate School of Management,2,99,99,99,99,99,99,99,99,99,5,5,99
 hillknowlton,Hill and Knowlton,2,99,99,99,99,99,99,99,99,99,2,99,2
 hirschtec,HIRSCHTEC,2,99,99,99,99,99,99,99,99,99,1,99,2
-hmkw,"Hochschule für Medien, Kommunikation und Wirtschaft",2,99,99,99,99,99,99,99,99,99,5,4,
+hmkw,"Hochschule für Medien, Kommunikation und Wirtschaft",2,99,99,99,99,99,99,99,99,99,5,4,99
 hnu_ulm,HNU - Hochschule Neu Ulm,2,99,99,99,99,99,99,99,99,99,5,99,2
-hobartsmith,Hobart and William Smith College,2,99,99,99,99,99,99,99,99,99,5,2,
+hobartsmith,Hobart and William Smith College,2,99,99,99,99,99,99,99,99,99,5,2,99
 hochberg,Miranda Hochberg,1,99,1,2,99,99,99,99,99,99,99,99,99
 hoechster_kreisblatt,Höchster Kreisblatt,2,99,99,99,99,99,99,99,99,99,8,99,2
 hoehler,Nina Höhler,1,2019,1,1,4,2,2,4,2,2,99,99,99
@@ -451,49 +451,49 @@ hospiz,Kinder- und Jugendhospiz Balthasar,2,99,99,99,99,99,99,99,99,99,3,99,2
 hotwire,Hotwire PR,2,99,99,99,99,99,99,99,99,99,2,99,1
 howe,Jörg Howe,1,99,2,2,99,99,99,99,99,99,99,99,99
 hoyningen_huene,Selina von Hoyningen-Huene,1,2017,1,1,5,3,2,2,1,2,99,99,99
-hs_ansbach,Hochschule Ansbach,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_bbw,bbw Hochschule,2,99,99,99,99,99,99,99,99,99,5,4,
-hs_bonn,Bonn-Rhein-Sieg University of Applied Sciences,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_darmstadt,Hochschule Darmstadt,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_fulda,Hochschule Fulda,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_gelsenkirchen,Westfälische Hochschule,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_gesundheit,Hochschule für Gesundheit,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_groningen,Hanzehogeschool Groningen,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_hannover,Hochschule Hannover,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_karlsruhe,Hochschule Karlsruhe,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_kempten,Hochschule Kempten,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_mediadesign,Mediadesign Hochschule,2,99,99,99,99,99,99,99,99,99,5,4,
-hs_mittweida,Hochschule Mittweida,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_mtm,"Hochschule für Musik, Theater und Medien Hannover",2,99,99,99,99,99,99,99,99,99,5,3,
-hs_osnabrueck,Hochschule Osnabrück,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_pforzheim,Hochschule Pforzheim,2,99,99,99,99,99,99,99,99,99,5,3,
+hs_ansbach,Hochschule Ansbach,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_bbw,bbw Hochschule,2,99,99,99,99,99,99,99,99,99,5,4,99
+hs_bonn,Bonn-Rhein-Sieg University of Applied Sciences,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_darmstadt,Hochschule Darmstadt,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_fulda,Hochschule Fulda,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_gelsenkirchen,Westfälische Hochschule,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_gesundheit,Hochschule für Gesundheit,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_groningen,Hanzehogeschool Groningen,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_hannover,Hochschule Hannover,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_karlsruhe,Hochschule Karlsruhe,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_kempten,Hochschule Kempten,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_mediadesign,Mediadesign Hochschule,2,99,99,99,99,99,99,99,99,99,5,4,99
+hs_mittweida,Hochschule Mittweida,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_mtm,"Hochschule für Musik, Theater und Medien Hannover",2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_osnabrueck,Hochschule Osnabrück,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_pforzheim,Hochschule Pforzheim,2,99,99,99,99,99,99,99,99,99,5,3,99
 hs_polizei,Hochschule für Polizei und Verwaltung NRW,2,99,99,99,99,99,99,99,99,99,5,99,2
-hs_quadriga,Quadriga University of Applied Sciences,2,99,99,99,99,99,99,99,99,99,5,4,
-hs_reutlingen,Hochschule Reutlingen,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_rheinmain,Hochschule Rhein-Main,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_wilhelmshaven,Jade Hochschule,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_wismar,Hochschule Wismar,2,99,99,99,99,99,99,99,99,99,5,3,
-hs_worms,Hochschule Worms,2,99,99,99,99,99,99,99,99,99,5,3,
-hsba,Hamburg School of Business Administration,2,99,99,99,99,99,99,99,99,99,5,4,
+hs_quadriga,Quadriga University of Applied Sciences,2,99,99,99,99,99,99,99,99,99,5,4,99
+hs_reutlingen,Hochschule Reutlingen,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_rheinmain,Hochschule Rhein-Main,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_wilhelmshaven,Jade Hochschule,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_wismar,Hochschule Wismar,2,99,99,99,99,99,99,99,99,99,5,3,99
+hs_worms,Hochschule Worms,2,99,99,99,99,99,99,99,99,99,5,3,99
+hsba,Hamburg School of Business Administration,2,99,99,99,99,99,99,99,99,99,5,4,99
 hsv,HSV,2,99,99,99,99,99,99,99,99,99,9,99,2
 hubert,Marina Hubert,1,99,1,2,99,99,99,99,99,99,99,99,99
 hueckmann,Sabine Hückmann,1,99,1,2,99,99,99,99,99,99,99,99,99
 humboldt_verpackung,Humboldt Verpackungstechnik,2,99,99,99,99,99,99,99,99,99,1,99,2
-humboldtuni,Humboldt-Universität zu Berlin,2,99,99,99,99,99,99,99,99,99,5,1,
+humboldtuni,Humboldt-Universität zu Berlin,2,99,99,99,99,99,99,99,99,99,5,1,99
 hundm,HundM,2,99,99,99,99,99,99,99,99,99,1,99,2
 husare,Husare,2,99,99,99,99,99,99,99,99,99,2,99,2
 hv_capital,HV Capital,2,99,99,99,99,99,99,99,99,99,1,99,2
-hwr_berlin,Hochschule für Wirtschaft und Recht,2,99,99,99,99,99,99,99,99,99,5,3,
+hwr_berlin,Hochschule für Wirtschaft und Recht,2,99,99,99,99,99,99,99,99,99,5,3,99
 hypr,Hypr,2,99,99,99,99,99,99,99,99,99,2,99,1
 hyundai,Hyundai Motor Deutschland,2,99,99,99,99,99,99,99,99,99,1,99,2
-icp_paris,Institut catholique de Paris,2,99,99,99,99,99,99,99,99,99,5,2,
+icp_paris,Institut catholique de Paris,2,99,99,99,99,99,99,99,99,99,5,2,99
 idema,IDEMA,2,99,99,99,99,99,99,99,99,99,10,99,2
 ifa_berlin,IFA Berlin,2,99,99,99,99,99,99,99,99,99,1,99,2
-ifmk,Institut für Marketing und Kommunikation,2,99,99,99,99,99,99,99,99,99,5,6,
+ifmk,Institut für Marketing und Kommunikation,2,99,99,99,99,99,99,99,99,99,5,6,99
 ifok,Institut für Organisationskommunikation,2,99,99,99,99,99,99,99,99,99,2,99,2
 ikea,IKEA,2,99,99,99,99,99,99,99,99,99,1,99,2
 img,IMG,2,99,99,99,99,99,99,99,99,99,2,99,2
-imperialcollege,Imperial College London,2,99,99,99,99,99,99,99,99,99,5,3,
+imperialcollege,Imperial College London,2,99,99,99,99,99,99,99,99,99,5,3,99
 inditex,inditex,2,99,99,99,99,99,99,99,99,99,1,99,2
 ing_deutschland,ING Deutschland,2,99,99,99,99,99,99,99,99,99,1,99,2
 institutfrancais,Institut Francais,2,99,99,99,99,99,99,99,99,99,10,99,2
@@ -503,12 +503,12 @@ intermedix,Intermedix,2,99,99,99,99,99,99,99,99,99,2,99,2
 interone,Interone,2,99,99,99,99,99,99,99,99,99,2,99,2
 intuitive,Intuitive,2,99,99,99,99,99,99,99,99,99,1,99,2
 inverto,INVERTO,2,99,99,99,99,99,99,99,99,99,2,99,2
-ism,International school of management,2,99,99,99,99,99,99,99,99,99,5,4,
+ism,International school of management,2,99,99,99,99,99,99,99,99,99,5,4,99
 israeltoday,Israel Today,2,99,99,99,99,99,99,99,99,99,8,99,2
 ista,Ista,2,99,99,99,99,99,99,99,99,99,1,99,2
 italiainnovation,Italia Innovation,2,99,99,99,99,99,99,99,99,99,10,99,2
 itcampus,itCampus Software- und Systemhaus,2,99,99,99,99,99,99,99,99,99,1,99,2
-iu_erfurt,International University of Applied Sciences,2,99,99,99,99,99,99,99,99,99,5,4,
+iu_erfurt,International University of Applied Sciences,2,99,99,99,99,99,99,99,99,99,5,4,99
 jamous,Baha Jamous,1,99,2,2,99,99,99,99,99,99,99,99,99
 jedox,Jedox,2,99,99,99,99,99,99,99,99,99,1,99,2
 jensen,Assana Maria Jensen,1,2018,1,1,4,3,2,1,2,2,99,99,99
@@ -519,7 +519,7 @@ johannmeier,Jannis Johannmeier,1,99,2,2,99,99,99,99,99,99,99,99,99
 johannsen_kretschmer,Johannsen und Kretschmer,2,99,99,99,99,99,99,99,99,99,2,99,2
 jolie,Jolie Magazin,2,99,99,99,99,99,99,99,99,99,8,99,2
 jost,Marlon Jost,1,99,2,2,99,99,99,99,99,99,99,99,99
-journalistenschule_ruhr,Journalistenschule Ruhr,2,99,99,99,99,99,99,99,99,99,5,9,
+journalistenschule_ruhr,Journalistenschule Ruhr,2,99,99,99,99,99,99,99,99,99,5,9,99
 jpkom,JP KOM,2,99,99,99,99,99,99,99,99,99,2,99,2
 juhl,Tim Juhl,1,2018,2,1,3,3,2,4,2,2,99,99,99
 jungeleute,Reisen und Freizeit mit jungen Leuten,2,99,99,99,99,99,99,99,99,99,6,99,2
@@ -530,7 +530,7 @@ k12,K12,2,99,99,99,99,99,99,99,99,99,2,99,2
 kaffeetoro,Kaffee Toro,2,99,99,99,99,99,99,99,99,99,1,99,2
 kaiser,Christina Kaiser,1,2017,1,1,4,3,2,4,2,2,99,99,99
 karl,Alexander Karl,1,2017,2,1,5,3,2,4,2,2,99,99,99
-karlshochschule,Karlshochschule,2,99,99,99,99,99,99,99,99,99,5,4,
+karlshochschule,Karlshochschule,2,99,99,99,99,99,99,99,99,99,5,4,99
 kaufmann_langhans,KAUFMANN LANGHANS,2,99,99,99,99,99,99,99,99,99,2,99,2
 kekstcnc,Kekst CNC,2,99,99,99,99,99,99,99,99,99,2,99,2
 kemper,Babette Kemper,1,99,1,2,99,99,99,99,99,99,99,99,99
@@ -585,7 +585,7 @@ kurc,Benjamin Kurc,1,99,2,2,99,99,99,99,99,99,99,99,99
 lagemann,Eugenia Lagemann,1,99,1,2,99,99,99,99,99,99,99,99,99
 lamart,LaMart Design,2,99,99,99,99,99,99,99,99,99,2,99,2
 lamm,Clara Lamm,1,2021,1,1,5,2,2,4,1,2,99,99,99
-landesstipendium_niedersachsen,Landesstipendium Niedersachsen,2,99,99,99,99,99,99,99,99,99,7,99,
+landesstipendium_niedersachsen,Landesstipendium Niedersachsen,2,99,99,99,99,99,99,99,99,99,7,99,99
 landtag_niedersachsen,Niedersächsischer Landtag,2,99,99,99,99,99,99,99,99,99,4,99,2
 landtag_nrw,Landtag NRW,2,99,99,99,99,99,99,99,99,99,4,99,2
 landtag_rp,Landtag Rheinland-Pfalz,2,99,99,99,99,99,99,99,99,99,4,99,2
@@ -611,7 +611,7 @@ lhlk,LoeschHundLiepold,2,99,99,99,99,99,99,99,99,99,2,99,1
 licracy,Licracy,2,99,99,99,99,99,99,99,99,99,1,99,2
 liepold,Jan Liepold,1,99,2,2,99,99,99,99,99,99,99,99,99
 lifesize,LIFE SIZE,2,99,99,99,99,99,99,99,99,99,1,99,2
-linnaeus,Linnaeus-Palme Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,
+linnaeus,Linnaeus-Palme Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,99
 linne,Luise Linne,1,99,1,2,99,99,99,99,99,99,99,99,99
 lmv_versicherung,LMV Versicherung Münster,2,99,99,99,99,99,99,99,99,99,1,99,2
 loadstudios,Load Studios,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -620,7 +620,7 @@ lohse,Viktoria Lohse,1,2019,1,1,5,3,2,1,1,2,99,99,99
 loreal,L'Oréal,2,99,99,99,99,99,99,99,99,99,1,99,2
 lovric,Manuela Lovric,1,2018,1,1,5,3,2,1,2,2,99,99,99
 lprs,LPRS (Leipzig),2,99,99,99,99,99,99,99,99,99,6,99,2
-lse_london,London School of Economics and Political Sciences,2,99,99,99,99,99,99,99,99,99,5,1,
+lse_london,London School of Economics and Political Sciences,2,99,99,99,99,99,99,99,99,99,5,1,99
 ludwig,Alina Ludwig,1,2017,1,1,4,3,2,4,2,1,99,99,99
 lueers,Marla Lüers,1,2019,1,1,4,3,2,1,2,2,99,99,99
 lufthansa,Lufthansa Group,2,99,99,99,99,99,99,99,99,99,1,99,2
@@ -629,7 +629,7 @@ lupus_alpha,Lupus Alpha,2,99,99,99,99,99,99,99,99,99,1,99,2
 lutermann,Katharina Lutermann,1,2018,1,1,5,3,2,4,2,1,99,99,99
 lye,Lye App,2,99,99,99,99,99,99,99,99,99,1,99,2
 macmillan,Macmillan,2,99,99,99,99,99,99,99,99,99,1,99,2
-macromedia,Hochschule Macromedia,2,99,99,99,99,99,99,99,99,99,5,4,
+macromedia,Hochschule Macromedia,2,99,99,99,99,99,99,99,99,99,5,4,99
 madsack,Verlagsgesellschaft Madsack,2,99,99,99,99,99,99,99,99,99,8,99,2
 maertin,Christian Maertin,1,99,2,2,99,99,99,99,99,99,99,99,99
 mahle,MAHLE,2,99,99,99,99,99,99,99,99,99,1,99,2
@@ -656,7 +656,7 @@ mccann,McCann,2,99,99,99,99,99,99,99,99,99,2,99,2
 mcgroup,mcGroup,2,99,99,99,99,99,99,99,99,99,2,99,2
 mckesson,McKesson,2,99,99,99,99,99,99,99,99,99,1,99,2
 mediatest,MediaTest digital,2,99,99,99,99,99,99,99,99,99,1,99,2
-medienakademie,Akademie der Deutschen Medien,2,99,99,99,99,99,99,99,99,99,5,6,
+medienakademie,Akademie der Deutschen Medien,2,99,99,99,99,99,99,99,99,99,5,6,99
 mediengruppe,Mediengruppe Oberfranken,2,99,99,99,99,99,99,99,99,99,8,99,2
 mediennetzwerk,Medien Netzwerk Bayern,2,99,99,99,99,99,99,99,99,99,8,99,2
 meng,Yalun Meng,1,2021,2,1,4,3,2,4,1,2,99,99,99
@@ -676,7 +676,7 @@ montua,Andrea Montua,1,99,1,2,99,99,99,99,99,99,99,99,99
 montuapartner,Montua Partner Communications,2,99,99,99,99,99,99,99,99,99,2,99,2
 mopo,Hamburger Morgenpost,2,99,99,99,99,99,99,99,99,99,8,99,2
 mountainnews,Mountain News,2,99,99,99,99,99,99,99,99,99,8,99,2
-mountholyoke,Mount Holyoke College,2,99,99,99,99,99,99,99,99,99,5,2,
+mountholyoke,Mount Holyoke College,2,99,99,99,99,99,99,99,99,99,5,2,99
 movingtwice,Moving Twice,2,99,99,99,99,99,99,99,99,99,1,99,2
 mrsnow,Mr Snow,2,99,99,99,99,99,99,99,99,99,1,99,2
 msd,MSD Deutschland,2,99,99,99,99,99,99,99,99,99,1,99,2
@@ -695,9 +695,9 @@ nagel,Daniel Nagel,1,99,2,2,99,99,99,99,99,99,99,99,99
 nanoscribe,Nanoscribe,2,99,99,99,99,99,99,99,99,99,1,99,2
 napoko,Nachwuchsnetzwerk politische Kommunikation,2,99,99,99,99,99,99,99,99,99,6,99,2
 nasir,Naman Nasir,1,2020,2,1,5,3,2,4,2,2,99,99,99
-nationaluniversity,National University,2,99,99,99,99,99,99,99,99,99,5,2,
+nationaluniversity,National University,2,99,99,99,99,99,99,99,99,99,5,2,99
 naumann,Patrick Naumann,1,99,2,2,99,99,99,99,99,99,99,99,99
-naumannstiftung,Friedrich-Naumann-Stiftung,2,99,99,99,99,99,99,99,99,99,7,99,
+naumannstiftung,Friedrich-Naumann-Stiftung,2,99,99,99,99,99,99,99,99,99,7,99,99
 ndr,NDR,2,99,99,99,99,99,99,99,99,99,8,99,2
 nebe,Tina Nebe,1,2021,1,1,5,1,2,1,2,2,99,99,99
 nebelung,Nebelung Kommunikation,2,99,99,99,99,99,99,99,99,99,2,99,2
@@ -712,7 +712,7 @@ niedermeier,Prof Hans-Peter Niedermeier,1,99,2,2,99,99,99,99,99,99,99,99,99
 nignbo,Nignbo Daily Group,2,99,99,99,99,99,99,99,99,99,8,99,2
 nike,Nike,2,99,99,99,99,99,99,99,99,99,1,99,2
 nolan,Katryna Nolan,1,2021,1,1,5,3,2,2,1,2,99,99,99
-nordakademie,Nordakademie Elmshorn,2,99,99,99,99,99,99,99,99,99,5,4,
+nordakademie,Nordakademie Elmshorn,2,99,99,99,99,99,99,99,99,99,5,4,99
 nordschleswiger,Der Nordschleswiger,2,99,99,99,99,99,99,99,99,99,8,99,2
 northeastern,Northeastern University,2,99,99,99,99,99,99,99,99,99,5,2,
 nrwschool,NRW School of Governance,2,99,99,99,99,99,99,99,99,99,5,99,2
@@ -767,9 +767,9 @@ prinovis,Prinovis,2,99,99,99,99,99,99,99,99,99,1,99,2
 prip,Primus inter pares,2,99,99,99,99,99,99,99,99,99,2,99,2
 proctergamble,Procter and Gamble,2,99,99,99,99,99,99,99,99,99,1,99,2
 progressive_zentrum,Das Progressive Zentrum,2,99,99,99,99,99,99,99,99,99,10,99,2
-promos,Promos Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,
+promos,Promos Stipendium,2,99,99,99,99,99,99,99,99,99,7,99,99
 prosieben,ProSiebenSat1 Media,2,99,99,99,99,99,99,99,99,99,8,99,2
-prrat,Deutscher Rat für PR,2,99,99,99,99,99,99,99,99,99,6,99,
+prrat,Deutscher Rat für PR,2,99,99,99,99,99,99,99,99,99,6,99,99
 prsh,PRSH (Hannover),2,99,99,99,99,99,99,99,99,99,6,99,2
 punch,Punch Media PR,2,99,99,99,99,99,99,99,99,99,2,99,2
 pvh_corp,PVH Corp,2,99,99,99,99,99,99,99,99,99,1,99,2
