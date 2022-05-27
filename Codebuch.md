@@ -7,11 +7,11 @@ erstellt von Hannah Bauer (hb062@hdm-stuttgart.de)
 - Nodes.csv (Nodelist) https://github.com/hb062/BA_30u30/blob/main/nl.csv
 - Codebuch.md (Codierung der Datensätze)
 
-# Umgang mit fehlenden Werten 
+## Umgang mit fehlenden Werten 
 Fehlen Werte oder falls sich Werte nur auf einen bestimmten Typ an Nodes bezieht, werden diese mit dem Wert "99" codiert. Dies ist beispielsweise der Fall bei Organisationen, für die beim Vertex-Attribut "sex" logischerweise kein Wert vergeben wird. Gleiches gilt für Daten der Edge-List, etwa wenn zu einer Beziehung kein Jahr bekannt ist. Das vorherige Vorgehen, bei dem das zugehörige Feld in der Edge- oder Node-List frei gelassen oder mit NA versehen wurde, hatte zu Problemen beim Plotten der Daten geführt, konkret bei der Arbeit mit und Selektion nach Vertex-/Node-Attributen. Eine Umcodierung auf "99" konnte zur Beseitigung des Problems beitragen.
 Fehlen Werte oder beziehen sich Attribute nur auf einen bestimmten Typ an Nodes des two-mode-Networks, wird entsprechend mit dem Wert "99" codiert.
 
-## Edgelist und Edge-Attribute
+# Edgelist und Edge-Attribute
 Grundregel: Die Edgelist enthält pro Spalte immer nur einen Wert. Bis auf die ID und den Namen ist dieser numerisch codiert (als Zahl).
 
 - from: Die Werte in der Spalte “from” definieren den Ausgangspunkt einer Beziehung. 
