@@ -1,41 +1,48 @@
 Datensatz 30u30
-Codebuch Stand 2022-04-23
+Codebuch Stand 2022-05-27
 erstellt von Hannah Bauer (hb062@hdm-stuttgart.de)
 
-## Inhalt
+## Inhalt des Datensatzes
 - Edges.csv (Edgelist) https://github.com/hb062/BA_30u30/blob/main/el.csv
 - Nodes.csv (Nodelist) https://github.com/hb062/BA_30u30/blob/main/nl.csv
 - Codebuch.md (Codierung der Datensätze)
 
-## Forschungsinteresse, Ursprung und Datenerhebung
-Im Rahmen meiner Bachelorarbeit analysiere ich die Jahrgänge 2017 bis 2021 des #30u30-Netzwerks für junge, aufstrebende Talente der Kommunikationsbranche. Da die Auswahl der 30 Talente eines Jahrgangs von einer zwei Mann-Jury getroffen wird, stellt sich die Frage, welche Kriterien dahinterstehen und ob in der Zusammenstellung generelle Tendenzen erkennbar sind. Insbesondere soll untersucht werden: Was verbindet die #30u30 über ihre Mitgliedschaft im Nachwuchsnetzwerk hinaus – gibt es gemeinsame Stationen in Ausbildung oder Beruf?
-Die Daten der Mitglieder wurden primär auf Basis ihrer LinkedIn-CVs erfasst und entsprechend der nachfolgenden Kritierien codiert. Ergänzend wurden teilweise auch die XING-Profile der Personen sowie die entsprechenden Porträts über die einzelnen Personen im PR-Report herangezogen.
-Das Netzwerk ist ein ungerichtetes two-mode Gesamtnetzwerk, welches zur weiteren Analyse in einzelne Teilnetzwerke aufgeteilt werden kann.
-
 # Umgang mit fehlenden Werten 
-Fehlen Werte oder falls sich Werte nur auf einen bestimmten Typ an Nodes bezieht, werden diese mit dem Wert "99" codiert. Dies ist beispielsweise der Fall bei Organisationen, für die beim Vertex-Attribut "sex" natürlich kein Wert vergeben wird. Gleichermaßen gilt es für Daten der Edge-List, etwa wenn zu einer Beziehung kein Jahr bekannt ist. Das vorherige Vorgehen, bei dem das zugehörige Feld in der Edge- oder Node-List frei gelassen oder mit NA versehen wurde, hatte zu Problemen beim Plotten der Daten geführt, konkret bei der Arbeit mit und Selektion nach Vertex-/Node-Attributen. Eine Umcodierung auf "99" konnte zur Beseitigung des Problems beitragen.
+Fehlen Werte oder falls sich Werte nur auf einen bestimmten Typ an Nodes bezieht, werden diese mit dem Wert "99" codiert. Dies ist beispielsweise der Fall bei Organisationen, für die beim Vertex-Attribut "sex" logischerweise kein Wert vergeben wird. Gleiches gilt für Daten der Edge-List, etwa wenn zu einer Beziehung kein Jahr bekannt ist. Das vorherige Vorgehen, bei dem das zugehörige Feld in der Edge- oder Node-List frei gelassen oder mit NA versehen wurde, hatte zu Problemen beim Plotten der Daten geführt, konkret bei der Arbeit mit und Selektion nach Vertex-/Node-Attributen. Eine Umcodierung auf "99" konnte zur Beseitigung des Problems beitragen.
+Fehlen Werte oder beziehen sich Attribute nur auf einen bestimmten Typ an Nodes des two-mode-Networks, wird entsprechend mit dem Wert "99" codiert.
 
 ## Edgelist und Edge-Attribute
 Grundregel: Die Edgelist enthält pro Spalte immer nur einen Wert. Bis auf die ID und den Namen ist dieser numerisch codiert (als Zahl).
 
-- from: Die Werte in der Spalte “from” definieren einen Ausgangspunkt einer Beziehung. Da es sich um ein ungerichtetes Netzwerk handelt, ist die Richtung der Beziehung nicht relevant, es gibt keinen Sender oder Empfänger. Der eingetragene Wert entspricht einer ID in der Nodelist und enthält keine Sonderzeichen, sondern nur ein Wort (ggf. mit einer Zahl oder einem Unterstrich zur Unterscheidung ähnlicher Namen).
-- to: Die Werte in der Spalte “to” definieren den Empfänger in ungerichteten Netzwerken. Der eingetragene Wert entspricht einer ID in der Nodelist und enthält keine Sonderzeichen, sondern nur ein Wort (ggf. mit einer Zahl oder einem Unterstrich zur Unterscheidung ähnlicher Namen).
-- relationship: Das Edge-Attribut “relationship” definiert die Art der Beziehung zwischen den Knoten, da es sich um ein multiplexes Netzwerk mit verschiedenen Beziehungsarten handelt. Hierbei werden vor allem die Beziehungen zwischen Knoten des Typ 1 und Typ 2 definiert, da wenig Daten zu den Beziehungen zwischen den einzelnen natürlichen Personen vorliegen. Primär wird die Verbindung zwischen natürlicher Person und der Organisation näher definiert, etwa ob diese durch ein Studium, Praktikum o.ä. besteht. Darüber hinaus werden Verbindungen zwischen den #30u30 und ihren Mentorinnen / Mentoren erfasst.
-1 = Ausbildung 2 = Bachelorstudium 3 = Masterstudium 4 = Auslandssemester 5 = PhD 6 = Weiterbildung 7 = Praktikum/Werkstudium 8 = Traineeship / Volontariat 9 = Anstellung *beschreibt ein festes Arbeitsverhältnis zwischen einer natürlichen Person und einer Organisation, keine Unterscheidung zwischen Hierarchiestufen* 
-10 = Freelance *beschreibt eine freiberufliche / selbstständige Tätigkeit* 
-11 = Mitgliedschaft *beschreibt die Mitgliedschaft (auch Alumni) in einer Partei / einem Verein, z.B. einer studentischen PR-Initiative oder einer Hochschulgruppe.* 
-12 = Founder *beschreibt die berufliche Tätigkeit einer Person in einem Unternehmen, das er / sie selbst gegründet hat* 
-13 = Leader *bezieht sich auf Personen, die in einem Verein eine leitende Rolle in hatten oder diesen gegründet haben (z. B. Vorstand bei PRIHO o. ä.)*
-14 = Förderung *Förderung meint, dass die natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde.* 
-15 = Lehrtätigkeit *beschreibt die Lehrtätigkeit von Personen an Hochschulen, entweder in Vollzeit oder als Gastdozierende*
-16 = family *beschreibt familiäre Verbindungen, etwa zwischen Eltern - Kind oder Geschwistern* 
-17 = mentorship *beschreibt eine Verbindung zwischen einem Mentor und einem #30u30-Mitglied.*
-18 = Freundschaft / Beziehung
-19 = Magister *beschreibt ein Studium, das mit dem nicht mehr existierenden akademischen Grad Magister beendet wurde*
-20 = Diplom *beschreibt ein Studium, das mit dem nicht mehr existierenden akademischen Grad Diplom beendet wurde*
-21 = Staatsexamen 
+- from: Die Werte in der Spalte “from” definieren den Ausgangspunkt einer Beziehung. 
+Da es sich um ein gerichtetes Netzwerk handelt, geht die Beziehung von einem Sender aus, bspw. einer Person, die bei einem Unternehmen gearbeitet hat. Der eingetragene Wert entspricht einer ID in der Nodelist und enthält keine Sonderzeichen, sondern nur ein Wort. Zur Unterscheidung ähnlicher Namen wird dieses ggf. mit einer Zahl oder einem Unterstrich ergänzt.
 
-- year: Das Edge-Attribut “year” definiert das Jahr, in dem die jeweilige Beziehung bestand, beziehungsweise wann eine Person bei einer Organisation beschäftigt war oder an einer Hochschule studiert hat. Die Zeiträume wurden auf Basis der Angaben in den jeweiligen LinkedIn-Profilen der Personen erfasst. Bei mehrjährigen Verbindungen wurde entsprechend für jedes separate Jahr eine Beziehung angelegt. Die Jahreszahlen reichen von 2006 bis 2022 und umfassen damit den Berufs- und Studienweg der Akteur:innen vor ihrer Aufnahme in das #30u30-Netzwerk bis hin zum aktuellen Zeitpunkt zur Datenerhebung im Rahmen dieser Arbeit (März 2022). Bei Verbindungen, bei denen das Jahr nicht bekannt war, wurde statt einer Jahreszahl kein Wert angegeben. Bei den Ausbildungs- und Karrierewegen der Mentor:innen wurde nur die Ausbildungsstätte, der Arbeitgeber zur Zeit des Mentorings sowie etwaige Mitgliedschaften oder leitende Tätigkeiten in (Berufs)Vereinen und Stipendien erfasst. Auch ohne Jahreszahl wird die Überschneidung mit dem Mentee durch die gemeinsame Arbeitsstelle deutlich, weshalb mit Blick auf die Größe des Datensatzes auf die Angabe der Jahreszahl verzichtet wurde. Zudem fehlte diese ohnehin in vielen Lebensläufen, etwa bei Angaben zum Studium war oft kein Zeitraum angegeben. 
+- to: Die Werte in der Spalte “to” definieren den Empfänger in ungerichteten Netzwerken.  Da es sich um ein gerichtetes Netzwerk handelt, sind beispielsweise Arbeitsstellen die Empfänger einer Beziehung, die Verbindung läuft von Arbeitnehmer:innen hin zur Arbeitsstelle.
+ Der eingetragene Wert entspricht einer ID in der Nodelist und enthält keine Sonderzeichen, sondern nur ein Wort, zur Unterscheidung ähnlicher Namen wird dieses ggf. mit einer Zahl oder einem Unterstrich ergänzt.
+ 
+ - year: Das Edge-Attribut „year“ definiert das Jahr, in dem die jeweilige Beziehung bestand, beziehungsweise wann eine Person bei einer Organisation beschäftigt war oder an einer Hochschule studiert hat. Die Zeiträume wurden auf Basis der Angaben in den jeweiligen LinkedIn-Profilen der Personen erfasst. Bei mehrjährigen Verbindungen wurde entsprechend für jedes separate Jahr eine Beziehung angelegt. Die Jahreszahlen reichen von 2006 bis 2022 und umfassen damit den Berufs- und Studienweg der Akteur:innen vor ihrer Aufnahme in das #30u30-Netzwerk bis hin zum aktuellen Zeitpunkt zur Datenerhebung im Rahmen dieser Arbeit (März 2022). Bei Verbindungen, bei denen das Jahr nicht bekannt war, wurde statt einer Jahreszahl der Wert 99 vergeben. 
+ - 
+- relationship: Das Edge-Attribut „relationship“ definiert die Art der Beziehung zwischen Knoten, da es sich um ein multiplexes Netzwerk mit verschiedenen Beziehungsarten handelt.  Hierbei wurden vor allem die Beziehungen zwischen Knoten des Typ 1 und Typ 2 (Personen und Organisationen) definiert, da wenig Daten zur Beziehungsqualität zwischen den einzelnen natürlichen Personen vorlagen bzw. mit der gewählten Methode nicht erhoben werden konnten. Primär wird daher die Verbindung zwischen natürlicher Person und der Organisation näher definiert, darüber hinaus werden Verbindungen zwischen den #30u30 und ihren Mentorinnen / Mentoren codiert. 
+1 = Ausbildung
+2 = Bachelorstudium
+3 = Masterstudium,
+4 = Auslandssemester *(Gesamte Bachelor-/Masterstudiengänge, die im Ausland absolviert wurden, wurden nicht als Auslandssemester, sondern regulär als Bachelor- oder Masterstudium codiert)*
+5 = Promotionsstudium
+6 = Weiterbildung
+7 = Praktikum / Werkstudium / Studentische Tätigkeit
+8 = Traineeship / Volontariat
+9 = Anstellung *(festes Arbeitsverhältnis zwischen einer natürlichen Person und einer Organisation ab Junior-Level, darüber hinaus wird nicht zwischen verschiedenen Karrierestufen differenziert.)*
+10 = Freelance *(freiberufliche / selbstständige Tätigkeit)*
+11 = Mitgliedschaft *(Mitgliedschaft (auch bei Alumni) in einer Partei, oder einem Verein, z.B. einer studentischen PR-Initiative / einer Hochschulgruppe. 12 = Founder (Bezieht sich auf Personen, die in einem Unternehmen arbeiten, das sie selbst gegründet haben)*
+13 = Leader *(Bezieht sich auf Personen, die in einem Verein eine leitende Rolle innehatten oder diesen gegründet haben (z. B. Vorstand bei PRIHO)* 
+14 = Förderung *(Beschreibt, dass eine natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde)*
+15 = Lehrtätigkeit *(Lehrtätigkeit von Personen an Hochschulen, entweder in Vollzeit oder als Gastdozierende)*
+16 = Family *(Familiäre Verbindungen, etwa zwischen Elternteil und Kind oder Geschwistern)*
+17 = Mentorship *(Verbindung zwischen Mentor:in und einem #30u30-Mitglied)*
+18 = Freundschaft / Beziehung
+19 = Magister *(Beschreibt ein Studium, das mit dem nicht mehr existierenden akademischen Grad Magister beendet wurde)*
+20 = Diplom *(Beschreibt ein Studium, das mit dem nicht mehr existierenden akademischen Grad Diplom beendet wurde)*
+21 = Staatsexamen 
 
 ## Nodelist und Node-Attribute
 Da es sich um eine two mode - Akteursnetzwerk handelt, in dem sowohl natürliche Personen (die Mitglieder der #30u30) sowie Organisationen (Unternehmen, Hochschulen, Vereine etc.) erfasst wurden, gibt es Node-Attribute, die sich auf alle Knoten beziehen als auch solche, die nur natürliche Personen oder nur Organisationen näher definieren. Bei diesen Attributen wurde für die Knoten, die davon nicht betroffen sind, kein Wert vergeben.
