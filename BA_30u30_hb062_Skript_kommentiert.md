@@ -1024,7 +1024,7 @@ plot(men_simple,
      edge.arrow.size=.00001,
      egde.arrow.color="white",
      main="Netzwerk der Männer der #30u30-Jahrgänge 2017 bis 2021",
-     sub="Anzahl der Männer: n = 48"
+     sub="Anzahl der Männer: n = 48",
      asp=0)
 ```
 
