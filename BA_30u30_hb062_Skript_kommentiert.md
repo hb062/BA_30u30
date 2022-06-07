@@ -5516,7 +5516,7 @@ plot(master_simple,
      vertex.label.font=2,
      vertex.label.color="black",
      main="Master-Hochschulen der #30u30-Jahrgänge 2017 bis 2021",
-     sub="Knotengröße entspr. Indegree-Wert und mit Faktor 1,2 skaliert"
+     sub="Knotengröße entspr. Indegree-Wert und mit Faktor 1,2 skaliert",
      asp=0)
 
 # Mit Labels bei allen HS mit indegree > 1
@@ -5536,7 +5536,7 @@ plot(master_simple,
      vertex.label.font=2,
      vertex.label.color="black",
      main="Master-Hochschulen der #30u30-Jahrgänge 2017 bis 2021",
-     sub="Knotengröße entspr. Indegree-Wert und mit Faktor 1,2 skaliert"
+     sub="Knotengröße entspr. Indegree-Wert und mit Faktor 1,2 skaliert",
      asp=0)
 ```
 
