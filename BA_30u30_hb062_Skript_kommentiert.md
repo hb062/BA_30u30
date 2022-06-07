@@ -2782,9 +2782,9 @@ Zuletzt wird das Netzwerk der Jahrgangsmitglieder betrachtet mit all deren Verbi
 Zunächst wird dazu das entsprechende Teilnetzwerk erstellt.
 
 ```{r Jahrgang 2020 - Bis Aufnahme - Plot}
-jg20_2
+jg20
 
-jg20_preentry <- subgraph.edges(jg20_2, E(jg20_2)[year <= 2020]) # selektiert alle Beziehungen, die bis einschließlich 2020 bestanden
+jg20_preentry <- subgraph.edges(jg20, E(jg20)[year <= 2020]) # selektiert alle Beziehungen, die bis einschließlich 2020 bestanden
 
 jg20_preentry
 jg20_preentry1 <- simplify(jg20_preentry, remove.multiple = TRUE) # entfernt doppelte Kanten
