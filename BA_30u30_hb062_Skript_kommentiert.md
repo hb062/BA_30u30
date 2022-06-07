@@ -1798,7 +1798,7 @@ plot(jg18_1,
      edge.arrow.size=.00001,
      edge.arrow.color="white",
      asp=0,
-     vertex.size = V(jg18_1)$betweenness/max(V(jg18_3)$betweenness) * 10,
+     vertex.size = V(jg18_1)$betweenness/max(V(jg18_1)$betweenness) * 10,
      main="Broker im Netzwerk des #30u30-Jahrgangs 2018",
      sub="Alle Stationen bis März 2022")
 ```
