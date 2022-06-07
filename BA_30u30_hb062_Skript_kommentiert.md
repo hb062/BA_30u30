@@ -3,7 +3,7 @@
 **Hochschule der Medien, Stuttgart**
 Hannah Bauer, Matr. Nr. 37000
 Sommersemester 2022
-Stand: 02.06.2022
+Stand: 07.06.2022
 
 *Dieses Skript enthält den Code, anhand dessen die erhobenen Daten ausgewertet, analysiert und visualisiert wurden. Es handelt es sich nicht ausschließlich um Ergebnisse, die in der finalen Bachelorarbeit wiedergegeben oder als Grafik eingebunden werden. Stattdessen sind auch Analysen enthalten, die bei der Ergebnisdarstellung letztlich mangels Aussagekraft bzw. Erkenntnisgehalt oder aus anderen Gründen nicht inkludiert wurden.*
 
@@ -2700,7 +2700,7 @@ plot(jg20_1,
      edge.arrow.size=.00001,
      edge.arrow.color="white",
      asp=0,
-     vertex.size = V(jg20_1)$betweenness/max(V(jg20_3)$betweenness) * 10,
+     vertex.size = V(jg20_1)$betweenness/max(V(jg20_1)$betweenness) * 10,
      main="Broker im Netzwerk des #30u30-Jahrgangs 2020",
      sub="Alle Stationen bis März 2022
      Knotengröße entspr. dem Betweennness-Wert mit Faktor 10 skaliert")
