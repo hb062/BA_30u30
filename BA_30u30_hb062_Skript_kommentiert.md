@@ -5123,9 +5123,8 @@ b) Wie viele Sponsoren sind im Arbeitsnetzwerk der Mitglieder des Jahrgangs 2018
 
 ```{r Sponsoren - Jahrgang 2018 - Gesamt}
 
-jg18_3
-
-jg18_spon <- V(jg18_3)$sponsor == 1
+jg18_1
+jg18_spon <- V(jg18_1)$sponsor == 1
 sum(jg18_spon, na.rm=T)
 # 5 Sponsoren
 ```
@@ -5160,7 +5159,7 @@ sum(jg20_pe_spon) # 4 Sponsoren
 a) Wie viele Sponsoren sind insgesamt im Arbeitsnetzwerk der Mitglieder des Jahrgangs 2020 bis heute enthalten?
 
 ```{r Sponsoren - Jahrgang 2020 - Gesamt}
-jg20_spon <- V(jg20_2)$sponsor == 1
+jg20_spon <- V(jg20_1)$sponsor == 1
 sum(jg20_spon) # 4 Sponsoren
 ```
 5. Jahrgang 2021
