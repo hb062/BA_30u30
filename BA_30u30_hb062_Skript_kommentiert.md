@@ -7396,7 +7396,7 @@ plot(mentor_winiarski,
 
 Wie hoch ist die Dichte im Teilnetzwerk?
 
-```{r eilnetzwerk Andreas Winiarski und Mentees - Dichte}
+```{r Teilnetzwerk Andreas Winiarski und Mentees - Dichte}
 edge_density(mentor_winiarski) # 0.04558405
 ```
 
