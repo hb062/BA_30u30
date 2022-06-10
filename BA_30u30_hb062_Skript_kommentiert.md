@@ -1,9 +1,9 @@
 # Bachelorarbeit: Netzwerkanalyse #30u30
 
 **Hochschule der Medien, Stuttgart**
-Hannah Bauer, Matr. Nr. 37000
-Sommersemester 2022
-Stand: 07.06.2022
+Hannah Bauer, Matr. Nr. 37000 ...
+... Sommersemester 2022 ...
+Stand: 07.06.2022 ...
 
 *Dieses Skript enthält den Code, anhand dessen die erhobenen Daten ausgewertet, analysiert und visualisiert wurden. Es handelt es sich nicht ausschließlich um Ergebnisse, die in der finalen Bachelorarbeit wiedergegeben oder als Grafik eingebunden werden. Stattdessen sind auch Analysen enthalten, die bei der Ergebnisdarstellung letztlich mangels Aussagekraft bzw. Erkenntnisgehalt oder aus anderen Gründen nicht inkludiert wurden.*
 
