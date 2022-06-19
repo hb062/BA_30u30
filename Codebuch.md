@@ -1,6 +1,6 @@
 # Datensatz zur Netzwerkanalyse von #30u30
 ## Codebuch 
-Stand 2022-05-27
+Stand 19.06.2022
 erstellt von Hannah Bauer (hb062@hdm-stuttgart.de)
 
 ## Inhalt des Datensatzes
