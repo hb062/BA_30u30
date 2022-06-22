@@ -139,12 +139,10 @@ V(g)[V(g)$type == 1]$shape <- "circle" # Personen als Kreis darstellen
 V(g)[V(g)$type == 2]$shape <- "square" # Organisationen als Quadrat darstellen
 V(g)[V(g)$member == 1]$color <- "firebrick2" # Knoten der 30u30-Mitglieder rot färben
 V(g)[V(g)$member == 2]$color <- "orange" # Knoten der Mentor:innen orange färben
-
 ```
 Nicht nur zwischen Knoten des Type 1 oder 2 wird optisch unterschieden, auch die Knoten des Type 2 werden untereinander verschieden dargestellt, je nach Organisationstyp.
 
 ```{r  Einfärben der unterschiedlichen Organisationstypen}
-
 V(g)[(V(g)$category == 1)]$color <- "dodgerblue4" # Unternehmen dunkelblau
 V(g)[(V(g)$category == 2)]$color <- "cadetblue3" # Agenturen hellblau
 V(g)[(V(g)$category == 3)]$color <- "seashell2" # NGO / NPO in beige
@@ -353,7 +351,6 @@ table(nodes$sponsor, nodes$category)
 Zur weiteren Analyse wird das Netzwerk der #30u30-Mitglieder der Jahrgänge 2017 - 2021 generiert, ohne deren Mentor:innen.
 
 ```{r #30u30 Mitgliedernetzwerk (Jg. 17 - 21) - Erstellen}
-
 g 
 
 members <- delete.vertices(g, V(g)[mentor == 2]) # löscht die Knoten der Mentor:innen aus dem Gesamtnetzwerk
@@ -408,13 +405,11 @@ Welche Organisationen stehen mit den meisten #30u30-Mitgliedern in Verbindung? H
 indmembers <- degree(members2, mode="in")
 indmembers
 sort(indmembers) # sortiert Knoten anhand ihres Indegree-Werts
-
 ```
 
 Erstellt ein Teilnetzwerk populärer Organisationen, in dem nur Organisationen mit indegree > 4 dargestellt werden.
 
 ```{r Populäre Organisationen - nur indegree > 4}
-
 members2
 
 members_ind5 <- delete_vertices(members2, V(members2)[(type == 2) & (degree(members2, mode="in")<5)]) # löscht Knoten mit Indegree-Wert unter 5
@@ -468,7 +463,6 @@ plot(members_ind10,
 Verschiedene Cluster im Netzwerk der Mitglieder anzeigen
 
 ```{r Cluster in Netzwerk}
-
 clusters(members2)
 # Anzahl der Cluster: 6 - Größe der Cluster: 961, 6, 5, 4, 2, 9
 
@@ -478,10 +472,8 @@ membership(clg_mem) # Gibt die Aufteilung der Knoten in Communities an
 ```
 
 ```{r Größe der Cluster berechnen & sortieren}
-
 size_clgmem <- sizes(clg_mem)
 sort(size_clgmem)
-
 ```
 
 Mitglieder der größten Community
@@ -490,13 +482,11 @@ Mitglieder der größten Community
 communities(clg_mem)
 # Community no. 8 ist mit 107 Knoten die größte im Mitglieder-Netzwerk:
 communities(clg_mem)[[8]]
-
 ```
 
 Berechne Modularität im Netzwerk
 
 ```{r Modularität Mitgliedernetzwerk}
-
 modularity(clg_mem) # 0,6722954
 
 #Prozentwert
@@ -538,7 +528,6 @@ plot(clg_mem,
      edge.curved=.2,
      vertex.size=2,
      vertex.label=NA)
-
 ```
 
 ## Berechnungen 
@@ -552,18 +541,15 @@ edge_density(members2) # Ergebnis: 0,001317328
 ### Degree-Zentralitäts-Werte
 
 ```{r Degree-Zentralität}
-
 centralization.degree(members2, mode = "all") # 0,007818382
 centralization.degree(members2, mode = "in") # 0,01288145
 centralization.degree(members2, mode = "out") # 0,01693825
-
 ```
 
 ### Closeness-Zentralität
 Closeness-Zentralität ist ein Maßstab dafür, wie viele Schritte es braucht, um jeden anderen Knoten von einem bestimmten Knoten im Netzwerk aus zu erreichen
 
 ```{r Closeness(-Zentralität)}
-
 clo_mem <- closeness(members2)
 sort(clo_mem) # sortiert die Werte
 
@@ -590,7 +576,6 @@ farthest_vertices(members2, directed=FALSE)
 ### Betweenness(-Zentralität)
 Welche Knoten haben hohe Betweenness-Werte und fungieren als Broker?
 ```{r Betweenness}
-
 centr_betw(members2, directed=TRUE)
 betw <- betweenness(members2)
 sort(betw, decreasing = T) # Sortiert Betweenness-Werte nach ihrer Größe
@@ -598,7 +583,6 @@ sort(betw, decreasing = T) # Sortiert Betweenness-Werte nach ihrer Größe
 Nach der Berechnung sollen nun auch visuell die Broker-Organisationen hervorgehoben werden.
 
 ```{r Plot: Broker-Organisationen}
-
 # Wir können die Ausgabe von betweenness()  einer Variablen im Netz zuordnen und die Knoten entsprechend dimensionieren.
 V(members2)$betweenness <- betweenness(members2)
 
@@ -628,7 +612,6 @@ plot(members2,
 Was machen die Talente der fünf Jahrgänge heute, im Jahr 2022?
 
 ```{r Arbeitsplätze der Mitglieder im 2022}
-
 members
 
 members22 <- subgraph.edges(members, E(members)[year == 2022]) # selektiert nur Beziehungen aus dem Jahr 2022
@@ -686,7 +669,6 @@ sort(ind_mem22, decreasing = T)
 ### Clusteranalyse: Mitgliedernetzwerk 2022
 
 ```{r Cluster / Communities & Dichte & Modularität}
-
 clusters(mem22)
   # Anzahl der Cluster: 102 - Größe der Cluster von 2 bis maximal 64 - bis auf ein Cluster mit 14 und einem mit 64 Knoten umfassen die meisten Cluster zwischen 2 und 4 Knoten, vereinzelt nur 5 bis 7
 
@@ -706,7 +688,6 @@ edge_density(mem22) # 0.002127255 (= 0,21 %)
 ```
 Visualisiert die Cluster im Mitgliedernetzwerk mit allen Verbindungen bis 2022:
 ```{r Visualisierung der Cluster (2022)}
-
 clg_mem22
 par(mfrow=c(1,1), mar=c(0,0,1,2))
 
@@ -740,7 +721,6 @@ plot(clg_mem22,
      edge.curved=.2,
      vertex.size=2,
      vertex.label=NA)
-
 ```
 
 # Teilnetzwerk der Frauen & Männer
@@ -750,7 +730,6 @@ Frauen sind zwar in der Überzahl in den fünf Jahrgängen, ein Vergleich ist so
 ## Frauen in den #30u30-Jahrgängen 2017 bis 2021
 
 ```{r Frauen-Teilnetzwerk erstellen}
-
 g
 
 women <- delete.vertices(g, V(g)[sex == 2]) # löscht die Männer
@@ -765,7 +744,6 @@ women_simple
 ```
 
 Plottet das Frauennetzwerk:
-
 
 ```{r Frauennetzwerk: Plot}
 # Generiert den Plot des Frauennetzwerks der #30u30-Jahrgänge 2017 bis 2021
@@ -796,7 +774,6 @@ edge_density(women_simple) # 0,001756047 (0,175 %)
 Berechne mittlere Pfaddistanz und die weiteste Distanz zwischen zwei Knoten.
 
 ```{r Frauennetzwerk: Pfaddistanz & Diameter}
-
 # Mittlere Pfaddistanz
 mean_distance(women_simple, directed=FALSE) # 6,005449
 
@@ -811,15 +788,12 @@ farthest_vertices(women_simple, directed=FALSE)
 Wie viele Organisationen sind im Frauennetzwerk enthalten?
 
 ```{r Frauennetzwerk: Anzahl der Organisationen}
-
 fem_org <- V(women_simple)$type == 2
 sum(fem_org, na.rm=T) # Summe: 606
-
 ```
 Wie viele Verbindungen hat jede Frau im Durchschnitt?
 
 ```{r Frauennetzwerk: Mittlerer Outdegree-Wert}
-
 # Berechne Mittelwert des Outdegree-Werts der #30u30-Frauen
 mean(degree(women_simple,v=V(women_simple)[(mentor==1) & (sex==1)]), mode="out") # 8,627451
 ```
@@ -865,7 +839,6 @@ sort(outd_fem, decreasing = T)
 
 Aus wie vielen Clusters und Communities besteht das Frauennetzwerk?
 ```{r Frauennetzwerk: Cluster}
-
 clusters(women_simple) # Anzahl der Cluster: 4, Größe: 688; 10; 6;  4
 
 clg_fem <- cluster_walktrap(women_simple) 
@@ -922,7 +895,6 @@ sum(women30u30, na.rm=T)
   # Anzahl: 46 (von 102 Frauen) - knapp die Hälfte (45,1 %) hat eine   Mentor:in genannt
 
 (46/102)*100 # Anteil der Frauen mit Mentor:in an allen Frauen: 45,09 %
-
 ```
 Wie viele Mentor:innen hatten die Frauen insgesamt?
 
@@ -1103,26 +1075,21 @@ plot(men_mentoring,
 Wie viele Männer haben eine:n Mentor:in genannt?
 
 ```{r Anzahl der Männer mit Mentor:in}
-
 men30u30 <- V(men_mentoring)$mentor == 1
 sum(men30u30, na.rm=T)
   # Anzahl: 24 (von 48 Männern) - genau die Hälfte hat keine:n Mentor:in genannt
-
 ```
 
 Wie viele Mentor:innen hatten die Männer insgesamt?
 
 ```{r Anzahl der Mentor:innen im Männernetzwerk}
-
 mentoren_mas <- V(men_mentoring)$mentor == 2
 sum(mentoren_mas, na.rm=T) # 53 Mentor:innen im Netzwerk der #30u30-Männer
-
 ```
 
 Wie ist die Geschlechterverteilung unter den Mentor:innen der Männer?
 
 ```{r Männernetzwerk: Geschlechterverteilung der Mentor:innen}
-
 mentors_mas_sex <- delete.vertices (men_mentoring, V(men_mentoring)[mentor == 1]) # selektiert Mentor*innen im Männernetzwerk
 
 mentoren_mas <- V(mentors_mas_sex)$sex == 1 # wie viele weibliche Mentor*innen?
@@ -1132,16 +1099,13 @@ sum(mentoren_mas, na.rm=T)
 
 # Das entspricht einem Prozentwert von 22,64%:
 (12/53)*100
-
 ```
 
 Wie viele Mentor:innen hat jeder Mann im Schnitt? (Unter Berücksichtigung: Die Hälfte der Männer von #30u30 hatten keine:n Mentor:in genannt)
 
 ```{r Durchschnittliche Zahl der Mentor:innen pro Mann}
-
 mean(degree(men_mentoring,v=V(men_mentoring)[mentor==1]))
 # Antwort: Die Männer mit Mentor:in hatten im Schnitt knapp über 2 Mentor:innen (2,25) --> Leicht unter der Zahl der Frauen
-
 ```
 ### Vergleich: Männer und Frauen - Constraint
 Zur Einschätzung, wie redundant die Beziehungen in den jew. Teilnetzwerken sind, wird der mittlere constraint-Wert berechnet.
@@ -1541,7 +1505,6 @@ farthest_vertices(jg17_preentry1, directed=FALSE) # Arsedition, Hochschule Darms
 Welche Organisationen waren besonders populär und verbinden viele Talente vor ihrer Aufnahme?
 
 ```{r Jahrgang 2017 - Bis Aufnahme - Indegree-Verteilung}
-
 jg17_ind_auf <- degree(jg17_preentry1, mode="in")
 jg17_ind_auf
 sort(jg17_ind_auf)
@@ -1550,17 +1513,14 @@ sort(jg17_ind_auf)
 Welche #30u30-Mitglieder sind bis zur Aufnahme besonders stark vernetzt?
 
 ```{r Jahrgang 2017 - Bis Aufnahme - Outdegree-Verteilung}
-
 jg17_outd_pe <- degree(jg17_preentry1, mode="out")
 jg17_outd_pe
 sort(jg17_outd_pe)
-
 ```
 
 Clusteranalyse im Netzwerk bis zur Aufnahme
 
 ```{r Jahrgang 2017 - Bis Aufnahme - Clusteranalyse}
-
 jg17_preentry1
 gc_jg17pe <- cluster_walktrap(jg17_preentry1)
 
@@ -1591,7 +1551,6 @@ plot(gc_jg17pe,
      vertex.label.family="sans",
      vertex.label.font=2,
      vertex.label.color="black")
-
 ```
 
 Betweenness-Werte: Wer waren die Broker im Netzwerk des Jahrgangs 0217 bis zum Jahr der Aufnahme? 
@@ -1784,7 +1743,6 @@ plot(gc_jg18,
      edge.curved=.2,
      vertex.size=5,
      vertex.label=NA)
-
 ```
 
 Wie hoch ist die Dichte im Gesamtnetzwerk des Jahrgangs 2018?
@@ -1802,7 +1760,6 @@ mean_distance(jg18_1, directed=FALSE) # 7,009103
 # Durchmesser
 diameter(jg18_1, directed=FALSE) # Längster Pfad: 16 Schritte
 farthest_vertices(jg18_1, directed = FALSE) #Alster Radio und Debattierclub der JGU Mainz (16 Schritte)
-
 ```
 
 Betweenness-Werte im Netzwerk des Jahrgangs 2018: Wer sind die Broker?
@@ -1842,7 +1799,6 @@ plot(jg18_1,
 Nun werden nur die Beziehungen selektiert, die in dem Jahr der Aufnahme bei #30u30 bestanden, um zu betrachten, ob es zu diesem Zeitpunkt Überschneidungen gab.
 
 ```{r Jahrgang 2018 - Aufnahmejahr - Plot}
-
 jg18_aufnahme <- subgraph.edges(jg18, E(jg18)[year == 2018]) # selektiert die Beziehungen aus dem Jahr 2018
 
 jg18_aufnahme
@@ -1911,7 +1867,6 @@ plot(gc_jg18a,
      vertex.label.family="sans",
      vertex.label.font=2,
      vertex.label.color="black")
-
 ```
 ### Jahrgang 2018 - Alle Stationen bis zum Aufnahmejahr
 Zuletzt wird das Netzwerk der Jahrgangsmitglieder betrachtet mit all ihren Verbindungen bis zum Jahr der Aufnahme, um die Überschneidungen bis dahin zu beleuchten.
@@ -1972,10 +1927,8 @@ plot(jg18_preentry1,
 Wie viele Organisationen enthält das Netzwerk bis zum Jahr der Aufnahme?
 
 ```{r Jahrgang 2018 - Bis Aufnahme - Anzahl der Organisationen}
-
 jg18_org_pe <- V(jg18_preentry1)$type == 2
 sum(jg18_org_pe, na.rm=T) # 191 Organisationen
-
 ```
 Wie hoch ist die Dichte im Netzwerk des Jahrgangs 2018 bis zum Jahr der Aufnahme?
 
@@ -2012,7 +1965,6 @@ sort(jg18_outd_pe)
 Aus wie viele Komponenten, Cluster und Communities besteht das Netzwerk des Jahrgangs 2018 bis zum Aufnahmejahr?
 
 ```{r Jahrgang 2018 - Bis Aufnahme - Clusteranalyse}
-
 jg18_preentry1
 gc_jg18pe <- cluster_walktrap(jg18_preentry1)
 
@@ -2169,7 +2121,6 @@ sort(jg19_outd)
 Zur Hervorhebung der zentralen, populären Organisationen, die mehrere Personen verbinden, wird die Knotengröße entsprechend des Indegree-Werts skaliert und so geplottet.
 
 ```{r Jahrgang 2019 - Gesamtnetzwerk - indegree-skaliert}
-
 ind_jg19 <- degree(jg19_3, mode="in")
 
 # Generiert den Plot des Netzwerks des Jahrgangs 2019, die Knoten mit höherem Indegree werden größer dargestellt
@@ -2189,7 +2140,6 @@ plot(jg19_3,
      sub="Alle Verbindungen bis März 2022, 
      Knotengröße entspr. dem Indegree-Wert und mit Faktor 1,2 skaliert",
      asp=0)
-
 ```
 
 Aus wie vielen Komponenten, Clustern, Communities besteht das Netzwerk des Jahrgangs 2019?
@@ -2239,7 +2189,6 @@ plot(gc_jg19,
      edge.curved=.2,
      vertex.size=5,
      vertex.label=NA)
-
 ```
 Wie hoch ist die Dichte im Netzwerk des Jahrgangs 2019?
 
@@ -2252,13 +2201,11 @@ edge_density(jg19_3)*100 # 0,41 %
 Wie lang sind die mittlere Pfaddistanz und der längste Pfad im Netzwerk des Jahrgangs 2019?
 
 ```{r Jahrgang 2019 - Pfaddistanz & Diameter}
-
 mean_distance(jg19_3, directed=FALSE) # 6,431584
 
 diameter(jg19_3, directed=FALSE) # Längster Pfad: 14 Schritte
 
 farthest_vertices(jg19_3, directed = FALSE) # Artist Network & Heidelberg Cement (14 Schritte)
-
 ```
 Betweenness-Werte im Netzwerk des Jahrgangs 2019: Wer sind die Broker?
 
@@ -2298,7 +2245,6 @@ plot(jg19_3,
 Nun werden nur die Beziehungen selektiert, die in dem Jahr der Aufnahme bei #30u30 bestanden, um zu betrachten, ob es zu diesem Zeitpunkt Überschneidungen gab.
 
 ```{r Jahrgang 2019 - Aufnahmejahr - Plot}
-
 jg19_aufnahme <- subgraph.edges(jg19_2, E(jg19_2)[year == 2019]) # selektiert die Beziehungen der Mitglieder aus dem Jahr 2019
 
 jg19_aufnahme
@@ -2336,7 +2282,6 @@ edge_density(jg19_aufnahme1) # 0,008374963 (= 0,84 %)
 Aus wie vielen Komponenten, Clustern, Communities besteht das Netzwerk im Aufnahmejahr?
 
 ```{r Jahrgang 2019 - Aufnahmejahr - Clusteranalyse}
-
 jg19_aufnahme1
 gc_jg19a <- cluster_walktrap(jg19_aufnahme1)
 
@@ -2428,10 +2373,8 @@ plot(jg19_preentry1,
 Wie viele Organisationen sind im Netzwerk des Jahrgangs 2019 bis zum Aufnahmejahr enthalten?
 
 ```{r Jahrgang 2019 - Bis Aufnahme - Anzahl der Organisationen}
-
 jg19_org_pe <- V(jg19_preentry1)$type == 2
 sum(jg19_org_pe, na.rm=T) # 208 Organisationen
-
 ```
 Wie hoch ist die Dichte im Netzwerk des Jahrgangs 2019 bis zum Aufnahmejahr?
 
@@ -2441,7 +2384,6 @@ edge_density(jg19_preentry1) # 0,004396695 (= 0,44 %)
 Wie lang ist die mittlere Pfaddistanz und wie weit sind die entferntesten Knoten voneinander entfernt (im Netzwerk bis zum Aufnahmejahr)?
 
 ```{r Jahrgang 2019 - Bis Aufnahme - Pfaddistanz & Diameter}
-
 # Mittlere Pfaddistanz
 mean_distance(jg19_preentry1, directed = FALSE) # 6,848954
 
@@ -2704,9 +2646,7 @@ mean_distance(jg20_1, directed=FALSE) # 5,48019
 diameter(jg20_1, directed=FALSE) # Längster Pfad: 10 Schritte
 
 farthest_vertices(jg20_1, directed = FALSE) # Hamburger Abendblatt & HS Hannover (10 Schritte)
-
 ```
-
 Betweennness-Werte im Netzwerk des Jahrgangs 2020: Wer sind die Broker?
 
 ```{r Jahrgang 2020 - Betweenness}
@@ -2770,7 +2710,6 @@ plot(jg20_aufnahme1,
      edge.arrow.size=0.0001,
      edge.arrow.color="white",
      asp=0)
-
 ```
 
 Wie hoch war die Dichte im Netzwerk des Jahrgangs 2020 im Jahr der Aufnahme?
@@ -3143,7 +3082,6 @@ diameter(jg21_2, directed=FALSE) # Längster Pfad: 10 Schritte
 
 farthest_vertices(jg21_2, directed = FALSE)
 # 3M & Berufsschule für den Großhandel, Außenhandel und Verkehr (10 Schritte)
-
 ```
 Betweennness-Werte im Netzwerk des Jahrgangs 2021: Wer sind die Broker?
 
@@ -3208,7 +3146,6 @@ plot(jg21_aufnahme1,
      edge.arrow.size=0.0001,
      edge.arrow.color="white",
      asp=0)
-
 ```
 Wie dicht ist das Netzwerk im Jahr der Aufnahme?
 
@@ -3599,7 +3536,6 @@ plot(members_preentry2,
      main="Populäre Organisationen in den #30u30-Jahrgängen 2017 - 2021",
      sub="Verbindungen bis zum jew. Aufnahmejahr,
      Knotengröße entspr. dem Indegree-Wert und mit Faktor 0,4 skaliert")
-
 ```
 
 ### Weitere Berechnungen
@@ -3648,7 +3584,6 @@ plot(gc_mem_pe,
      edge.curved=.2,
      vertex.size=3,
      vertex.label=NA)
-
 ```
 ### Betweenness / Broker zwischen den Jahrgängen
 
@@ -3802,7 +3737,6 @@ plot(cl_work,
      edge.curved=.2,
      vertex.size=3,
      vertex.label=NA)
-
 ```
 
 #### Berechnungen für das Arbeitsnetzwerk bis März 2022
@@ -3833,7 +3767,6 @@ constr_work
 sort(constr_work) # sortieren
 mean(constr_work)
 ```
-
 
 Betweenness-Werte im Arbeitsnetzwerk bis März 2022: Wer sind insgesamt die Broker?
 
@@ -3884,7 +3817,6 @@ Im Folgenden werden Teilnetzwerke der versch. Beschäftigungsarten erstellt (Pra
 
 Erstellt das Netzwerk der Praktikums- bzw. Werkstudiumsbeziehungen (diese werden zusammengefasst, da die Art der Stelle auf einem ähnlichen Level liegt).
 ```{r Teilnetzwerk Praktikumsstellen}
-
 internship <- subgraph.edges(work, E(work)[relationship == " 7"]) # selektiert Kanten aus dem Arbeitsnetzwerk, bei denen es sich um Praktikums-/Werkstudiumsbzgh. handelt
 
 internship <- delete_vertices (internship, V(internship)[degree(internship, mode="all")=="0"]) # löscht isolierte Knoten
@@ -4420,41 +4352,40 @@ Dazu wird ein Teilnetzwerk erstellt, in dem nur Personen und Knoten, bei denne e
 ```{r Journ. Stationen: Teilnetzwerk Medienunternehmen}
 members
 
-workinmedia <- delete.vertices(members, V(members)[(type == 2) & (category !=8)]) # löscht alle Organisationen außer Medienunternehmen
+mediaworker <- delete.vertices(members, V(members)[(type == 2) & (category !=8)]) # löscht alle Organisationen außer Medienunternehmen
 
-workinmedia <- delete.vertices(workinmedia, V(workinmedia)[degree(workinmedia, V(workinmedia), mode = "all")== 0]) # löscht Isolates
+mediaworker <- delete.vertices(mediaworker, V(mediaworker)[degree(mediaworker, V(mediaworker), mode = "all")== 0]) # löscht Isolates
 ```
 
 Die Mitglieder verschiedener Jahrgänge werden unterschiedlich eingefärbt.
 
 ```{r Journ. Stationen: Visualisierungsanpassung - Jahrgänge einfärben}
-V(workinmedia)[V(workinmedia)$type == 1]$shape <- "circle"
-V(workinmedia)[V(workinmedia)$entry == 2017]$color <- "firebrick1"
-V(workinmedia)[V(workinmedia)$entry == 2018]$color <- "firebrick2" 
-V(workinmedia)[V(workinmedia)$entry == 2019]$color <- "firebrick3" 
-V(workinmedia)[V(workinmedia)$entry == 2020]$color <- "firebrick"
-V(workinmedia)[V(workinmedia)$entry == 2021]$color <- "firebrick4" 
+V(mediaworker)[V(mediaworker)$type == 1]$shape <- "circle"
+V(mediaworker)[V(mediaworker)$entry == 2017]$color <- "firebrick1"
+V(mediaworker)[V(mediaworker)$entry == 2018]$color <- "firebrick2" 
+V(mediaworker)[V(mediaworker)$entry == 2019]$color <- "firebrick3" 
+V(mediaworker)[V(mediaworker)$entry == 2020]$color <- "firebrick"
+V(mediaworker)[V(mediaworker)$entry == 2021]$color <- "firebrick4" 
 ```
 
 Je nach Art der Beschäftigung (Praktika / Werkstudium, Volontariat, Freelance oder Festanstellung) werden die Kanten verschieden eingefärbt.
 
 ```{r Journ. Stationen: Visualisierungsanpassung - Edges einfärben}
-E(workinmedia)[E(workinmedia)$relationship == " 7"]$color <- "dodgerblue1"
-E(workinmedia)[E(workinmedia)$relationship == " 8"]$color <- "palegreen3" 
-E(workinmedia)[E(workinmedia)$relationship == " 9"]$color <- "dodgerblue4" 
-E(workinmedia)[E(workinmedia)$relationship == "10"]$color <- "palegreen4"
+E(mediaworker)[E(mediaworker)$relationship == " 7"]$color <- "dodgerblue1"
+E(mediaworker)[E(mediaworker)$relationship == " 8"]$color <- "palegreen3" 
+E(mediaworker)[E(mediaworker)$relationship == " 9"]$color <- "dodgerblue4" 
+E(mediaworker)[E(mediaworker)$relationship == "10"]$color <- "palegreen4"
 ```
 
 Plottet das Netzwerk der #30u30-Mitglieder mit Arbeitsstationen in Medienunternehmen.
 
 ```{r Journ. Stationen: Plot}
-
-E(workinmedia)$width <- 1
+E(mediaworker)$width <- 1
 
 # Generiert den Plot des Teilnetzwerks
-plot(workinmedia,
+plot(mediaworker,
      layout=layout_with_kk,
-     edge.curved=curve_multiple(workinmedia),
+     edge.curved=curve_multiple(mediaworker),
      vertex.frame.color="white",
      edge.curved=.2,
      edge.arrow.size=.00001,
@@ -4472,56 +4403,55 @@ Wie viele Medienunternehmen sind im Netzwerk enthalten und wie viele #30u30-Mitg
 
 ```{r Journ. Stationen: Knotenverteilung im Netzwerk}
 # Wie viele Medienunternehmen sind im Netzwerk enthalten?
-medienunternehmen <- V(workinmedia)$category == 8
+medienunternehmen <- V(mediaworker)$category == 8
 sum(medienunternehmen, na.rm=T) # Ergebnis: 92
 
 # Wie viele #30u30-Mitglieder der Jahrgänge 2017 bis 2021?
-mediaworkers <- V(workinmedia)$type == 1
+mediaworkers <- V(mediaworker)$type == 1
 sum(mediaworkers, na.rm=T) # Ergebnis: 64
 
 # Jahrgangsverteilung: Wie viele aus den einzelnen Jahrgängen haben in Medienunternehmen gearbeitet?
 
-mediaworkers17 <- V(workinmedia)$entry == "2017"
+mediaworkers17 <- V(mediaworker)$entry == "2017"
 sum(mediaworkers17)  # 12 Personen
 
-mediaworkers18 <- V(workinmedia)$entry == "2018"
+mediaworkers18 <- V(mediaworker)$entry == "2018"
 sum(mediaworkers18)  # 15 Personen
 
-mediaworkers19 <- V(workinmedia)$entry == "2019"
+mediaworkers19 <- V(mediaworker)$entry == "2019"
 sum(mediaworkers19)  # 12 Personen
 
-mediaworkers20 <- V(workinmedia)$entry == "2020"
+mediaworkers20 <- V(mediaworker)$entry == "2020"
 sum(mediaworkers20)  # 10 Personen
 
-mediaworkers21 <- V(workinmedia)$entry == "2021"
+mediaworkers21 <- V(mediaworker)$entry == "2021"
 sum(mediaworkers21)  # 15 Personen
 ```
 Welches Anstellungsverhältnis dominiert? Haben die Personen eher Praktika oder Student:innen-Jobs oder eine feste Anstellung ausgeübt?
 
 ```{r Journ. Stationen: Beziehungsarten im Netzwerk}
-E(workinmedia)
-media_intern <- E(workinmedia)[relationship == " 7"] # zählt Kanten, bei denen es sich um Praktika / Studijobs handelt
+E(mediaworker)
+media_intern <- E(mediaworker)[relationship == " 7"] # zählt Kanten, bei denen es sich um Praktika / Studijobs handelt
 sum(media_intern) # 15368
 
-media_volo <- E(workinmedia)[relationship == " 8"]
+media_volo <- E(mediaworker)[relationship == " 8"]
 sum(media_volo) # zählt Kanten, bei denen es sich um Volos handelt; Ergebnis: 1457
 
-media_fulltime <- E(workinmedia)[relationship == " 9"]
+media_fulltime <- E(mediaworker)[relationship == " 9"]
 sum(media_fulltime) # zählt Kanten, bei denen es sich um Festanstellungen handelt; Ergebnis: 4352
 
-media_freelance <- E(workinmedia)[relationship == "10"]
+media_freelance <- E(mediaworker)[relationship == "10"]
 sum(media_freelance) # zählt Kanten, bei denen es sich um Freelancejobs handelt; Ergebnis: 22812
 ```
 
 Der Plot wird erneut mit vereinfachten Kanten generiert.
 
 ```{r Journ. Stationen: Plot mit Kantenvereinfachung}
+mediaworker1 <- simplify(mediaworker, remove.multiple = T) # Kantenvereinfachung
 
-workinmedia1 <- simplify(workinmedia, remove.multiple = T) # Kantenvereinfachung
-
-plot(workinmedia1,
+plot(mediaworker1,
      layout=layout_with_kk,
-     edge.curved=curve_multiple(workinmedia1),
+     edge.curved=curve_multiple(mediaworker1),
      vertex.frame.color="white",
      edge.curved=.2,
      edge.arrow.size=.00001,
@@ -4538,8 +4468,8 @@ plot(workinmedia1,
 Wie viele Komponenten, Cluster und Communities enthält das Teilnetzwerk?
 
 ```{r Journ. Stationen: Cluster-Analyse}
-clusters(workinmedia1)
-cl_media <- cluster_walktrap(workinmedia1)
+clusters(mediaworker1)
+cl_media <- cluster_walktrap(mediaworker1)
   
 membership(cl_media)
 communities(cl_media)
@@ -4550,16 +4480,16 @@ sort(size_cl_media)
 modularity(cl_media) # 0,8657078
 
 # Liste Components auf
-components(workinmedia) # 29 components
+components(mediaworker1) # 29 components
 
 #Visualisierung der Cluster
 plot(cl_media, 
-     workinmedia1, 
+     mediaworker1, 
      edge.arrow.size=0.0001,
      edge.arrow.color="white",
      main="Clusteranalyse der #30u30 der Jahrgänge 2017 - 2021
      mit berufichen Stationen in Medienunternehmen",
-     edge.curved=curve_multiple(workinmedia1),
+     edge.curved=curve_multiple(mediaworker1),
      vertex.frame.color="black",
      edge.color="grey",
      edge.curved=.2,
@@ -4567,12 +4497,11 @@ plot(cl_media,
      vertex.label.family="sans",
      vertex.label.color="black",
      vertex.label.cex=.2)
-
 ```
 Welches ist die größte Komponente im Netzwerk und welche Knoten enthält sie?
 
 ```{r Journ. Stationen: Größte Komponente im Netzwerk - Plot}
-media_comp <- decompose(workinmedia1)
+media_comp <- decompose(mediaworker1)
 media_comp
 # Selektiert die größte Komponente mit insg. 63 Knoten
 media_comp[[2]]
@@ -4622,9 +4551,9 @@ edge_density(media_comp[[2]]) # 0,01587302 = 1,58 %
 mean_distance(media_comp[[2]], directed=F) # 6,173067
 diameter(media_comp[[2]], directed = F) # 16
 # im Vergleich zu Netzwerk aller Medienunternehmen:
-mean_distance(workinmedia1, directed=F) # 5,83497
-diameter(workinmedia1, directed=F) # 16
-edge_density(workinmedia1) # 0,005252275 = 0,52 %
+mean_distance(mediaworker1, directed=F) # 5,83497
+diameter(mediaworker1, directed=F) # 16
+edge_density(mediaworker1) # 0,005252275 = 0,52 %
 
 # Clusteranalyse
 clusters(media_comp[[2]])
@@ -4637,16 +4566,16 @@ modularity(cl_media_comp) # 0.7147503
 ```
 
 ```{r Journ. Stationen: Indegree-Verteilung}
-ind_media <- degree(workinmedia1, mode="in")
+ind_media <- degree(mediaworker1, mode="in")
 sort(ind_media)
 ```
 
 Die populärsten Medienunternehmen werden hervorgehoben, indem die Knotengröße ja nach Indegree-Wert skaliert wird.
 
 ```{r Journ. Stationen: Indegree-skalierter Plot}
-plot(workinmedia1,
+plot(mediaworker1,
      layout=layout_with_kk,
-     edge.curved=curve_multiple(workinmedia1),
+     edge.curved=curve_multiple(mediaworker1),
      vertex.frame.color="white",
      #edge.color="grey",
      edge.curved=.2,
@@ -4665,30 +4594,30 @@ plot(workinmedia1,
 Betweenness-Werte im Netzwerk der Medienunternehmen und dort beschäftigten #30u30-Mitgliedern: Wer sind die Broker?
 
 ```{r Journ. Stationen: Betweenness}
-betweenness(workinmedia1)
-centr_betw(workinmedia1, directed=TRUE)
-betw_media <- betweenness(workinmedia1)
+betweenness(mediaworker1)
+centr_betw(mediaworker1, directed=TRUE)
+betw_media <- betweenness(mediaworker1)
 sort(betw_media, decreasing = T)
 
 # Ausgabe von betweenness()  einer Variablen im Netz zuordnen und die Knoten entsprechend dimensionieren:
-V(workinmedia1)$betweenness <- betweenness(workinmedia1)
+V(mediaworker1)$betweenness <- betweenness(mediaworker1)
 
-plot(workinmedia1, 
+plot(mediaworker1, 
      vertex.label.cex = .6, 
      vertex.label.color = "black", 
-     vertex.size = V(workinmedia1)$betweenness) # Größe angepasst an betweenness
+     vertex.size = V(mediaworker1)$betweenness) # Größe angepasst an betweenness
 
 # Da die  Betweenness-Zentralität sehr groß sein kann, wird sie im folgenden normalisiert, indem man sie durch das Maximum teilt und mit einem Skalar multipliziert, bevor man sie plottet. So erkennen wir die Broker besser.
-plot(workinmedia1,
+plot(mediaworker1,
      layout=layout_with_kk,
-     edge.curved=curve_multiple(workinmedia1),
+     edge.curved=curve_multiple(mediaworker1),
      vertex.label.cex = .15, 
      vertex.label.color = "black", 
      vertex.label.family="sans",
      edge.arrow.size=.00001,
      edge.arrow.color="white",
      asp=0,
-     vertex.size = V(workinmedia1)$betweenness/max(V(workinmedia1)$betweenness) * 5,
+     vertex.size = V(mediaworker1)$betweenness/max(V(mediaworker1)$betweenness) * 5,
      main="Broker im Netzwerk der Medienunternehmen 
      und dort beschäftigten #30u30 der Jahrgänge 2017 - 2021",
      sub="Knotengröße entspr. Betweenness-Wert und mit Faktor 5 skaliert")
@@ -4701,17 +4630,17 @@ Im Folgenden wird die Verteilung der verschiedenen Beschäftigungsarten betracht
 
 1. Praktikums- und Werkstudiumsstellen
 ```{r Journ. Stationen: Praktika/Werkstudiums-Jobs}
-workinmedia
-workinmedia_intern <- delete.edges(workinmedia, E(workinmedia)[relationship != " 7"]) # selektiert nur die Praktikums-/Werkstudiumsstellen
+mediaworker
+media_intern <- delete.edges(mediaworker, E(mediaworker)[relationship != " 7"]) # selektiert nur die Praktikums-/Werkstudiumsstellen
 
-workinmedia_intern1 <- delete.vertices(workinmedia_intern, V(workinmedia_intern)[degree(workinmedia_intern, V(workinmedia_intern), mode="all")==0]) # löscht Isolates
+media_intern1 <- delete.vertices(media_intern, V(media_intern)[degree(media_intern, V(media_intern), mode="all")==0]) # löscht Isolates
 
-workinmedia_intern1
+media_intern1
 
 # Generiert einen Plot
-plot(workinmedia_intern1,
+plot(media_intern1,
      layout=layout_with_kk,
-     edge.curved=curve_multiple(workinmedia_intern1),
+     edge.curved=curve_multiple(media_intern1),
      vertex.frame.color="white",
      #edge.color="grey",
      edge.curved=.2,
@@ -4726,29 +4655,29 @@ plot(workinmedia_intern1,
      der #30u30-Mitglieder der Jahrgänge 2017 bis 2021")
 
 # Löscht mehrfache Kanten
-workinmedia_intern2 <- simplify(workinmedia_intern1, remove.multiple = TRUE)
+media_intern2 <- simplify(media_intern1, remove.multiple = TRUE)
 
 # Zählt die Anzahl der verschiedenen Knotentypen im Teilnetzwerk: Wie viele Personen sind im Praktikums-/Werkstudiumsnetzwerk enthalten?
-mediainterns <- V(workinmedia_intern2)$type == 1
+mediainterns <- V(media_intern2)$type == 1
 sum(mediainterns) # 48 Praktis / Werkstudis
 
 # Wie viele Organisationen / Unternehmen?
-mediainterns_org <- V(workinmedia_intern2)$type == 2
+mediainterns_org <- V(media_intern2)$type == 2
 sum(mediainterns_org)  # 57 Org.
 ```
 2. Freiberufliche Tätigkeiten 
 ```{r Journ. Stationen: Freelance-Jobs}
-workinmedia
-workinmedia_freelance <- delete.edges(workinmedia, E(workinmedia)[relationship != "10"]) # selektiert nur die Beziehungen, bei denen es sich um freiberufl. Tätigkeiten handelt
+mediaworker
+media_freelancer <- delete.edges(mediaworker, E(mediaworker)[relationship != "10"]) # selektiert nur die Beziehungen, bei denen es sich um freiberufl. Tätigkeiten handelt
 
-workinmedia_freelance <- delete.vertices(workinmedia_freelance, V(workinmedia_freelance)[degree(workinmedia_freelance, V(workinmedia_freelance), mode="all")==0]) # löscht isolierte Knoten
+media_freelancer <- delete.vertices(media_freelancer, V(media_freelancer)[degree(media_freelancer, V(media_freelancer), mode="all")==0]) # löscht isolierte Knoten
 
-workinmedia_freelance
+media_freelancer
 
 # Generiert den Plot des Teilnetzwerks
-plot(workinmedia_freelance,
+plot(media_freelancer,
      layout=layout_with_kk,
-     edge.curved=curve_multiple(workinmedia_freelance),
+     edge.curved=curve_multiple(media_freelancer),
      vertex.frame.color="white",
      #edge.color="grey",
      edge.curved=.2,
@@ -4763,31 +4692,30 @@ plot(workinmedia_freelance,
      der #30u30-Mitglieder der Jahrgänge 2017 bis 2021")
 
 # Löscht multiple Kanten
-workinmedia_freelance1 <- simplify(workinmedia_freelance, remove.multiple = TRUE)
+media_freelancer1 <- simplify(media_freelancer, remove.multiple = TRUE)
 
 # Berechnung der Anzahl der einzelnen Knotentypen
 # Wie viele Medien-Freelancer im Netzwerk?
-mediafreelancer <- V(workinmedia_freelance1)$type == 1
+mediafreelancer <- V(media_freelancer1)$type == 1
 sum(mediafreelancer)   # 28 Freelancer
 
 # Wie viele Organisationen, bei denen diese beschäftigt waren?
-mediafreelancer_org <- V(workinmedia_freelance1)$type == 2
+mediafreelancer_org <- V(media_freelancer1)$type == 2
 sum(mediafreelancer_org)  # 33 Org.
 ```
 
 3. Volontariate
 ```{r Journ. Stationen: Volontariate}
-workinmedia
-workinmedia_volo <- delete.edges(workinmedia, E(workinmedia)[relationship != " 8"]) # Löscht alle Kanten, bei denen es sich nicht um Volontariats-Kanten handelt
+mediaworker
+media_volo <- delete.edges(mediaworker, E(mediaworker)[relationship != " 8"]) # Löscht alle Kanten, bei denen es sich nicht um Volontariats-Kanten handelt
 
-workinmedia_volo <- delete.vertices(workinmedia_volo, V(workinmedia_volo)[degree(workinmedia_volo, V(workinmedia_volo), mode="all")==0]) # Löscht isolierte Knoten
-
-workinmedia_volo
+media_volo <- delete.vertices(media_volo, V(media_volo)[degree(media_volo, V(media_volo), mode="all")==0]) # Löscht isolierte Knoten
+media_volo
 
 # Generiert den Plot des Teilnetzwerks
-plot(workinmedia_volo,
+plot(media_volo,
      layout=layout_with_kk,
-     edge.curved=curve_multiple(workinmedia_volo),
+     edge.curved=curve_multiple(media_volo),
      vertex.frame.color="white",
      #edge.color="grey",
      edge.curved=.2,
@@ -4802,30 +4730,29 @@ plot(workinmedia_volo,
      der #30u30-Mitglieder der Jahrgänge 2017 bis 2021")
 
 # Löscht multiple Kanten
-workinmedia_volo1 <- simplify(workinmedia_volo, remove.multiple = TRUE)
+media_volo1 <- simplify(media_volo, remove.multiple = TRUE)
 
 # Zählt Anzahl der einzelnen Knotentypen
 # Wie viele Personen haben ein Volontariat absolviert?
-mediavolo <- V(workinmedia_volo1)$type == 1
+mediavolo <- V(media_volo1)$type == 1
 sum(mediavolo)  # 4 Volos
 
 # Bei wie vielen Organisationen wurden Volontariate absolviert?
-mediavolo_org <- V(workinmedia_volo1)$type == 2
+mediavolo_org <- V(media_volo1)$type == 2
 sum(mediavolo_org)  # 4 Org.
 ```
 4. Festanstellungen
 ```{r Journ. Stationen: Festangestellte}
-workinmedia
-workinmedia_fulltime <- delete.edges(workinmedia, E(workinmedia)[relationship != " 9"]) # Löscht alle Knoten, bei denen es sich nicht um Vollzeit-Beschäftigungen bzw. Festanstellungen handelt
+mediaworker
+media_fulltime <- delete.edges(mediaworker, E(mediaworker)[relationship != " 9"]) # Löscht alle Knoten, bei denen es sich nicht um Vollzeit-Beschäftigungen bzw. Festanstellungen handelt
 
-workinmedia_fulltime <- delete.vertices(workinmedia_fulltime, V(workinmedia_fulltime)[degree(workinmedia_fulltime, V(workinmedia_fulltime), mode="all")==0]) # löscht isolierte Knoten
-
-workinmedia_fulltime
+media_fulltime <- delete.vertices(media_fulltime, V(media_fulltime)[degree(media_fulltime, V(media_fulltime), mode="all")==0]) # löscht isolierte Knoten
+media_fulltime
 
 # Generiert den Plot des Teilnetzwerks
-plot(workinmedia_fulltime,
+plot(media_fulltime,
      layout=layout_with_kk,
-     edge.curved=curve_multiple(workinmedia_fulltime),
+     edge.curved=curve_multiple(media_fulltime),
      vertex.frame.color="white",
      edge.curved=.2,
      edge.arrow.size=.00001,
@@ -4838,12 +4765,12 @@ plot(workinmedia_fulltime,
      main="Festanstellungen in Medienunternehmen
      der #30u30-Mitglieder der Jahrgänge 2017 bis 2021")
 
-workinmedia_fulltime1 <- simplify(workinmedia_fulltime, remove.multiple = TRUE)
+media_fulltime1 <- simplify(media_fulltime, remove.multiple = TRUE)
 
-mediafulltimer <- V(workinmedia_fulltime1)$type == 1
+mediafulltimer <- V(media_fulltime1)$type == 1
 sum(mediafulltimer)  # 8 Festangestellte
 
-mediafulltimer_org <- V(workinmedia_fulltime1)$type == 2
+mediafulltimer_org <- V(media_fulltime1)$type == 2
 sum(mediafulltimer_org) # 10 Org.
 ```
 
@@ -4855,273 +4782,257 @@ Hierzu werden die die einzelnen Jahre, von 2006 bis 2022, einzelnen betrachtet u
 
 1. 2006
 ```{r Journ. Stationen: 2006}
-workinmedia
+mediaworker
 
-workinmedia_2006 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2006"]) # selektiert Beziehungen des Jahres 2006
+mediaworker_2006 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2006"]) # selektiert Beziehungen des Jahres 2006
 
-workinmedia_06 <- simplify(workinmedia_2006, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_06 <- simplify(mediaworker_2006, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Zählt die Anzahl der verschiedenen Knotentypen
-mediaworkers06 <- V(workinmedia_06)$type == 1
+mediaworkers06 <- V(mediaworker_06)$type == 1
 sum(mediaworkers06)  # 1 Person
 
-mediaworkers06_org <- V(workinmedia_2006)$type == 2
+mediaworkers06_org <- V(mediaworker_2006)$type == 2
 sum(mediaworkers06_org)# 1 Org.
 ```
 
 2. 2007
 ```{r Journ. Stationen: 2007}
+mediaworker
 
-workinmedia
+mediaworker_2007 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2007"]) # selektiert Beziehungen aus dem Jahr 2007
 
-workinmedia_2007 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2007"]) # selektiert Beziehungen aus dem Jahr 2007
+mediaworker_07 <- simplify(mediaworker_2007, remove.multiple = TRUE) # Kantenvereinfachung
 
-workinmedia_07 <- simplify(workinmedia_2007, remove.multiple = TRUE)
-
-mediaworkers07 <- V(workinmedia_07)$type == 1
+mediaworkers07 <- V(mediaworker_07)$type == 1
 sum(mediaworkers07)  # 0 Personen
 
-mediaworkers07_org <- V(workinmedia_2007)$type == 2
+mediaworkers07_org <- V(mediaworker_07)$type == 2
 sum(mediaworkers07_org)  # 0 Organisationen
 ```
 
 3. 2008
 ```{r Journ. Stationen: 2008}
-workinmedia
-workinmedia_2008 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2008"]) # selektiert Beziehungen aus dem Jahr 2008
+mediaworker
+mediaworker_2008 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2008"]) # selektiert Beziehungen aus dem Jahr 2008
 
-workinmedia_08 <- simplify(workinmedia_2008, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_08 <- simplify(mediaworker_2008, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen:
-mediaworkers08 <- V(workinmedia_08)$type == 1
+mediaworkers08 <- V(mediaworker_08)$type == 1
 sum(mediaworkers08)  # 4 Personen
 
-mediaworkers08_org <- V(workinmedia_2008)$type == 2
+mediaworkers08_org <- V(mediaworker_2008)$type == 2
 sum(mediaworkers08_org)  # 4 Organisationen
 ```
 
 4. 2009
 ```{r Journ. Stationen: 2009}
-workinmedia
-workinmedia_2009 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2009"]) # Selektiert Beziehungen im Jahr 2009
+mediaworker
+mediaworker_2009 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2009"]) # Selektiert Beziehungen im Jahr 2009
 
-workinmedia_09 <- simplify(workinmedia_2009, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_09 <- simplify(mediaworker_2009, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen:
-mediaworkers09 <- V(workinmedia_09)$type == 1
+mediaworkers09 <- V(mediaworker_09)$type == 1
 sum(mediaworkers09) # 11 Personen
 
-mediaworkers09_org <- V(workinmedia_2009)$type == 2
+mediaworkers09_org <- V(mediaworker_09)$type == 2
 sum(mediaworkers09_org) # 13 Org.
 ```
 
 5. 2010
 ```{r Journ. Stationen: 2010}
-workinmedia
-workinmedia_2010 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2010"]) # selektiert Beziehungen aus dem Jahr 2010
+mediaworker
+mediaworker_2010 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2010"]) # selektiert Beziehungen aus dem Jahr 2010
 
-workinmedia_10 <- simplify(workinmedia_2010, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_10 <- simplify(mediaworker_2010, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers10 <- V(workinmedia_10)$type == 1
+mediaworkers10 <- V(mediaworker_10)$type == 1
 sum(mediaworkers10)  # 18 Personen
 
-mediaworkers10_org <- V(workinmedia_2010)$type == 2
+mediaworkers10_org <- V(mediaworker_10)$type == 2
 sum(mediaworkers10_org)  # 21 Org.
 ```
 
 6. 2011
 ```{r Journ. Stationen: 2011}
-workinmedia
-workinmedia_2011 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2011"]) # selektiert Beziehungen aus dem Jahr 2011
+mediaworker
+mediaworker_2011 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2011"]) # selektiert Beziehungen aus dem Jahr 2011
 
-workinmedia_11 <- simplify(workinmedia_2011, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_11 <- simplify(mediaworker_2011, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers11 <- V(workinmedia_11)$type == 1
+mediaworkers11 <- V(mediaworker_11)$type == 1
 sum(mediaworkers11) # 18 Personen
 
-mediaworkers11_org <- V(workinmedia_2011)$type == 2
+mediaworkers11_org <- V(mediaworker_11)$type == 2
 sum(mediaworkers11_org) # 20 Org.
 ```
 
 7. 2011
 ```{r Journ. Stationen: 2012}
-workinmedia
-workinmedia_2012 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2012"]) # selektiert Beziehungen aus dem Jahr 2012
+mediaworker
+mediaworker_2012 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2012"]) # selektiert Beziehungen aus dem Jahr 2012
 
-workinmedia_12 <- simplify(workinmedia_2012, remove.multiple = TRUE) # Kantenvereinfachung
+mediaworker_12 <- simplify(mediaworker_2012, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers12 <- V(workinmedia_12)$type == 1
+mediaworkers12 <- V(mediaworker_12)$type == 1
 sum(mediaworkers12) # 24 Personen
 
-mediaworkers12_org <- V(workinmedia_2012)$type == 2
+mediaworkers12_org <- V(mediaworker_12)$type == 2
 sum(mediaworkers12_org) # 25 Org.
 ```
 
 8. 2013
 ```{r Journ. Stationen: 2013}
-workinmedia
-workinmedia_2013 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2013"]) # selektiert Beziehungen aus dem Jahr 2013
+mediaworker
+mediaworker_2013 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2013"]) # selektiert Beziehungen aus dem Jahr 2013
 
-workinmedia_13 <- simplify(workinmedia_2013, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_13 <- simplify(mediaworker_2013, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers13 <- V(workinmedia_13)$type == 1
+mediaworkers13 <- V(mediaworker_13)$type == 1
 sum(mediaworkers13) # 28 Personen
 
-mediaworkers13_org <- V(workinmedia_2013)$type == 2
+mediaworkers13_org <- V(mediaworker_13)$type == 2
 sum(mediaworkers13_org) # 34 Org.
 ```
 
 10. 2014
 ```{r Journ. Stationen: 2014}
-workinmedia
-workinmedia_2014 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2014"]) # Selektiert Beziehungen aus dem Jahr 2014
+mediaworker
+mediaworker_2014 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2014"]) # Selektiert Beziehungen aus dem Jahr 2014
 
-workinmedia_14 <- simplify(workinmedia_2014, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_14 <- simplify(mediaworker_2014, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers14 <- V(workinmedia_14)$type == 1
+mediaworkers14 <- V(mediaworker_14)$type == 1
 sum(mediaworkers14) # 29 Personen
 
-mediaworkers14_org <- V(workinmedia_2014)$type == 2
+mediaworkers14_org <- V(mediaworker_14)$type == 2
 sum(mediaworkers14_org) # 35 Org.
 ```
 
 11. 2015
 ```{r Journ. Stationen: 2015}
-workinmedia
-workinmedia_2015 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2015"]) # selektiert Beziehungen aus dem Jahr 2015
+mediaworker
+mediaworker_2015 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2015"]) # selektiert Beziehungen aus dem Jahr 2015
 
-workinmedia_15 <- simplify(workinmedia_2015, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_15 <- simplify(mediaworker_2015, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers15 <- V(workinmedia_15)$type == 1
+mediaworkers15 <- V(mediaworker_15)$type == 1
 sum(mediaworkers15)  # 27 Personen
 
-mediaworkers15_org <- V(workinmedia_2015)$type == 2
+mediaworkers15_org <- V(mediaworker_15)$type == 2
 sum(mediaworkers15_org)  # 31 Org.
 ```
 
 12. 2016
 ```{r Journ. Stationen: 2016}
-workinmedia
-workinmedia_2016 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2016"]) # selektiert Beziehungen aus dem Jahr 2016
+mediaworker
+mediaworker_2016 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2016"]) # selektiert Beziehungen aus dem Jahr 2016
 
-workinmedia_16 <- simplify(workinmedia_2016, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_16 <- simplify(mediaworker_2016, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers16 <- V(workinmedia_16)$type == 1
+mediaworkers16 <- V(mediaworker_16)$type == 1
 sum(mediaworkers16)  # 17 Personen
 
-mediaworkers16_org <- V(workinmedia_2016)$type == 2
+mediaworkers16_org <- V(mediaworker_16)$type == 2
 sum(mediaworkers16_org) # 21 Org.
 ```
 
 13. 2017
 ```{r Journ. Stationen: 2017}
-workinmedia
-workinmedia_2017 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2017"]) # Selektiert Beziehungen aus dem Jahr 2017
+mediaworker
+mediaworker_2017 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2017"]) # Selektiert Beziehungen aus dem Jahr 2017
 
-workinmedia_17 <- simplify(workinmedia_2017, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_17 <- simplify(mediaworker_2017, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers17 <- V(workinmedia_17)$type == 1
+mediaworkers17 <- V(mediaworker_17)$type == 1
 sum(mediaworkers17) # 15 Personen
 
-mediaworkers17_org <- V(workinmedia_2017)$type == 2
+mediaworkers17_org <- V(mediaworker_17)$type == 2
 sum(mediaworkers17_org) # 17 Org.
 ```
 
 14. 2018
 ```{r Journ. Stationen: 2018}
-workinmedia
-workinmedia_2018 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2018"]) # selektiert Beziehungen aus dem Jahr 2018
+mediaworker
+mediaworker_2018 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2018"]) # selektiert Beziehungen aus dem Jahr 2018
 
-workinmedia_18 <- simplify(workinmedia_2018, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_18 <- simplify(mediaworker_2018, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers18 <- V(workinmedia_18)$type == 1
+mediaworkers18 <- V(mediaworker_18)$type == 1
 sum(mediaworkers18) # 15 Personen
 
-mediaworkers18_org <- V(workinmedia_2018)$type == 2
+mediaworkers18_org <- V(mediaworker_18)$type == 2
 sum(mediaworkers18_org) # 14 Org.
 ```
 
 15. 2019
 ```{r Journ. Stationen: 2019}
-workinmedia
-workinmedia_2019 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2019"]) # Selektiert Beziehungen aus dem Jahr 2019
+mediaworker
+mediaworker_2019 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2019"]) # Selektiert Beziehungen aus dem Jahr 2019
 
-workinmedia_19 <- simplify(workinmedia_2019, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_19 <- simplify(mediaworker_2019, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers19 <- V(workinmedia_19)$type == 1
+mediaworkers19 <- V(mediaworker_19)$type == 1
 sum(mediaworkers19) # 11 Personen
 
-mediaworkers19_org <- V(workinmedia_2019)$type == 2
+mediaworkers19_org <- V(mediaworker_19)$type == 2
 sum(mediaworkers19_org) # 10 Org.
 ```
 
 16. 2020
 ```{r Journ. Stationen: 2020}
-workinmedia
-workinmedia_2020 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2020"]) # selektiert Beziehungen aus dem Jahr 2020
+mediaworker
+mediaworker_2020 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2020"]) # selektiert Beziehungen aus dem Jahr 2020
 
-workinmedia_20 <- simplify(workinmedia_2020, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_20 <- simplify(mediaworker_2020, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen:
-mediaworkers20 <- V(workinmedia_20)$type == 1
+mediaworkers20 <- V(mediaworker_20)$type == 1
 sum(mediaworkers20) # 7 Personen
 
-mediaworkers20_org <- V(workinmedia_2020)$type == 2
+mediaworkers20_org <- V(mediaworker_20)$type == 2
 sum(mediaworkers20_org) # 6 Org.
 ```
 
 17. 2021
 ```{r Journ. Stationen: 2021}
-workinmedia
-workinmedia_2021 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2021"]) # selektiert Beziehungen aus dem Jahr 2021
+mediaworker
+mediaworker_2021 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2021"]) # selektiert Beziehungen aus dem Jahr 2021
 
-workinmedia_21 <- simplify(workinmedia_2021, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_21 <- simplify(mediaworker_2021, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers21 <- V(workinmedia_21)$type == 1
+mediaworkers21 <- V(mediaworker_21)$type == 1
 sum(mediaworkers21) # 6 Personen
 
-mediaworkers21_org <- V(workinmedia_21)$type == 2
+mediaworkers21_org <- V(mediaworker_21)$type == 2
 sum(mediaworkers21_org) # 7 Org.
 ```
 
 18. 2022
 ```{r Journ. Stationen: 2022}
-workinmedia
-workinmedia_2022 <- subgraph.edges(workinmedia, E(workinmedia)[year == "2022"]) # selektiert Beziehungen aus dem Jahr 2018
+mediaworker
+mediaworker_2022 <- subgraph.edges(mediaworker, E(mediaworker)[year == "2022"]) # selektiert Beziehungen aus dem Jahr 2018
 
-workinmedia_22 <- simplify(workinmedia_2022, remove.multiple = TRUE)
-# Kantenvereinfachung
+mediaworker_22 <- simplify(mediaworker_2022, remove.multiple = TRUE) # Kantenvereinfachung
 
 # Anzahl der Knotentypen
-mediaworkers22 <- V(workinmedia_22)$type == 1
+mediaworkers22 <- V(mediaworker_22)$type == 1
 sum(mediaworkers22) # 5 Personen
 
-mediaworkers22_org <- V(workinmedia_22)$type == 2
+mediaworkers22_org <- V(mediaworker_22)$type == 2
 sum(mediaworkers22_org) # 6 Org.
 ```
 
@@ -5172,7 +5083,6 @@ sum(jg18_pe_spon, na.rm=T) # 4 Sponsoren
 b) Wie viele Sponsoren sind im Arbeitsnetzwerk der Mitglieder des Jahrgangs 2018 bis heute enthalten?
 
 ```{r Sponsoren - Jahrgang 2018 - Gesamt}
-
 jg18_1
 
 jg18_spon <- V(jg18_1)$sponsor == 1
@@ -5869,10 +5779,8 @@ study19_ma1 <- simplify(study19_ma, remove.multiple = T) # Kantenvereinfachung
 Bei welchen Hochschulen haben besonders viele Personen des Jahrgangs im Master studiert?
 
 ```{r Studiumsnetzwerk - Jahrgang 2019 - Master - Indegree-Verteilung}
-
 ind_ma19 <- degree(study19_ma1, mode="in")
 sort(ind_ma19, decreasing = T)
-
 ```
 
 Erstellt den Plot der Beziehungen zwischen den Jahrgangsmitgliedern und Master-Hochschulen:
@@ -6307,7 +6215,6 @@ Abschließend werden verschiedene Berechnungen zu den drei populärsten Universi
 Die Mehrheit der 150 Personen in den #30u30-Jahrgängen 2017 bis 2021 hat studiert, nur vier Personen sind mit Ausbildung oder Abitur in den Job gestartet. Was unterscheidet sie von den akademisierten Mitgliedern?
 
 ```{r Teilnetzwerk der Mitglieder ohne Studiumsabschluss}
-
 members
 nonacademic <- delete.vertices(members, V(members)[(type == 1) & (education > 3)]) # löscht alle #30u30-Mitglieder mit mind. BA-Abschluss
 
@@ -6347,14 +6254,12 @@ outd_nonacad # 1,2,4,8
 
 # Durchschnittliche Anzahl an Verbindungen
 (1+2+4+8)/4 # Ergebnis: Im Durchschnitt hat jede Person ohne akadem. Abschluss  3,75 Verbindungen
-
 ```
 
 Berechne den mittleren Constraint-Wert im Teilnetzwerk der nicht-akad. Mitglieder
 ```{r Mitglieder ohne Studienabschluss: constraint}
 constr_nonacad <- constraint(nonacademics, V(nonacademics)[type == 1])
 mean(constr_nonacad)
-
 ```
 
 
@@ -6431,7 +6336,6 @@ sum(teachers_bs, na.rm=T)
 teachers_wb <- V(teachers)$ownership == "6"
 sum(teachers_wb, na.rm=T)
 # 0 Weiterbildungsakademien
-
 ```
 Wie viele Personen haben / hatten in den jew. Jahrgängen einen Lehrauftrag?
 ```{r Teilnetzwerk Dozent:innen: Anzahl in jew. Jahrgängen}
@@ -6466,7 +6370,6 @@ Wer hat mehrere Lehraufträge?
 ```{r Teilnetzwerk Dozent:innen: Outdegree-Verteilung}
 outd_teacher <- degree(teachers1, mode="out")
 sort(outd_teacher, decreasing = T)
-
 ```
 
 Generiert den Plot
@@ -6693,12 +6596,10 @@ V(initiative_preentry2)[V(initiative_preentry2)$entry == 2018]$color <- "firebri
 V(initiative_preentry2)[V(initiative_preentry2)$entry == 2019]$color <- "firebrick3" # JG 19 wird dunkelorange
 V(initiative_preentry2)[V(initiative_preentry2)$entry == 2020]$color <- "firebrick" # JG 20 wird rot
 V(initiative_preentry2)[V(initiative_preentry2)$entry == 2021]$color <- "firebrick4" # JG 21 wird dunkelrot
-
 ```
 
 Löschen der Knoten ohne Verbindungen und die keine PR-Initiativen sind.
 ```{r Mitgliedschaft in Initiativen - Bis Aufnahme - Löschen unpassender Nodes}
-
 # Isolates löschen
 initiative_preentry2 <- delete_vertices (initiative_preentry2, V(initiative_preentry2)[degree(initiative_preentry2, mode="all")=="0"]) 
 
@@ -6715,7 +6616,6 @@ initiative_preentry2 <- simplify(initiative_preentry2, remove.multiple = TRUE,ed
 
 # Isolates löschen
 initiative_preentry2 <- delete_vertices (initiative_preentry2, V(initiative_preentry2)[degree(initiative_preentry2, mode="all")=="0"]) 
-
 ```
 
 Generiert den Plot der Initiativen-Mitglieder:
@@ -6736,7 +6636,6 @@ plot(initiative_preentry2,
 Zählt wie viele der jew. Knotentypen im Netzwerk enthalten sind: Wie viele Personen und wie viele Vereine o. ä. ?
 
 ```{r Mitgliedschaft in Initiativen - Bis Aufnahme - Anzahl der Knotentypen}
-
 # Wie viele Verbände und Vereine sind im Netzwerk enthalten?
 vereine_bisaufnahme <- V(initiative_preentry2)$category == 6
 sum(vereine_bisaufnahme, na.rm=T)
@@ -6754,7 +6653,6 @@ sum(vereine_bisaufn_mem, na.rm=T)
 Art des Engagements: Wie viele Kanten stellen eine leitende Funktion, wie viele eine reine Mitgliedschaft dar? 
 
 ```{r Mitgliedschaft in Initiativen - Bis Aufnahme - Art des Engagements}
-
 # Bei wie vielen Edges handelt es sich um eine leitende Funktion?
 verein_bisaufn_leadership <- E(initiative_preentry1)$relationship == 13
 sum(verein_bisaufn_leadership, na.rm=T) # 55
@@ -6972,15 +6870,15 @@ plot(gc_schol,
      vertex.label.family="sans",
      vertex.label.font=2,
      vertex.label.color="black")
-
 ```
+
+Aus wie vielen Komponenten besteht das Stipendiat:innen-Netzwerk?
 ```{r Komponenten im Stipendiat:innen-Netzwerk}
 components(scholarship1)
 # 16 Komponenten, $csize [1] 24  3  2  2  2  3  3  2  2  2  3  2  2  2  5  2
 ```
 
 Um wie viele und welche Art von Organisation handelt es sich bei den Stipendiengebern?
-
 ```{r Teilnetzwerk Stipendium: Anzahl & Zusammensetzung der Stipendiengeber}
 stipendiumsgeber <- V(scholarship1)$type == 2
 sum(stipendiumsgeber, na.rm=T) # Zählt, wie viele Förderungsinstitutionen das Netzwerk enthält - insg. 26
@@ -7498,4 +7396,3 @@ plot(goetter[[1]],
      sub="nur direkte Beziehungen des ersten Grads",
      asp=0)
 ```
-
