@@ -136,7 +136,7 @@ Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein 
 
 # Codiervorgaben
 
-## Codiert wird
+## Erfasst werden folgende Informationen:
 - Person hat an einer Hochschule studiert – auch nur für ein Auslandssemester oder an einer Institution eine Weiterbildung absolviert.
 - Person hat bei einer Organisation gearbeitet (differenziert wird hier nur nach Praktikum/Werkstudium und Festanstellung, nicht nach weiteren Karrierelevels)
 - Person war / ist Mitglied in einer studentischen PR-Initiative oder einem PR-Branchenverband, entweder als einfaches Mitglied oder in leitender Funktion.
@@ -144,7 +144,7 @@ Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein 
 - Person wurde im Laufe der Karriere von Mentor*innen betreut
 - Bei Mentor:innen: Nur der Arbeitsplatz zur Zeit der Mentoring-Beziehung, der Ausbildungsweg, sowie leitende Positionen in Branchenverbänden, z. B. im DPRG-Vorstand
 
-## Codiert wird nicht
+## Nicht erfasst wird:
 - Soziales / freiwilliges Engagement über Mitgliedschaft in PR-Initiativen hinaus (bspw. Engagement in der Flüchtlingshilfe, freiwilliger Feuerwehr usw.)
 - Nebenberufliche / Hobbymäßige Tätigkeiten von Personen, bspw. das Betreiben eines privaten Blogs oder eines Podcast, da daraus mit hoher Wahrscheinlichkeit keine Links zu anderen Personen entstehen. Dies gilt nicht, wenn Personen ein Unternehmen gegründet haben, in dem sie (und ggf. Mitarbeitende) beschäftigt sind.
 - Person wird mit einem (branchenrelevanten) Preis – z. B. dem PR Report Award o. ä. –
