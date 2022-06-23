@@ -1,11 +1,11 @@
 # Über das Projekt
 Im Rahmen meiner Bachelorarbeit untersuche ich das Netzwerk der #30u30-Jahrgänge 2017 bis 2021 auf Gemeinsamkeiten, Unterschiede und Überschneidungen 
 in den Lebensläufen der 150 Personen. #30u30 ist eine Nachwuchsinitiative, bei der jedes Jahr 30 aufstrebende Talente der Kommunikationsbranche aus mehreren
-hundert Nominierungen ausgewählt werden. Da die Auswahl von einer Zwei-Mann-Redaktion bestehend aus Initiator Nico Kunkel und *PR Report*-Chefredakteur Nico Kunkel
+hundert Nominierungen ausgewählt werden. \
+Da die Auswahl von einer Zwei-Mann-Redaktion bestehend aus Initiator Nico Kunkel und *PR Report*-Chefredakteur Nico Kunkel
 getroffen wird, soll diese in dieser Arbeit überprüft werden, ob bestimmte Auswahlkriterien herausstechen.
 
-Generelles Forschungsinteresse ist es zu beleuchten, wie homo- oder heterogen das Netzwerk ist, ob bestimmte Hochschulen oder Organisationen besonders häufig auftauchen
-und inwiefern die Mitglieder ein Spiegel der Kommunikationsbranche insgesamt sind.
+Generelles Forschungsinteresse ist es zu beleuchten, wie homo- oder heterogen das Netzwerk ist, ob bestimmte Hochschulen oder Organisationen besonders häufig auftauchen und inwiefern die Mitglieder ein Spiegel der Kommunikationsbranche insgesamt sind.
 
 # About the project
 As part of my bachelor's thesis, I am examining the network of #30u30 cohorts 2017 to 2021 for similarities, differences, and overlaps 
