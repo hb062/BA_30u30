@@ -105,7 +105,7 @@ Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein 
 1 = Gewinner:in des "Young Professional des Jahres"-Awards \
 2 = Nein
 
-# Node-Attribute, die sich auf Knoten des Typs 2 (Organisationen) beziehen \
+# Node-Attribute, die sich auf Knoten des Typs 2 (Organisationen) beziehen
 - category: Definiert näher, um welche Art der Organisation es sich handelt.\
 1 = Unternehmen \
 2 = Agentur / Beratungsunternehmen \
