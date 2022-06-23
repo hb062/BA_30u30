@@ -59,7 +59,7 @@ Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein 
 1 = natürliche Person \
 2 = Organisation (Unternehmen, Agentur, NGO, Partei, Universität etc.) - Organisationstyp wird näher definiert durch Node-Attribut "category" (s. u.)
 
-# Node-Attribute, die sich auf Knoten des Typs 1 (natürliche Personen) beziehen.
+# Node-Attribute, die sich auf Knotentyp 1 (natürliche Personen) beziehen
 
 - entry: Definiert das Jahr, in dem die jeweiligen Personen in das #30u30-Netzwerk aufgenommen wurden. Bei dem Wert handelt es sich um eine Jahreszahl.
 
