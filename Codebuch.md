@@ -1,6 +1,6 @@
 # Datensatz zur Netzwerkanalyse von #30u30
 ## Codebuch 
-Stand 19.06.2022
+Stand 23.06.2022 \
 erstellt von Hannah Bauer (hb062@hdm-stuttgart.de)
 
 ## Inhalt des Datensatzes
@@ -24,25 +24,25 @@ Da es sich um ein gerichtetes Netzwerk handelt, geht die Beziehung von einem Sen
  - year: Das Edge-Attribut „year“ definiert das Jahr, in dem die jeweilige Beziehung bestand, beziehungsweise wann eine Person bei einer Organisation beschäftigt war oder an einer Hochschule studiert hat. Die Zeiträume wurden auf Basis der Angaben in den jeweiligen LinkedIn-Profilen der Personen erfasst. Bei mehrjährigen Verbindungen wurde entsprechend für jedes separate Jahr eine Beziehung angelegt. Die Jahreszahlen reichen von 2006 bis 2022 und umfassen damit den Berufs- und Studienweg der Akteur:innen vor ihrer Aufnahme in das #30u30-Netzwerk bis hin zum aktuellen Zeitpunkt zur Datenerhebung im Rahmen dieser Arbeit (März 2022). Bei Verbindungen, bei denen das Jahr nicht bekannt war, wurde statt einer Jahreszahl der Wert 99 vergeben. 
 
 - relationship: Das Edge-Attribut „relationship“ definiert die Art der Beziehung zwischen Knoten, da es sich um ein multiplexes Netzwerk mit verschiedenen Beziehungsarten handelt.  Hierbei wurden vor allem die Beziehungen zwischen Knoten des Typ 1 und Typ 2 (Personen und Organisationen) definiert, da wenig Daten zur Beziehungsqualität zwischen den einzelnen natürlichen Personen vorlagen bzw. mit der gewählten Methode nicht erhoben werden konnten. Primär wird daher die Verbindung zwischen natürlicher Person und der Organisation näher definiert, darüber hinaus werden Verbindungen zwischen den #30u30 und ihren Mentorinnen / Mentoren codiert. 
-1 = Ausbildung
-2 = Bachelorstudium
-3 = Masterstudium,
-4 = Auslandssemester *(Gesamte Bachelor-/Masterstudiengänge, die im Ausland absolviert wurden, wurden nicht als Auslandssemester, sondern regulär als Bachelor- oder Masterstudium codiert)*
-5 = Promotionsstudium
-6 = Weiterbildung
-7 = Praktikum / Werkstudium / Studentische Tätigkeit
-8 = Traineeship / Volontariat
-9 = Anstellung *(festes Arbeitsverhältnis zwischen einer natürlichen Person und einer Organisation ab Junior-Level, darüber hinaus wird nicht zwischen verschiedenen Karrierestufen differenziert.)*
-10 = Freelance *(freiberufliche / selbstständige Tätigkeit)*
-11 = Mitgliedschaft *(Mitgliedschaft (auch bei Alumni) in einer Partei, oder einem Verein, z.B. einer studentischen PR-Initiative / einer Hochschulgruppe. 12 = Founder (Bezieht sich auf Personen, die in einem Unternehmen arbeiten, das sie selbst gegründet haben)*
-13 = Leader *(Bezieht sich auf Personen, die in einem Verein eine leitende Rolle innehatten oder diesen gegründet haben (z. B. Vorstand bei PRIHO)* 
-14 = Förderung *(Beschreibt, dass eine natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde)*
-15 = Lehrtätigkeit *(Lehrtätigkeit von Personen an Hochschulen, entweder in Vollzeit oder als Gastdozierende)*
-16 = Family *(Familiäre Verbindungen, etwa zwischen Elternteil und Kind oder Geschwistern)*
-17 = Mentorship *(Verbindung zwischen Mentor:in und einem #30u30-Mitglied)*
-18 = Freundschaft / Beziehung
-19 = Magister *(Studium, das mit dem nicht mehr existierenden akademischen Grad Magister beendet wurde)*
-20 = Diplom *(Studium, das mit dem nicht mehr existierenden akademischen Grad Diplom beendet wurde)*
+1 = Ausbildung \
+2 = Bachelorstudium \
+3 = Masterstudium \
+4 = Auslandssemester *(Gesamte Bachelor-/Masterstudiengänge, die im Ausland absolviert wurden, wurden nicht als Auslandssemester, sondern regulär als Bachelor- oder Masterstudium codiert)* \
+5 = Promotionsstudium \
+6 = Weiterbildung \
+7 = Praktikum / Werkstudium / Studentische Tätigkeit \
+8 = Traineeship / Volontariat \
+9 = Anstellung *(festes Arbeitsverhältnis zwischen einer natürlichen Person und einer Organisation ab Junior-Level, darüber hinaus wird nicht zwischen verschiedenen Karrierestufen differenziert.)* \
+10 = Freelance *(freiberufliche / selbstständige Tätigkeit)* \
+11 = Mitgliedschaft *(Mitgliedschaft (auch bei Alumni) in einer Partei, oder einem Verein, z.B. einer studentischen PR-Initiative / einer Hochschulgruppe. 12 = Founder (Bezieht sich auf Personen, die in einem Unternehmen arbeiten, das sie selbst gegründet haben)* \
+13 = Leader *(Bezieht sich auf Personen, die in einem Verein eine leitende Rolle innehatten oder diesen gegründet haben (z. B. Vorstand bei PRIHO)* \
+14 = Förderung *(Beschreibt, dass eine natürliche Person durch ein Begabtenförderungswerk mit einem Stipendium gefördert wurde)* \
+15 = Lehrtätigkeit *(Lehrtätigkeit von Personen an Hochschulen, entweder in Vollzeit oder als Gastdozierende)* \
+16 = Family *(Familiäre Verbindungen, etwa zwischen Elternteil und Kind oder Geschwistern)* \
+17 = Mentorship *(Verbindung zwischen Mentor:in und einem #30u30-Mitglied)* \
+18 = Freundschaft / Beziehung \
+19 = Magister *(Studium, das mit dem nicht mehr existierenden akademischen Grad Magister beendet wurde)* \
+20 = Diplom *(Studium, das mit dem nicht mehr existierenden akademischen Grad Diplom beendet wurde)* \
 21 = Staatsexamen 
 
 ## Nodelist und Node-Attribute
@@ -56,7 +56,7 @@ Da die Arbeit mit Initialen als IDs bei 150 Mitgliedern von #30u30, deren Mentor
 Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein einheitlicher Name, auf Zusätze wie GmbH, AG, e. V. oder ähnliches wurde der Einfachheit wegen verzichtet. Sonderfall: Im Falle von Umfirmierungen wird der aktuelle Firmenname verwendet, bei Namensänderungen von Personen (z. B. durch Hochzeit) wird ebenfalls der jetzige Name angegeben.
 
 - type: Definiert den Typ der Knoten des two mode-Netzwerks 
-1 = natürliche Person 
+1 = natürliche Person \
 2 = Organisation (Unternehmen, Agentur, NGO, Partei, Universität etc.) - Organisationstyp wird näher definiert durch Node-Attribut "category" (s. u.)
 
 # Node-Attribute, die sich auf Knoten des Typs 1 (natürliche Personen) beziehen.
@@ -64,65 +64,72 @@ Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein 
 - entry: Definiert das Jahr, in dem die jeweiligen Personen in das #30u30-Netzwerk aufgenommen wurden. Bei dem Wert handelt es sich um eine Jahreszahl.
 
 - sex: Definiert das Geschlecht bei natürlichen Personen.
-1 = weiblich, 2 = männlich, 3 = divers (sex = 3 wurde nicht vergeben)
+1 = weiblich \
+2 = männlich \
+3 = divers (wurde nicht vergeben)
 
 - mentor: Definiert, ob es sich um ein #30u30-Mitglied oder eine:n Mentor:in eines #30u30-Mitglieds handelt. 
-1 = 30u30 Mitglied, 2 = Mentor:in
+1 = 30u30 Mitglied \
+2 = Mentor:in
 
 - education: Definiert den höchsten Bildungsabschluss der natürlichen Personen. 
-1 = kein Abschluss
-2 = Gymnasialabschluss / Abitur
-3 = Ausbildung
-4 = Bachelorabschluss
-5 = Masterabschluss / MBA
-6 = Magister / Diplom
+1 = kein Abschluss \
+2 = Gymnasialabschluss / Abitur \
+3 = Ausbildung \
+4 = Bachelorabschluss \
+5 = Masterabschluss / MBA \
+6 = Magister / Diplom \
 7 = PhD (da sich die Personen aufgrund ihres Alters teils noch in der Promotion befinden, wird der Promotionsprozess bereits als angestrebter Abschluss aufgefasst)
 
 - membership: Ist / war die Person Teil einer studentischen PR-Initiative / PR-Verband?
-1 = Ja - Mitglied, 2 = Ja, in einer Gründungs-/Vorstandsrolle, 3 = Nein
+1 = Ja - Mitglied \
+2 = Ja, in einer Gründungs-/Vorstandsrolle \
+3 = Nein
 
 - scholarship: Wurde die Person in ihrem Studium durch ein Stipendium gefördert? 
-1 = Ja, 2 = Nein, 3 = Hat selbst kein Stipendium erhalten, ist aber Mitglied der Auswahlkommission
+1 = Ja \
+2 = Nein \
+3 = Hat selbst kein Stipendium erhalten, ist aber Mitglied der Auswahlkommission
 
 - exchange: Definiert, ob die Person in ihrem Studium akademische Auslandserfahrung gesammelt hat.
-1 = Auslandssemester
-2 = Studium im Ausland 
-3 = beides
+1 = Auslandssemester \
+2 = Studium im Ausland \ 
+3 = beides \
 4 = Nein
 
 - abroad: Definiert, ob die Person in ihrem Berufsleben bislang (zeitweise) im Ausland gearbeitet hat - als Ausland gelten Länder außerhalb des DACH-Raumes gezählt. 
 1 = Ja, 2 = Nein
 
 - winner: definiert, ob die Person unter den 30 Mitgliedern ihres Jahrgangs als "Young Professional des Jahres" ausgewählt und vom PR Report ausgezeichnet wurden. 
-1 = Gewinner:in des "Young Professional des Jahres"-Awards 
+1 = Gewinner:in des "Young Professional des Jahres"-Awards \
 2 = Nein
 
 # Node-Attribute, die sich auf Knoten des Typs 2 (Organisationen) beziehen
 - category: Definiert näher, um welche Art der Organisation es sich handelt.
-1 = Unternehmen
-2 = Agentur / Beratungsunternehmen
-3 = NGO / NPO
-4 = Regierungsorganisation / Partei / Behörde o.ä.
-5 = Hochschule
-6 = Verein / Netzwerk
-7 = Begabtenförderungswerk / Stiftung
-8 = Medienunternehmen / Zeitung / Sender
-9 = Sonstiges
+1 = Unternehmen \
+2 = Agentur / Beratungsunternehmen \
+3 = NGO / NPO \
+4 = Regierungsorganisation / Partei / Behörde o.ä. \
+5 = Hochschule \
+6 = Verein / Netzwerk \
+7 = Begabtenförderungswerk / Stiftung \
+8 = Medienunternehmen / Zeitung / Sender \
+9 = Sonstiges \
 10 = Forschungs-/Bildungseinrichtung / Institut
 
 - ownership: Definiert bei Hochschulen, um welche Art der Hochschule es sich handelt.  
-1 = Universität staatlich
-2 = Universität privat
-3 = FH / HAW staatlich
-4 = FH / HAW privat
-5 = Business School / Wirtschaftshochschule
-6 = Weiterbildungsakademie
-7 = Berufsschule
-8 = duale Hochschule
+1 = Universität staatlich \
+2 = Universität privat \
+3 = FH / HAW staatlich \
+4 = FH / HAW privat \
+5 = Business School / Wirtschaftshochschule \
+6 = Weiterbildungsakademie \
+7 = Berufsschule \
+8 = duale Hochschule \
 9 = sonstiges
 
 - sponsor: Definiert, ob die jeweiligen Organisation Partner bzw. Unterstützer des #30u30 Netzwerks ist oder war. 
-1 = Ja 
+1 = Ja \
 2 = Nein
 
 
