@@ -93,7 +93,7 @@ Bei Personen wurde hier der Vor- und Nachname angegeben, bei Organisationen ein 
 
 - exchange: Definiert, ob die Person in ihrem Studium akademische Auslandserfahrung gesammelt hat. \
 1 = Auslandssemester \
-2 = Studium im Ausland \ 
+2 = Studium im Ausland\
 3 = beides \
 4 = Nein
 
