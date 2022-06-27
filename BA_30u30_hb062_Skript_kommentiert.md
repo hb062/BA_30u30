@@ -1168,7 +1168,7 @@ plot(jg17_2,
      edge.curved=curve_multiple(jg17_2), # verhindert, dass sich Kanten überlagern
      vertex.frame.color=NA,
      edge.curved=.2,
-     vertex.size=degree(jg17_2)*1.2, # Knoten werden entsprechend ihres Degree-Wert skaliert
+     vertex.size=degree(jg17_2)*1.2, # Knoten werden entsprechend ihres indegree-Wert skaliert
      vertex.label.cex=.15,
      vertex.label.family="sans",
      vertex.label.font=2,
